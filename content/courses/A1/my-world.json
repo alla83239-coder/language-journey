@@ -604,7 +604,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Notice the relationship words. Some describe women, some men, and some can describe both."
+      "prompt": "Notice the relationship words. Some describe women, some men, and some can describe both.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "A family sharing time together"
+      }
     },
     {
       "id": "b-family-categories",
@@ -655,7 +659,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Can you think of one example for each category?"
+      "prompt": "Can you think of one example for each category?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family members together"
+      }
     },
     {
       "id": "b-family-tree",
@@ -703,7 +711,11 @@
         }
       ],
       "assistant": "Emma",
-      "prompt": "Use the family tree to explain how two people are related."
+      "prompt": "Use the family tree to explain how two people are related.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "A multigenerational family"
+      }
     },
     {
       "id": "b-family-relations",
@@ -786,7 +798,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Check the generations in the family tree before you answer."
+      "prompt": "Check the generations in the family tree before you answer.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Relatives smiling together"
+      }
     },
     {
       "id": "b-plurals-grammar",
@@ -796,7 +812,11 @@
       "grammarIndex": 0,
       "body": "Student's Book, page 6: regular and irregular plural nouns. Welcome B practises both spelling patterns and irregular forms.",
       "assistant": "Nick",
-      "prompt": "Look for patterns. Which plural forms add -s, which add -ies, and which change completely?"
+      "prompt": "Look for patterns. Which plural forms add -s, which add -ies, and which change completely?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family portrait"
+      }
     },
     {
       "id": "b-plurals-practice",
@@ -867,7 +887,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Explain one spelling rule in your own words."
+      "prompt": "Explain one spelling rule in your own words.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family members together"
+      }
     },
     {
       "id": "b-possessive-grammar",
@@ -877,7 +901,11 @@
       "grammarIndex": 2,
       "body": "Use possessive adjectives to show who something belongs to. The complete set in Grammar Reference W.2 is: my, your, his, her, its, our, their.",
       "assistant": "Nick",
-      "prompt": "Remember: a possessive adjective comes before a noun."
+      "prompt": "Remember: a possessive adjective comes before a noun.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family members smiling"
+      }
     },
     {
       "id": "b-possessive-practice",
@@ -951,7 +979,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Find the person or thing in brackets. Which pronoun does it match?"
+      "prompt": "Find the person or thing in brackets. Which pronoun does it match?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family spending time together"
+      }
     },
     {
       "id": "b-demonstratives-grammar",
@@ -961,7 +993,11 @@
       "title": "Grammar Lab · This, that, these, those",
       "body": "Use this and these for people or things near you (here). Use that and those for people or things farther away (there). This/that go with singular nouns; these/those go with plural nouns.",
       "assistant": "Nick",
-      "prompt": "First decide: is it near or far? Then decide: singular or plural."
+      "prompt": "First decide: is it near or far? Then decide: singular or plural.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family portrait"
+      }
     },
     {
       "id": "b-demonstratives-practice",
@@ -1026,7 +1062,11 @@
         }
       ],
       "assistant": "Nick",
-      "prompt": "Say the full sentence aloud after choosing."
+      "prompt": "Say the full sentence aloud after choosing.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Relatives together"
+      }
     },
     {
       "id": "b-reading",
@@ -1065,7 +1105,11 @@
         }
       ],
       "assistant": "Emma",
-      "prompt": "Can you find three possessive adjectives in the text?"
+      "prompt": "Can you find three possessive adjectives in the text?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family enjoying a day together"
+      }
     },
     {
       "id": "b-speaking-task",
@@ -1082,7 +1126,11 @@
         "Who is Ben? He's her brother."
       ],
       "assistant": "Emma",
-      "prompt": "Use family words, possessive adjectives and the verb be."
+      "prompt": "Use family words, possessive adjectives and the verb be.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family talking together"
+      }
     },
     {
       "id": "b-project",
@@ -1118,7 +1166,11 @@
         }
       ],
       "assistant": "Leo",
-      "prompt": "Your project now has an identity card and a family tree. Keep your sentences simple and accurate."
+      "prompt": "Your project now has an identity card and a family tree. Keep your sentences simple and accurate.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family portrait for a family tree"
+      }
     },
     {
       "id": "b-reflection",
@@ -1134,7 +1186,11 @@
         "I can use this, that, these and those."
       ],
       "assistant": "Leo",
-      "prompt": "Which part would you like to practise again?"
+      "prompt": "Which part would you like to practise again?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        "alt": "Family together"
+      }
     },
     {
       "id": "complete",
