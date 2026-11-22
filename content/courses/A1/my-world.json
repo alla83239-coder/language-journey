@@ -113,7 +113,7 @@
       "title": "Welcome to My World",
       "body": "Join an international community. Introduce yourself, discover where people come from and create the first part of your My World Profile.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/welcome_team.jpg",
         "alt": "Students meeting"
       },
       "assistant": "Leo",
@@ -126,17 +126,17 @@
       "body": "Look at the three photographs. What connects them? Share your associations before you name the topic.",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85",
+          "src": "../media/helper_emma.jpg",
           "alt": "Portrait",
           "caption": "A person"
         },
         {
-          "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=85",
+          "src": "../media/intro_city.jpg",
           "alt": "World map",
           "caption": "A place in the world"
         },
         {
-          "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85",
+          "src": "../media/welcome_team.jpg",
           "alt": "Friends",
           "caption": "Meeting people"
         }
@@ -163,7 +163,7 @@
         "Create your Identity Card"
       ],
       "visual": {
-        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/intro_connection.jpg",
         "alt": "Student preparing an identity profile"
       },
       "assistant": "Leo",
@@ -178,7 +178,7 @@
       "audioSrc": "../media/audio/Insight2e_Elem_SB_Track_0.1.mp3",
       "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/welcome_team.jpg",
         "alt": "Friends meeting"
       },
       "assistant": "Emma",
@@ -267,7 +267,7 @@
         }
       ],
       "visual": {
-        "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/intro_city.jpg",
         "alt": "Students at school"
       },
       "assistant": "Nick",
@@ -351,7 +351,7 @@
         }
       ],
       "visual": {
-        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/intro_volunteer.jpg",
         "alt": "Students studying"
       },
       "assistant": "Nick",
@@ -390,7 +390,7 @@
         }
       ],
       "visual": {
-        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/volunteer_project_1.jpg",
         "alt": "Students working together"
       },
       "assistant": "Nick",
@@ -989,7 +989,7 @@
         }
       ],
       "visual": {
-        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85",
+        "src": "../media/vocab_photos/id-card.jpg",
         "alt": "Photorealistic learning scene"
       }
     },
