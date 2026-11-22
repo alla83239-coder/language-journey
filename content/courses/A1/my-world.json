@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -112,13 +112,12 @@
       "type": "welcome",
       "title": "Welcome to My World",
       "body": "Join an international community. Introduce yourself, discover where people come from and create the first part of your My World Profile.",
-      "assistant": "Leo",
-      "prompt": "Today you will create your identity card.",
-      "section": "LESSON 1 · ALL ABOUT ME",
       "visual": {
         "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+        "alt": "Students meeting"
+      },
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME"
     },
     {
       "id": "motivation",
@@ -128,7 +127,7 @@
       "images": [
         {
           "src": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85",
-          "alt": "Portrait of a young person",
+          "alt": "Portrait",
           "caption": "A person"
         },
         {
@@ -138,21 +137,18 @@
         },
         {
           "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85",
-          "alt": "Friends meeting",
+          "alt": "Friends",
           "caption": "Meeting people"
         }
       ],
-      "question": "What might connect these pictures?",
+      "question": "What connects these pictures?",
       "options": [
-        "Introducing yourself and your country",
-        "Ordering food in a café",
-        "Talking about the weather"
+        "People, identity and countries",
+        "Food and cooking",
+        "Sports and competitions"
       ],
-      "correct": 0,
-      "feedback": "Think about the people around you, the places you know and the things you enjoy. They are all part of your world.",
       "assistant": "Emma",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "prompt": "What information do we share when we meet someone for the first time?"
+      "section": "LESSON 1 · ALL ABOUT ME"
     },
     {
       "id": "mission",
@@ -160,27 +156,26 @@
       "title": "Your mission: My Identity Card",
       "body": "Imagine you are joining an international school community. You need to introduce yourself to people from different countries.",
       "steps": [
-        "Say your name and spell it.",
-        "Say how old you are.",
-        "Name your country and nationality.",
-        "Ask and answer simple questions with be.",
-        "Create your identity card."
+        "Introduce yourself",
+        "Say your name and spell it",
+        "Talk about age, country and nationality",
+        "Ask and answer questions with be",
+        "Create your Identity Card"
       ],
-      "assistant": "Leo",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "prompt": "Keep your identity card. You will add a family tree in Lesson 2.",
       "visual": {
         "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Student preparing an international identity profile"
-      }
+        "alt": "Student preparing an identity profile"
+      },
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME"
     },
     {
-      "id": "vocabulary",
+      "id": "sb-p4-ex1",
       "type": "listening",
       "title": "First meeting · Marie and Mateo",
-      "body": "Student’s Book, p. 4, Exercise 1 · Audio 0.1. Read and listen to the dialogue, then practise it with a partner.",
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
+      "body": "Student’s Book, p. 4, Exercise 1 · Audio 0.1. Listen to the original dialogue. Then work in pairs and practise reading it.",
+      "audioTrack": "0.1",
+      "audioSrc": null,
       "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
       "questions": [
         {
@@ -213,442 +208,540 @@
       ],
       "visual": {
         "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+        "alt": "Friends meeting"
+      },
+      "assistant": "Emma",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
     },
     {
-      "id": "check-vocab",
-      "type": "reading",
+      "id": "sb-p4-ex2",
+      "type": "matching",
       "title": "Meet Markos and Freya",
-      "body": "Student’s Book, p. 4, Exercise 2. Read the blog and match the sentence beginnings with the correct endings.",
-      "questions": [
+      "body": "Student’s Book, p. 4, Exercise 2. Read Thomas’s blog. Match the sentence beginnings (1–3) with the correct endings (a–c).",
+      "text": "Hi. My name’s Thomas. I’m British and I live in Oxford. In this photo, I’m with Markos and Freya. They’re my friends. Markos is from Greece and Freya is from New Zealand. We’re at the same school, but we aren’t in the same class. Markos likes football and he’s in the same football team as me. Freya isn’t in the team, but she’s in the school basketball team.",
+      "items": [
         {
-          "q": "Markos is …",
+          "prompt": "1. Markos is …",
           "options": [
-            "from Oxford",
-            "in a football team with Thomas",
-            "in a basketball team"
+            "a. from Oxford",
+            "b. in a football team with Thomas",
+            "c. in a basketball team"
           ],
-          "correct": 1
+          "answer": "b. in a football team with Thomas"
         },
         {
-          "q": "Freya is …",
+          "prompt": "2. Freya is …",
           "options": [
-            "from Greece",
-            "in a basketball team",
-            "from Oxford"
+            "a. from Oxford",
+            "b. in a football team with Thomas",
+            "c. in a basketball team"
           ],
-          "correct": 1
+          "answer": "c. in a basketball team"
         },
         {
-          "q": "Thomas is …",
+          "prompt": "3. Thomas is …",
           "options": [
-            "from Oxford",
-            "from New Zealand",
-            "in a basketball team"
+            "a. from Oxford",
+            "b. in a football team with Thomas",
+            "c. in a basketball team"
           ],
-          "correct": 0
+          "answer": "a. from Oxford"
         }
       ],
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "text": "In this photo, I'm with Markos and Freya. They're my friends. Markos is from Greece and Freya is from New Zealand. We're at the same school, but we aren't in the same class. Markos likes football and he's in the same football team as me. Freya isn't in the team, but she's in the school basketball team.",
       "visual": {
         "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
-    },
-    {
-      "id": "grammar-be",
-      "type": "grammar",
-      "title": "Grammar Lab · be: affirmative and negative",
-      "grammarIndex": 0,
-      "body": "Student’s Book, p. 4, Exercises 3–5 · Grammar Reference W.1. Notice the full and short forms, then use them to describe yourself and other people.",
+        "alt": "Students at school"
+      },
       "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "prompt": "Which form goes with I? Which forms go with he, she, it and plural subjects?",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
     },
     {
-      "id": "practice-be",
-      "type": "choice",
-      "title": "Build the sentences",
-      "body": "Choose the correct affirmative or negative form of be.",
-      "questions": [
+      "id": "sb-p4-ex3-4",
+      "type": "grammarTables",
+      "title": "Grammar Insight · be: affirmative and negative",
+      "body": "Student’s Book, p. 4, Exercises 3–4 · Grammar Reference W.1. Complete the tables with the full and short forms of be.",
+      "tables": [
         {
-          "q": "I ___ 14.",
-          "options": [
-            "am",
-            "is",
-            "are"
-          ],
-          "correct": 0
+          "title": "Exercise 3 · Affirmative",
+          "rows": [
+            [
+              "Full form",
+              "Short form"
+            ],
+            [
+              "I am",
+              "I’m"
+            ],
+            [
+              "he / she / it is",
+              "he’s / she’s / it’s"
+            ],
+            [
+              "you / we / they are",
+              "you’re / we’re / they’re"
+            ]
+          ]
         },
         {
-          "q": "Markos and Freya ___ my friends.",
-          "options": [
-            "am",
-            "is",
-            "are"
-          ],
-          "correct": 2
-        },
-        {
-          "q": "She ___ in the football team. She's in the basketball team.",
-          "options": [
-            "isn't",
-            "aren't",
-            "am not"
-          ],
-          "correct": 0
-        },
-        {
-          "q": "We ___ in the same class.",
-          "options": [
-            "isn't",
-            "aren't",
-            "am not"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "Thomas ___ American. He's British.",
-          "options": [
-            "isn't",
-            "aren't",
-            "am not"
-          ],
-          "correct": 0
+          "title": "Exercise 4 · Negative",
+          "rows": [
+            [
+              "Full form",
+              "Short form"
+            ],
+            [
+              "I am not",
+              "I’m not"
+            ],
+            [
+              "he / she / it is not",
+              "he / she / it isn’t"
+            ],
+            [
+              "you / we / they are not",
+              "you / we / they aren’t"
+            ]
+          ]
         }
       ],
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
       "visual": {
         "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
-    },
-    {
-      "id": "world-quiz",
-      "type": "motivation",
-      "title": "A world of people",
-      "body": "Student’s Book, p. 5, Exercise 6. Study the pictures and use the clues to identify the countries. What do the places and people tell you about the world?",
-      "assistant": "Emma",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "images": [
-        {
-          "src": "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
-          "alt": "Rio de Janeiro city view",
-          "caption": "Brazil"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85",
-          "alt": "Taj Mahal in India",
-          "caption": "India"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85",
-          "alt": "Koala in Australia",
-          "caption": "Australia"
-        }
-      ],
-      "question": "Which country is associated with the Taj Mahal?",
-      "options": [
-        "India",
-        "Italy",
-        "Poland"
-      ],
-      "correct": 0,
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
+        "alt": "Students studying"
       },
-      "prompt": "Look carefully at the three photographs. Share your associations before choosing."
+      "assistant": "Nick",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
     },
     {
-      "id": "grammar-have",
-      "type": "familyVocabulary",
-      "title": "Countries and nationalities",
-      "grammarIndex": 1,
-      "body": "Student’s Book, p. 5, Exercise 7 · Audio 0.2. Match the nationalities to the flags, listen, check and repeat.",
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
+      "id": "sb-p4-ex5",
+      "type": "fill",
+      "title": "Make sentences with be",
+      "body": "Student’s Book, p. 4, Exercise 5. Use the prompts to make complete sentences. Pay attention to affirmative and negative forms.",
       "items": [
         {
-          "term": "Australia",
-          "meaning": "Australian",
-          "example": "I'm Australian."
+          "q": "Thomas: American / British ✓",
+          "answer": "Thomas isn't American. He's British.",
+          "hint": "Thomas isn't … He's …"
         },
         {
-          "term": "Brazil",
-          "meaning": "Brazilian",
-          "example": "I'm Brazilian."
+          "q": "you: from New Zealand / Greece ✓",
+          "answer": "You're from New Zealand. You're Greek.",
+          "hint": "You're …"
         },
         {
-          "term": "Britain",
-          "meaning": "British",
-          "example": "I'm British."
+          "q": "we: in London / in Oxford ✓",
+          "answer": "We aren't in London. We're in Oxford.",
+          "hint": "We aren't … We're …"
         },
         {
-          "term": "China",
-          "meaning": "Chinese",
-          "example": "I'm Chinese."
+          "q": "they: my family / my friends ✓",
+          "answer": "They aren't my family. They're my friends.",
+          "hint": "They aren't … They're …"
         },
         {
-          "term": "Germany",
-          "meaning": "German",
-          "example": "I'm German."
-        },
-        {
-          "term": "India",
-          "meaning": "Indian",
-          "example": "I'm Indian."
-        },
-        {
-          "term": "Italy",
-          "meaning": "Italian",
-          "example": "I'm Italian."
-        },
-        {
-          "term": "Japan",
-          "meaning": "Japanese",
-          "example": "I'm Japanese."
-        },
-        {
-          "term": "Poland",
-          "meaning": "Polish",
-          "example": "I'm Polish."
-        },
-        {
-          "term": "Russia",
-          "meaning": "Russian",
-          "example": "I'm Russian."
+          "q": "I: good at football / good at basketball ✓",
+          "answer": "I'm not good at football. I'm good at basketball.",
+          "hint": "I'm not … I'm …"
         }
-      ],
-      "prompt": "Say the country first, then the nationality.",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
-    },
-    {
-      "id": "family-task",
-      "type": "listening",
-      "title": "The English alphabet",
-      "body": "Student’s Book, p. 5, Exercise 8 · Audio 0.3. Listen and repeat the alphabet. Then practise spelling names.",
-      "items": [
-        {
-          "q": "I ___ a brother.",
-          "answer": "have got",
-          "hint": "Use have got with I."
-        },
-        {
-          "q": "She ___ a cat.",
-          "answer": "has got",
-          "hint": "Use has got with she."
-        },
-        {
-          "q": "This is ___ best friend.",
-          "answer": "my",
-          "hint": "Use a possessive adjective before a noun."
-        }
-      ],
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "audioText": "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z.",
-      "questions": [
-        {
-          "q": "Which letter comes after G?",
-          "options": [
-            "H",
-            "I",
-            "J"
-          ],
-          "correct": 0
-        },
-        {
-          "q": "Which letter comes before M?",
-          "options": [
-            "K",
-            "L",
-            "N"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "How do you spell Mateo?",
-          "options": [
-            "M-A-T-E-O",
-            "M-E-T-A-O",
-            "M-A-T-O-E"
-          ],
-          "correct": 0
-        }
-      ],
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
-    },
-    {
-      "id": "grammar-home",
-      "type": "challenge",
-      "title": "Ask and answer",
-      "grammarIndex": 3,
-      "body": "Student’s Book, p. 5, Exercise 9. Work in pairs. Ask and answer, then change the country and nationality.",
-      "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "scenario": "You meet a new student at an international event. Introduce yourself and find out about the other person.",
-      "prompts": [
-        "What's your name?",
-        "How do you spell your name?",
-        "Where are you from?",
-        "How old are you?",
-        "Are you from ...?"
       ],
       "visual": {
         "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
-    },
-    {
-      "id": "home-task",
-      "type": "grammar",
-      "title": "Grammar Lab · Questions and short answers",
-      "body": "Student’s Book, p. 5, Exercises 10–11 · Grammar Reference W.1. Learn question order and short answers with be.",
+        "alt": "Students working together"
+      },
       "assistant": "Nick",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "grammarIndex": 0,
-      "prompt": "Put am, is or are before the subject to form a question. Practise short answers: Yes, I am. / No, she isn't.",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
     },
     {
-      "id": "listening",
-      "type": "choice",
-      "title": "Ask the right question",
-      "body": "Practise question forms and short answers with be. These are adapted practice items for the language focus in Student’s Book, p. 5, Exercises 10–11 and Workbook, p. 4.",
-      "questions": [
+      "id": "sb-p5-ex6",
+      "type": "worldQuiz",
+      "title": "World Quiz · Where are they from?",
+      "body": "Student’s Book, p. 5, Exercise 6. Identify the countries in photographs A–F. Then check your answers against the quiz flags.",
+      "items": [
         {
-          "q": "___ you from Australia?",
-          "options": [
-            "Are",
-            "Is",
-            "Am"
-          ],
-          "correct": 0
+          "label": "A",
+          "src": "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=700&q=85",
+          "alt": "Brazil",
+          "answer": "Brazil"
         },
         {
-          "q": "___ your best friend 16?",
-          "options": [
-            "Are",
-            "Is",
-            "Am"
-          ],
-          "correct": 1
+          "label": "B",
+          "src": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=85",
+          "alt": "India",
+          "answer": "India"
         },
         {
-          "q": "___ your cousins Italian?",
-          "options": [
-            "Are",
-            "Is",
-            "Am"
-          ],
-          "correct": 0
+          "label": "C",
+          "src": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=700&q=85",
+          "alt": "Australia",
+          "answer": "Australia"
         },
         {
-          "q": "A: Is Katie from Britain? B: No, ___. She's from Australia.",
-          "options": [
-            "she isn't",
-            "she aren't",
-            "she's"
-          ],
-          "correct": 0
+          "label": "D",
+          "src": "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=700&q=85",
+          "alt": "Poland",
+          "answer": "Poland"
         },
         {
-          "q": "A: Are they German? B: No, ___. They're Russian.",
-          "options": [
-            "they isn't",
-            "they aren't",
-            "they are"
-          ],
-          "correct": 1
+          "label": "E",
+          "src": "https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=700&q=85",
+          "alt": "Japan",
+          "answer": "Japan"
+        },
+        {
+          "label": "F",
+          "src": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=700&q=85",
+          "alt": "Italy",
+          "answer": "Italy"
         }
+      ],
+      "countries": [
+        "Brazil",
+        "India",
+        "Australia",
+        "Poland",
+        "Japan",
+        "Italy"
       ],
       "assistant": "Emma",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
     },
     {
-      "id": "project-draft",
-      "type": "choice",
-      "title": "Workbook Practice · Welcome A",
-      "body": "Workbook, p. 4, Welcome A. Complete each sentence with the correct form of be. The items shown here are adapted practice, not a verbatim reproduction of the workbook.",
-      "assistant": "Leo",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "questions": [
+      "id": "sb-p5-ex7",
+      "type": "flagMatch",
+      "title": "Countries and nationalities",
+      "body": "Student’s Book, p. 5, Exercise 7 · Audio 0.2. Match the nationalities to the ten flags in the quiz. Listen to the original recording, check and repeat.",
+      "flags": [
+        [
+          "Australian",
+          "🇦🇺"
+        ],
+        [
+          "Brazilian",
+          "🇧🇷"
+        ],
+        [
+          "British",
+          "🇬🇧"
+        ],
+        [
+          "Chinese",
+          "🇨🇳"
+        ],
+        [
+          "German",
+          "🇩🇪"
+        ],
+        [
+          "Indian",
+          "🇮🇳"
+        ],
+        [
+          "Italian",
+          "🇮🇹"
+        ],
+        [
+          "Japanese",
+          "🇯🇵"
+        ],
+        [
+          "Polish",
+          "🇵🇱"
+        ],
+        [
+          "Russian",
+          "🇷🇺"
+        ]
+      ],
+      "audioTrack": "0.2",
+      "audioSrc": null,
+      "assistant": "Nick",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "vocabulary-extra-132",
+      "type": "flagMatch",
+      "title": "Vocabulary Extra · Countries and nationalities",
+      "body": "Vocabulary Extra, p. 132, Exercise 1. Match the 30 countries to flags 1–30. Extended vocabulary challenge after Student’s Book Exercise 7.",
+      "flags": [
         {
-          "q": "Hi, I'm Yulia. I ___ 14.",
-          "options": [
-            "am",
-            "is",
-            "are"
-          ],
-          "correct": 0
+          "country": "Canada",
+          "flag": "🇨🇦"
         },
         {
-          "q": "My home ___ in London.",
-          "options": [
-            "am",
-            "is",
-            "are"
-          ],
-          "correct": 1
+          "country": "the USA",
+          "flag": "🇺🇸"
         },
         {
-          "q": "I ___ British. I'm Russian.",
-          "options": [
-            "am not",
-            "isn't",
-            "aren't"
-          ],
-          "correct": 0
+          "country": "Mexico",
+          "flag": "🇲🇽"
         },
         {
-          "q": "Thomas, Jonas, Ben and I ___ at the same school.",
-          "options": [
-            "am",
-            "is",
-            "are"
-          ],
-          "correct": 2
+          "country": "Brazil",
+          "flag": "🇧🇷"
         },
         {
-          "q": "My friend Maria ___ in this photo.",
-          "options": [
-            "isn't",
-            "aren't",
-            "am not"
-          ],
-          "correct": 0
+          "country": "Argentina",
+          "flag": "🇦🇷"
+        },
+        {
+          "country": "Ireland",
+          "flag": "🇮🇪"
+        },
+        {
+          "country": "the UK",
+          "flag": "🇬🇧"
+        },
+        {
+          "country": "Belgium",
+          "flag": "🇧🇪"
+        },
+        {
+          "country": "the Netherlands",
+          "flag": "🇳🇱"
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹"
+        },
+        {
+          "country": "Spain",
+          "flag": "🇪🇸"
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷"
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪"
+        },
+        {
+          "country": "Poland",
+          "flag": "🇵🇱"
+        },
+        {
+          "country": "the Czech Republic",
+          "flag": "🇨🇿"
+        },
+        {
+          "country": "Italy",
+          "flag": "🇮🇹"
+        },
+        {
+          "country": "Hungary",
+          "flag": "🇭🇺"
+        },
+        {
+          "country": "Slovakia",
+          "flag": "🇸🇰"
+        },
+        {
+          "country": "Morocco",
+          "flag": "🇲🇦"
+        },
+        {
+          "country": "Egypt",
+          "flag": "🇪🇬"
+        },
+        {
+          "country": "Kenya",
+          "flag": "🇰🇪"
+        },
+        {
+          "country": "South Africa",
+          "flag": "🇿🇦"
+        },
+        {
+          "country": "Turkey",
+          "flag": "🇹🇷"
+        },
+        {
+          "country": "Russia",
+          "flag": "🇷🇺"
+        },
+        {
+          "country": "China",
+          "flag": "🇨🇳"
+        },
+        {
+          "country": "India",
+          "flag": "🇮🇳"
+        },
+        {
+          "country": "Thailand",
+          "flag": "🇹🇭"
+        },
+        {
+          "country": "Japan",
+          "flag": "🇯🇵"
+        },
+        {
+          "country": "Australia",
+          "flag": "🇦🇺"
+        },
+        {
+          "country": "New Zealand",
+          "flag": "🇳🇿"
         }
       ],
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      },
-      "prompt": "Complete all five items. Your result will be reviewed after the activity."
+      "assistant": "Nick",
+      "section": "LESSON 1 · VOCABULARY EXTRA p. 132"
     },
     {
-      "id": "challenge",
+      "id": "sb-p5-ex8",
+      "type": "letters",
+      "title": "The alphabet · Listen and click",
+      "body": "Student’s Book, p. 5, Exercise 8 · Audio 0.3. Listen to the alphabet and click each letter in the order you hear it. Use Reset to try again.",
+      "audioTrack": "0.3",
+      "audioSrc": null,
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "assistant": "Nick",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "sb-p5-ex9",
+      "type": "speaking",
+      "title": "Work in pairs · Ask and answer",
+      "body": "Student’s Book, p. 5, Exercise 9. Work in pairs. Ask and answer the questions. Then change pairs and change the country and nationality.",
+      "dialogue": [
+        [
+          "What’s your name?",
+          "It’s Alicia."
+        ],
+        [
+          "How do you spell your name?",
+          "A-L-I-C-I-A."
+        ],
+        [
+          "Where are you from?",
+          "I’m from Brazil."
+        ],
+        [
+          "Oh, you’re Brazilian!",
+          "Yes, I am."
+        ]
+      ],
+      "assistant": "Emma",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "sb-p5-ex10",
+      "type": "grammarQuestions",
+      "title": "Grammar Insight · be: questions and short answers",
+      "body": "Student’s Book, p. 5, Exercise 10. Read the dialogue in Exercise 1 again. Complete the table with the questions and short answers for be.",
+      "table": [
+        [
+          "Questions",
+          "Affirmative short answers",
+          "Negative short answers"
+        ],
+        [
+          "Am I?",
+          "Yes, I am.",
+          "No, I’m not."
+        ],
+        [
+          "Are you? / Is he / she / it?",
+          "Yes, you are. / Yes, he / she / it is.",
+          "No, you aren’t. / No, he / she / it isn’t."
+        ],
+        [
+          "Are we / you / they?",
+          "Yes, we / you / they are.",
+          "No, we / you / they aren’t."
+        ]
+      ],
+      "assistant": "Nick",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "wb-p90-w1",
+      "type": "workbookW1",
+      "title": "Grammar Reference and Practice · W.1 be",
+      "body": "Workbook, p. 90, Grammar Reference and Practice · Welcome unit. Complete Exercise 1 with affirmative and negative forms of be, then write questions and short answers in Exercise 2.",
+      "exercise1": [
+        "She’s a student. She isn’t a teacher.",
+        "They ______ big. They ______ small.",
+        "We ______ hot. We ______ cold.",
+        "It ______ a good school. It ______ a bad school.",
+        "My mother ______ in the garden. My mother ______ in the house.",
+        "I ______ 15. I ______ 18."
+      ],
+      "exercise2": [
+        "you / English? (Yes)",
+        "the girl / happy? (No)",
+        "they / 16? (Yes)",
+        "we / in London? (No)",
+        "you / my friend? (No)",
+        "the boy / your brother? (Yes)"
+      ],
+      "assistant": "Nick",
+      "section": "LESSON 1 · WORKBOOK p. 90"
+    },
+    {
+      "id": "sb-p5-ex11",
+      "type": "questionBuild",
+      "title": "Make questions with be",
+      "body": "Student’s Book, p. 5, Exercise 11. Put the prompts in the correct order to make questions.",
+      "prompts": [
+        "you / from Australia?",
+        "your best friend / 16?",
+        "your cousins / Italian?",
+        "you / good at sport?",
+        "your home / in a city?"
+      ],
+      "assistant": "Nick",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "sb-p5-ex12",
+      "type": "speaking",
+      "title": "Work in pairs · Ask and answer",
+      "body": "Student’s Book, p. 5, Exercise 12. Work in pairs. Ask and answer the questions from Exercise 11. Give short answers and add one more detail.",
+      "assistant": "Emma",
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+    },
+    {
+      "id": "wb-p9-assess",
+      "type": "selfAssessment",
+      "title": "Assess your progress · Lesson WA",
+      "body": "Workbook, p. 9. Give yourself a mark for each learning objective: 1 = I found this difficult; 2 = This was OK; 3 = I can do this well. Then complete “How can I improve?”",
+      "objectives": [
+        "I can use the verb be.",
+        "I can talk about countries and nationalities.",
+        "I can recognize the letters of the alphabet."
+      ],
+      "assistant": "Leo",
+      "section": "LESSON 1 · WORKBOOK p. 9"
+    },
+    {
+      "id": "identity-card-project",
       "type": "project",
       "title": "Project Workshop · My Identity Card",
       "body": "Create the first artefact for your My World Profile. You may use your real details or invent a profile. This task applies the language from Welcome A.",
@@ -659,8 +752,8 @@
         "What do you like doing?",
         "Have you got any brothers or sisters?"
       ],
-      "assistant": "Emma",
-      "section": "LESSON 1 · ALL ABOUT ME",
+      "assistant": "Leo",
+      "section": "LESSON 1 · PROJECT",
       "fields": [
         {
           "id": "identity-name",
@@ -699,35 +792,27 @@
       }
     },
     {
-      "id": "final",
+      "id": "lesson1-reflection",
       "type": "reflection",
       "title": "Reflection · What can you do now?",
-      "body": "Check the statements that are true for you. Think about what you can now do with the language from Welcome A.",
-      "assistant": "Leo",
-      "section": "LESSON 1 · ALL ABOUT ME",
+      "body": "Review your work and identify one thing you can do confidently and one thing to practise next.",
       "questions": [
         "I can introduce myself and spell my name.",
         "I can say my age, country and nationality.",
         "I can use affirmative and negative forms of be.",
         "I can ask questions and give short answers with be."
       ],
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "assistant": "Leo",
+      "section": "LESSON 1 · REFLECTION"
     },
     {
-      "id": "reflection",
+      "id": "lesson1-complete",
       "type": "complete",
       "title": "Identity Card created!",
       "body": "You have completed Lesson 1 and created the first part of your My World Profile. In Lesson 2, you will add the people in your family.",
+      "badge": "My Identity Card",
       "assistant": "Leo",
-      "section": "LESSON 1 · ALL ABOUT ME",
-      "badge": "Identity Explorer",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "section": "LESSON 1 · COMPLETE"
     },
     {
       "id": "b-motivation",
