@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -173,7 +173,7 @@
       "id": "sb-p4-ex1",
       "type": "listening",
       "title": "First meeting · Marie and Mateo",
-      "body": "Student’s Book, p. 4, Exercise 1 · Audio 0.1. Listen to the original dialogue. Then work in pairs and practise reading it.",
+      "body": "Listen to the original dialogue. Then work in pairs and practise reading it.",
       "audioTrack": "0.1",
       "audioSrc": null,
       "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
@@ -182,13 +182,13 @@
         "alt": "Friends meeting"
       },
       "assistant": "Emma",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p4-ex2",
       "type": "matching",
       "title": "Meet Markos and Freya",
-      "body": "Student’s Book, p. 4, Exercise 2. Read Thomas’s blog. Match the sentence beginnings (1–3) with the correct endings (a–c).",
+      "body": "Read Thomas’s blog. Match the sentence beginnings (1–3) with the correct endings (a–c).",
       "text": "Hi. My name’s Thomas. I’m British and I live in Oxford. In this photo, I’m with Markos and Freya. They’re my friends. Markos is from Greece and Freya is from New Zealand. We’re at the same school, but we aren’t in the same class. Markos likes football and he’s in the same football team as me. Freya isn’t in the team, but she’s in the school basketball team.",
       "items": [
         {
@@ -224,13 +224,13 @@
         "alt": "Students at school"
       },
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p4-ex3-4",
       "type": "grammarTables",
       "title": "Grammar Insight · be: affirmative and negative",
-      "body": "Student’s Book, p. 4, Exercises 3–4 · Grammar Reference W.1. Complete the tables with the full and short forms of be.",
+      "body": "Complete the tables with the full and short forms of be.",
       "tables": [
         {
           "title": "Exercise 3 · Affirmative",
@@ -280,13 +280,13 @@
         "alt": "Students studying"
       },
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p4-ex5",
       "type": "fill",
       "title": "Make sentences with be",
-      "body": "Student’s Book, p. 4, Exercise 5. Use the prompts to make complete sentences. Pay attention to affirmative and negative forms.",
+      "body": "Use the prompts to make complete sentences. Pay attention to affirmative and negative forms.",
       "items": [
         {
           "q": "Thomas: American / British ✓",
@@ -319,13 +319,13 @@
         "alt": "Students working together"
       },
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 4"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex6",
       "type": "worldQuiz",
       "title": "World Quiz · Where are they from?",
-      "body": "Student’s Book, p. 5, Exercise 6. Identify the countries in photographs A–F. Then check your answers against the quiz flags.",
+      "body": "Identify the countries in photographs A–F. Then check your answers against the quiz flags.",
       "items": [
         {
           "label": "A",
@@ -373,195 +373,279 @@
         "Italy"
       ],
       "assistant": "Emma",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex7",
       "type": "flagMatch",
       "title": "Countries and nationalities",
-      "body": "Student’s Book, p. 5, Exercise 7 · Audio 0.2. Match the nationalities to the ten flags in the quiz. Listen to the original recording, check and repeat.",
+      "body": "Match the nationalities to the flags. Listen, check your choices and repeat the words.",
       "flags": [
-        [
-          "Australian",
-          "🇦🇺"
-        ],
-        [
-          "Brazilian",
-          "🇧🇷"
-        ],
-        [
-          "British",
-          "🇬🇧"
-        ],
-        [
-          "Chinese",
-          "🇨🇳"
-        ],
-        [
-          "German",
-          "🇩🇪"
-        ],
-        [
-          "Indian",
-          "🇮🇳"
-        ],
-        [
-          "Italian",
-          "🇮🇹"
-        ],
-        [
-          "Japanese",
-          "🇯🇵"
-        ],
-        [
-          "Polish",
-          "🇵🇱"
-        ],
-        [
-          "Russian",
-          "🇷🇺"
-        ]
+        {
+          "label": "Australian",
+          "code": "au",
+          "answer": "Australian"
+        },
+        {
+          "label": "Brazilian",
+          "code": "br",
+          "answer": "Brazilian"
+        },
+        {
+          "label": "British",
+          "code": "gb",
+          "answer": "British"
+        },
+        {
+          "label": "Chinese",
+          "code": "cn",
+          "answer": "Chinese"
+        },
+        {
+          "label": "German",
+          "code": "de",
+          "answer": "German"
+        },
+        {
+          "label": "Indian",
+          "code": "in",
+          "answer": "Indian"
+        },
+        {
+          "label": "Italian",
+          "code": "it",
+          "answer": "Italian"
+        },
+        {
+          "label": "Japanese",
+          "code": "jp",
+          "answer": "Japanese"
+        },
+        {
+          "label": "Polish",
+          "code": "pl",
+          "answer": "Polish"
+        },
+        {
+          "label": "Russian",
+          "code": "ru",
+          "answer": "Russian"
+        }
       ],
       "audioTrack": "0.2",
       "audioSrc": null,
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·",
+      "options": [
+        "Australian",
+        "Brazilian",
+        "British",
+        "Chinese",
+        "German",
+        "Indian",
+        "Italian",
+        "Japanese",
+        "Polish",
+        "Russian"
+      ]
     },
     {
       "id": "vocabulary-extra-132",
       "type": "flagMatch",
-      "title": "Vocabulary Extra · Countries and nationalities",
-      "body": "Vocabulary Extra, p. 132, Exercise 1. Match the 30 countries to flags 1–30. Extended vocabulary challenge after Student’s Book Exercise 7.",
+      "title": "Countries around the world",
+      "body": "Match each country to its flag. Use all 30 countries.",
       "flags": [
         {
-          "country": "Canada",
-          "flag": "🇨🇦"
+          "label": "Canada",
+          "code": "ca",
+          "answer": "Canada"
         },
         {
-          "country": "the USA",
-          "flag": "🇺🇸"
+          "label": "the USA",
+          "code": "us",
+          "answer": "the USA"
         },
         {
-          "country": "Mexico",
-          "flag": "🇲🇽"
+          "label": "Mexico",
+          "code": "mx",
+          "answer": "Mexico"
         },
         {
-          "country": "Brazil",
-          "flag": "🇧🇷"
+          "label": "Brazil",
+          "code": "br",
+          "answer": "Brazil"
         },
         {
-          "country": "Argentina",
-          "flag": "🇦🇷"
+          "label": "Argentina",
+          "code": "ar",
+          "answer": "Argentina"
         },
         {
-          "country": "Ireland",
-          "flag": "🇮🇪"
+          "label": "Ireland",
+          "code": "ie",
+          "answer": "Ireland"
         },
         {
-          "country": "the UK",
-          "flag": "🇬🇧"
+          "label": "the UK",
+          "code": "gb",
+          "answer": "the UK"
         },
         {
-          "country": "Belgium",
-          "flag": "🇧🇪"
+          "label": "Belgium",
+          "code": "be",
+          "answer": "Belgium"
         },
         {
-          "country": "the Netherlands",
-          "flag": "🇳🇱"
+          "label": "the Netherlands",
+          "code": "nl",
+          "answer": "the Netherlands"
         },
         {
-          "country": "Portugal",
-          "flag": "🇵🇹"
+          "label": "Portugal",
+          "code": "pt",
+          "answer": "Portugal"
         },
         {
-          "country": "Spain",
-          "flag": "🇪🇸"
+          "label": "Spain",
+          "code": "es",
+          "answer": "Spain"
         },
         {
-          "country": "France",
-          "flag": "🇫🇷"
+          "label": "France",
+          "code": "fr",
+          "answer": "France"
         },
         {
-          "country": "Germany",
-          "flag": "🇩🇪"
+          "label": "Germany",
+          "code": "de",
+          "answer": "Germany"
         },
         {
-          "country": "Poland",
-          "flag": "🇵🇱"
+          "label": "Poland",
+          "code": "pl",
+          "answer": "Poland"
         },
         {
-          "country": "the Czech Republic",
-          "flag": "🇨🇿"
+          "label": "the Czech Republic",
+          "code": "cz",
+          "answer": "the Czech Republic"
         },
         {
-          "country": "Italy",
-          "flag": "🇮🇹"
+          "label": "Italy",
+          "code": "it",
+          "answer": "Italy"
         },
         {
-          "country": "Hungary",
-          "flag": "🇭🇺"
+          "label": "Hungary",
+          "code": "hu",
+          "answer": "Hungary"
         },
         {
-          "country": "Slovakia",
-          "flag": "🇸🇰"
+          "label": "Slovakia",
+          "code": "sk",
+          "answer": "Slovakia"
         },
         {
-          "country": "Morocco",
-          "flag": "🇲🇦"
+          "label": "Morocco",
+          "code": "ma",
+          "answer": "Morocco"
         },
         {
-          "country": "Egypt",
-          "flag": "🇪🇬"
+          "label": "Egypt",
+          "code": "eg",
+          "answer": "Egypt"
         },
         {
-          "country": "Kenya",
-          "flag": "🇰🇪"
+          "label": "Kenya",
+          "code": "ke",
+          "answer": "Kenya"
         },
         {
-          "country": "South Africa",
-          "flag": "🇿🇦"
+          "label": "South Africa",
+          "code": "za",
+          "answer": "South Africa"
         },
         {
-          "country": "Turkey",
-          "flag": "🇹🇷"
+          "label": "Turkey",
+          "code": "tr",
+          "answer": "Turkey"
         },
         {
-          "country": "Russia",
-          "flag": "🇷🇺"
+          "label": "Russia",
+          "code": "ru",
+          "answer": "Russia"
         },
         {
-          "country": "China",
-          "flag": "🇨🇳"
+          "label": "China",
+          "code": "cn",
+          "answer": "China"
         },
         {
-          "country": "India",
-          "flag": "🇮🇳"
+          "label": "India",
+          "code": "in",
+          "answer": "India"
         },
         {
-          "country": "Thailand",
-          "flag": "🇹🇭"
+          "label": "Thailand",
+          "code": "th",
+          "answer": "Thailand"
         },
         {
-          "country": "Japan",
-          "flag": "🇯🇵"
+          "label": "Japan",
+          "code": "jp",
+          "answer": "Japan"
         },
         {
-          "country": "Australia",
-          "flag": "🇦🇺"
+          "label": "Australia",
+          "code": "au",
+          "answer": "Australia"
         },
         {
-          "country": "New Zealand",
-          "flag": "🇳🇿"
+          "label": "New Zealand",
+          "code": "nz",
+          "answer": "New Zealand"
         }
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · VOCABULARY EXTRA p. 132"
+      "section": "LESSON 1 ·",
+      "options": [
+        "Canada",
+        "the USA",
+        "Mexico",
+        "Brazil",
+        "Argentina",
+        "Ireland",
+        "the UK",
+        "Belgium",
+        "the Netherlands",
+        "Portugal",
+        "Spain",
+        "France",
+        "Germany",
+        "Poland",
+        "the Czech Republic",
+        "Italy",
+        "Hungary",
+        "Slovakia",
+        "Morocco",
+        "Egypt",
+        "Kenya",
+        "South Africa",
+        "Turkey",
+        "Russia",
+        "China",
+        "India",
+        "Thailand",
+        "Japan",
+        "Australia",
+        "New Zealand"
+      ]
     },
     {
       "id": "sb-p5-ex8",
       "type": "letters",
       "title": "The alphabet · Listen and click",
-      "body": "Student’s Book, p. 5, Exercise 8 · Audio 0.3. Listen to the alphabet and click each letter in the order you hear it. Use Reset to try again.",
+      "body": "Listen to the alphabet and click each letter in the order you hear it. Use Reset to try again.",
       "audioTrack": "0.3",
       "audioSrc": null,
       "letters": [
@@ -593,13 +677,13 @@
         "Z"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex9",
       "type": "speaking",
       "title": "Work in pairs · Ask and answer",
-      "body": "Student’s Book, p. 5, Exercise 9. Work in pairs. Ask and answer the questions. Then change pairs and change the country and nationality.",
+      "body": "Work in pairs. Ask and answer the questions. Then change pairs and change the country and nationality.",
       "dialogue": [
         [
           "What’s your name?",
@@ -619,13 +703,13 @@
         ]
       ],
       "assistant": "Emma",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex10",
       "type": "grammarQuestions",
       "title": "Grammar Insight · be: questions and short answers",
-      "body": "Student’s Book, p. 5, Exercise 10. Read the dialogue in Exercise 1 again. Complete the table with the questions and short answers for be.",
+      "body": "Read the dialogue in Exercise 1 again. Complete the table with the questions and short answers for be.",
       "table": [
         [
           "Questions",
@@ -649,7 +733,7 @@
         ]
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5",
+      "section": "LESSON 1 ·",
       "missingQuestion": "Is he / she / it?"
     },
     {
@@ -674,7 +758,7 @@
         "the boy / your brother? (Yes)"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · WORKBOOK p. 90"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "wb-p90-w1-ex2",
@@ -690,13 +774,13 @@
         "the boy / your brother? (Yes)"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · WORKBOOK p. 90"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex11",
       "type": "questionBuild",
       "title": "Make questions with be",
-      "body": "Student’s Book, p. 5, Exercise 11. Put the prompts in the correct order to make questions.",
+      "body": "Put the prompts in the correct order to make questions.",
       "prompts": [
         "you / from Australia?",
         "your best friend / 16?",
@@ -705,28 +789,28 @@
         "your home / in a city?"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "sb-p5-ex12",
       "type": "speaking",
       "title": "Work in pairs · Ask and answer",
-      "body": "Student’s Book, p. 5, Exercise 12. Work in pairs. Ask and answer the questions from Exercise 11. Give short answers and add one more detail.",
+      "body": "Work in pairs. Ask and answer the questions from Exercise 11. Give short answers and add one more detail.",
       "assistant": "Emma",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "wb-p9-assess",
       "type": "selfAssessment",
       "title": "Assess your progress · Lesson WA",
-      "body": "Workbook, p. 9. Give yourself a mark for each learning objective: 1 = I found this difficult; 2 = This was OK; 3 = I can do this well. Then complete “How can I improve?”",
+      "body": "Give yourself a mark for each learning objective: 1 = I found this difficult; 2 = This was OK; 3 = I can do this well. Then complete “How can I improve?”",
       "objectives": [
         "I can use the verb be.",
         "I can talk about countries and nationalities.",
         "I can recognize the letters of the alphabet."
       ],
       "assistant": "Leo",
-      "section": "LESSON 1 · WORKBOOK p. 9"
+      "section": "LESSON 1 ·"
     },
     {
       "id": "identity-card-project",
@@ -1105,7 +1189,7 @@
       "type": "grammar",
       "title": "Grammar Lab · Plural nouns",
       "grammarIndex": 0,
-      "body": "Student’s Book, p. 6, Exercise 4. The page shows regular plurals (brothers, grannies) and irregular plurals (people, children, men, women).",
+      "body": "The page shows regular plurals (brothers, grannies) and irregular plurals (people, children, men, women).",
       "assistant": "Nick",
       "prompt": "Look for patterns. Which plural forms add -s, which add -ies, and which change completely?",
       "visual": {
@@ -1194,7 +1278,7 @@
       "type": "grammar",
       "title": "Grammar Lab · Possessive adjectives",
       "grammarIndex": 2,
-      "body": "Student’s Book, p. 7, Exercise 6 · Grammar Reference W.2. The table pairs subject pronouns with possessive adjectives: I/my, you/your, he/his, she/her, it/its, we/our, they/their.",
+      "body": "Grammar Reference W.2. The table pairs subject pronouns with possessive adjectives: I/my, you/your, he/his, she/her, it/its, we/our, they/their.",
       "assistant": "Nick",
       "prompt": "Remember: a possessive adjective comes before a noun.",
       "visual": {
@@ -1286,7 +1370,7 @@
       "type": "grammar",
       "grammarIndex": 2,
       "title": "Grammar Lab · This, that, these, those",
-      "body": "Student’s Book, p. 7, Exercise 8 · Grammar Reference W.3. Near: this / these. Far: that / those. Singular: this / that. Plural: these / those.",
+      "body": "Grammar Reference W.3. Near: this / these. Far: that / those. Singular: this / that. Plural: these / those.",
       "assistant": "Nick",
       "prompt": "First decide: is it near or far? Then decide: singular or plural.",
       "visual": {
@@ -1432,7 +1516,7 @@
       "type": "challenge",
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "title": "Workbook Task · Friends in photos",
-      "body": "Workbook, p. 5, Exercise 6. Find two or three photos of your friends. Write sentences about each photo. Use the questions to help you.",
+      "body": "Find two or three photos of your friends. Write sentences about each photo. Use the questions to help you.",
       "scenario": "Describe who is in each photo. Say whether the people are the same age, have the same nationality and are in the same class at school.",
       "prompts": [
         "Who is in the photo?",
