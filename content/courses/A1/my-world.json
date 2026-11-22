@@ -4,20 +4,21 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
-  "estimatedMinutes": 90,
+  "estimatedMinutes": 120,
   "project": {
     "title": "My World Profile",
     "description": "Create a personal profile and introduce the people who are important to you. The project grows lesson by lesson.",
-    "deliverable": "A personal My World profile with an identity card and a family tree, presented in simple English.",
+    "deliverable": "A personal profile with an identity card and a family tree, presented in simple English.",
     "successCriteria": [
       "I can introduce myself and give basic personal information.",
+      "I can name countries and nationalities.",
+      "I can use be in affirmative, negative and question forms.",
       "I can talk about family members and relationships.",
-      "I can use plural nouns and possessive adjectives.",
-      "I can use this, that, these and those to identify people and things.",
+      "I can use plural nouns, possessive adjectives and demonstratives.",
       "I can present my family tree in simple English."
     ]
   },
@@ -43,91 +44,65 @@
       "example": "My name is Alex."
     },
     {
-      "term": "hometown",
-      "meaning": "родной город",
-      "example": "My hometown is small."
+      "term": "age",
+      "meaning": "возраст",
+      "example": "I'm 14 years old."
+    },
+    {
+      "term": "country",
+      "meaning": "страна",
+      "example": "I'm from Italy."
+    },
+    {
+      "term": "nationality",
+      "meaning": "национальность",
+      "example": "I'm Italian."
+    },
+    {
+      "term": "spell",
+      "meaning": "называть по буквам",
+      "example": "How do you spell your name?"
     },
     {
       "term": "family",
       "meaning": "семья",
-      "example": "My family is important to me."
+      "example": "This is my family."
     },
     {
       "term": "friend",
       "meaning": "друг",
-      "example": "This is my friend Sam."
-    },
-    {
-      "term": "favourite",
-      "meaning": "любимый",
-      "example": "My favourite colour is blue."
-    },
-    {
-      "term": "hobby",
-      "meaning": "увлечение",
-      "example": "My hobby is drawing."
-    },
-    {
-      "term": "live",
-      "meaning": "жить",
-      "example": "I live in a flat."
-    },
-    {
-      "term": "near",
-      "meaning": "рядом с",
-      "example": "My school is near my home."
-    },
-    {
-      "term": "usually",
-      "meaning": "обычно",
-      "example": "I usually walk to school."
-    },
-    {
-      "term": "together",
-      "meaning": "вместе",
-      "example": "We play games together."
+      "example": "They're my friends."
     }
   ],
   "grammar": [
     {
       "title": "Verb be",
-      "rule": "I am · You are · He/She/It is · We/They are",
+      "rule": "I am / I'm · He/She/It is / He's/She's/It's · You/We/They are / You're/We're/They're. Negative: I'm not · isn't · aren't. Questions: Am I? Is he/she/it? Are you/we/they?",
       "examples": [
-        "I am 12.",
-        "My best friend is kind.",
-        "We are from Spain."
-      ]
-    },
-    {
-      "title": "Have got",
-      "rule": "I/You/We/They have got · He/She has got",
-      "examples": [
-        "I have got a sister.",
-        "She has got a dog."
+        "I'm Marie. My name's Mateo.",
+        "We're at the same school.",
+        "They aren't in the same class.",
+        "Are you from England? No, I'm not."
       ]
     },
     {
       "title": "Possessive adjectives",
-      "rule": "my · your · his · her · our · their",
+      "rule": "I → my · you → your · he → his · she → her · it → its · we → our · they → their",
       "examples": [
-        "This is my room.",
-        "Her name is Mia."
+        "This is my family.",
+        "It's her favourite band.",
+        "They're with their friend.",
+        "We're with our dog."
       ]
     },
     {
-      "title": "There is / There are",
-      "rule": "There is + one thing · There are + two or more things",
+      "title": "Demonstratives",
+      "rule": "Near: this (singular), these (plural). Far: that (singular), those (plural).",
       "examples": [
-        "There is a desk in my room.",
-        "There are two parks near my home."
-      ]
-    },
-    {
-      "title": "Present Simple: likes and routines",
-      "rule": "I like / I play / I go · He likes / He plays / He goes",
-      "examples": [
-        "I like music.",
-        "He plays football every Saturday."
+        "This is my photo.",
+        "That is my house.",
+        "These are my cousins.",
+        "Those are my brothers."
       ]
     }
   ],
@@ -136,164 +111,227 @@
       "id": "welcome",
       "type": "welcome",
       "title": "Welcome to My World",
-      "body": "Every person has a world: people, places, interests and everyday moments. Let’s discover yours — and learn how to talk about it in English.",
+      "body": "Join an international community. Introduce yourself, discover where people come from and create the first part of your My World Profile.",
       "assistant": "Leo",
-      "prompt": "Your final mission is to create a My World Profile. Each activity will help you build one part of it."
+      "prompt": "Today you will create your identity card.",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "motivation",
       "type": "motivation",
       "title": "Look. Think. Connect.",
-      "body": "Look at the three photographs. What connects them? Choose the ideas that come to your mind, then make a guess about our topic.",
+      "body": "Look at the three photographs. What connects them? Share your associations before you name the topic.",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85",
-          "alt": "Family spending time together",
-          "caption": "People who matter"
+          "src": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85",
+          "alt": "Portrait of a young person",
+          "caption": "A person"
         },
         {
-          "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85",
-          "alt": "Warm and welcoming home interior",
-          "caption": "Places we belong"
+          "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=900&q=85",
+          "alt": "World map",
+          "caption": "A place in the world"
         },
         {
           "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85",
-          "alt": "Friends spending time outdoors",
-          "caption": "Things we enjoy"
+          "alt": "Friends meeting",
+          "caption": "Meeting people"
         }
       ],
-      "question": "What can connect people, places and interests?",
+      "question": "What might connect these pictures?",
       "options": [
-        "My World",
-        "A Shopping List",
-        "The Weather"
+        "Introducing yourself and your country",
+        "Ordering food in a café",
+        "Talking about the weather"
       ],
       "correct": 0,
       "feedback": "Think about the people around you, the places you know and the things you enjoy. They are all part of your world.",
-      "assistant": "Emma"
+      "assistant": "Emma",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "prompt": "What information do we share when we meet someone for the first time?"
     },
     {
       "id": "mission",
       "type": "mission",
-      "title": "Your mission",
-      "body": "Create a personal profile in English. Imagine you are introducing yourself to a new international friend.",
+      "title": "Your mission: My Identity Card",
+      "body": "Imagine you are joining an international school community. You need to introduce yourself to people from different countries.",
       "steps": [
-        "Introduce yourself.",
-        "Describe people who are important to you.",
-        "Talk about your home and hometown.",
-        "Share your interests and daily routine.",
-        "Present your My World Profile."
+        "Say your name and spell it.",
+        "Say how old you are.",
+        "Name your country and nationality.",
+        "Ask and answer simple questions with be.",
+        "Create your identity card."
       ],
-      "assistant": "Leo"
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "prompt": "Keep your identity card. You will add a family tree in Lesson 2."
     },
     {
       "id": "vocabulary",
-      "type": "vocabulary",
-      "title": "Words for your world",
-      "body": "Explore the key words. Read each example aloud and think of a true sentence about your own life.",
-      "assistant": "Nick"
+      "type": "listening",
+      "title": "First meeting · Marie and Mateo",
+      "body": "Student’s Book, p. 4, Exercise 1 · Audio 0.1. Read and listen to the dialogue, then practise it with a partner.",
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
+      "questions": [
+        {
+          "q": "How does Mateo spell his name?",
+          "options": [
+            "M-A-T-E-O",
+            "M-A-T-T-E-O",
+            "M-A-T-I-O"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "How old is Marie?",
+          "options": [
+            "14",
+            "15",
+            "16"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Is Mateo from England?",
+          "options": [
+            "Yes, he is.",
+            "No, he isn't. He's Italian.",
+            "No, he isn't. He's British."
+          ],
+          "correct": 1
+        }
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "check-vocab",
-      "type": "choice",
-      "title": "Vocabulary check",
-      "body": "Choose the best word to complete each sentence.",
+      "type": "reading",
+      "title": "Meet Markos and Freya",
+      "body": "Student’s Book, p. 4, Exercise 2. Read the blog and match the sentence beginnings with the correct endings.",
       "questions": [
         {
-          "q": "My ___ is Anna. Nice to meet you.",
+          "q": "Markos is …",
           "options": [
-            "name",
-            "near",
-            "usually"
+            "from Oxford",
+            "in a football team with Thomas",
+            "in a basketball team"
           ],
-          "correct": 0,
-          "why": "We use name to say what a person is called."
+          "correct": 1
         },
         {
-          "q": "I ___ in a small town.",
+          "q": "Freya is …",
           "options": [
-            "live",
-            "favourite",
-            "together"
+            "from Greece",
+            "in a basketball team",
+            "from Oxford"
           ],
-          "correct": 0,
-          "why": "Live means to have your home in a place."
+          "correct": 1
         },
         {
-          "q": "My ___ hobby is reading.",
+          "q": "Thomas is …",
           "options": [
-            "favourite",
-            "family",
-            "near"
+            "from Oxford",
+            "from New Zealand",
+            "in a basketball team"
           ],
-          "correct": 0,
-          "why": "Favourite means the one you like most."
-        },
-        {
-          "q": "We play football ___.",
-          "options": [
-            "together",
-            "hometown",
-            "name"
-          ],
-          "correct": 0,
-          "why": "Together means with each other."
+          "correct": 0
         }
       ],
-      "assistant": "Nick"
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "text": "In this photo, I'm with Markos and Freya. They're my friends. Markos is from Greece and Freya is from New Zealand. We're at the same school, but we aren't in the same class. Markos likes football and he's in the same football team as me. Freya isn't in the team, but she's in the school basketball team.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "grammar-be",
       "type": "grammar",
-      "title": "Grammar Lab 1 · Verb be",
+      "title": "Grammar Lab · be: affirmative and negative",
       "grammarIndex": 0,
-      "body": "Use be to give basic information and describe people and places.",
-      "assistant": "Nick"
+      "body": "Student’s Book, p. 4, Exercises 3–5 · Grammar Reference W.1. Notice the full and short forms, then use them to describe yourself and other people.",
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "prompt": "Which form goes with I? Which forms go with he, she, it and plural subjects?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "practice-be",
       "type": "choice",
-      "title": "Build a sentence",
-      "body": "Choose the correct form of be.",
+      "title": "Build the sentences",
+      "body": "Choose the correct affirmative or negative form of be.",
       "questions": [
         {
-          "q": "I ___ from Poland.",
+          "q": "I ___ 14.",
           "options": [
             "am",
             "is",
             "are"
           ],
-          "correct": 0,
-          "why": "Use am with I."
+          "correct": 0
         },
         {
-          "q": "My friends ___ very funny.",
+          "q": "Markos and Freya ___ my friends.",
           "options": [
             "am",
             "is",
             "are"
           ],
-          "correct": 2,
-          "why": "Use are with plural subjects."
+          "correct": 2
         },
         {
-          "q": "Her brother ___  ten.",
+          "q": "She ___ in the football team. She's in the basketball team.",
           "options": [
-            "am",
-            "is",
-            "are"
+            "isn't",
+            "aren't",
+            "am not"
           ],
-          "correct": 1,
-          "why": "Use is with he, she and it."
+          "correct": 0
+        },
+        {
+          "q": "We ___ in the same class.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Thomas ___ American. He's British.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not"
+          ],
+          "correct": 0
         }
       ],
-      "assistant": "Nick"
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "reading",
       "type": "reading",
-      "title": "Reading · Meet Mia",
-      "body": "Read Mia’s profile. Notice how she introduces herself and describes her world.",
+      "title": "A world of people",
+      "body": "Student’s Book, p. 5, Exercise 6. Look at the world quiz pictures and connect each clue with a country.",
       "text": "Hi! My name is Mia and I’m 13. I live in a small town near the sea. I’ve got one brother and a friendly dog called Max. My best friend is Lily. We are in the same class. I like drawing and listening to music. At weekends, I usually ride my bike with Lily. There is a lovely park near my house.",
       "questions": [
         {
@@ -324,21 +362,108 @@
           "correct": 0
         }
       ],
-      "assistant": "Emma"
+      "assistant": "Emma",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
+          "alt": "Rio de Janeiro",
+          "caption": "Brazil"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85",
+          "alt": "Taj Mahal",
+          "caption": "India"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85",
+          "alt": "Koala",
+          "caption": "Australia"
+        }
+      ],
+      "question": "Which country is associated with the Taj Mahal?",
+      "options": [
+        "India",
+        "Italy",
+        "Poland"
+      ],
+      "correct": 0,
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "grammar-have",
-      "type": "grammar",
-      "title": "Grammar Lab 2 · Have got",
+      "type": "familyVocabulary",
+      "title": "Countries and nationalities",
       "grammarIndex": 1,
-      "body": "Use have got to talk about family members, pets and possessions.",
-      "assistant": "Nick"
+      "body": "Student’s Book, p. 5, Exercise 7 · Audio 0.2. Match the nationalities to the flags, listen, check and repeat.",
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "items": [
+        {
+          "term": "Australia",
+          "meaning": "Australian",
+          "example": "I'm Australian."
+        },
+        {
+          "term": "Brazil",
+          "meaning": "Brazilian",
+          "example": "I'm Brazilian."
+        },
+        {
+          "term": "Britain",
+          "meaning": "British",
+          "example": "I'm British."
+        },
+        {
+          "term": "China",
+          "meaning": "Chinese",
+          "example": "I'm Chinese."
+        },
+        {
+          "term": "Germany",
+          "meaning": "German",
+          "example": "I'm German."
+        },
+        {
+          "term": "India",
+          "meaning": "Indian",
+          "example": "I'm Indian."
+        },
+        {
+          "term": "Italy",
+          "meaning": "Italian",
+          "example": "I'm Italian."
+        },
+        {
+          "term": "Japan",
+          "meaning": "Japanese",
+          "example": "I'm Japanese."
+        },
+        {
+          "term": "Poland",
+          "meaning": "Polish",
+          "example": "I'm Polish."
+        },
+        {
+          "term": "Russia",
+          "meaning": "Russian",
+          "example": "I'm Russian."
+        }
+      ],
+      "prompt": "Say the country first, then the nationality.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "family-task",
-      "type": "fill",
-      "title": "My people",
-      "body": "Complete the sentences with have got, has got, my or her.",
+      "type": "listening",
+      "title": "The English alphabet",
+      "body": "Student’s Book, p. 5, Exercise 8 · Audio 0.3. Listen and repeat the alphabet. Then practise spelling names.",
       "items": [
         {
           "q": "I ___ a brother.",
@@ -356,21 +481,69 @@
           "hint": "Use a possessive adjective before a noun."
         }
       ],
-      "assistant": "Nick"
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "audioText": "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z.",
+      "questions": [
+        {
+          "q": "Which letter comes after G?",
+          "options": [
+            "H",
+            "I",
+            "J"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Which letter comes before M?",
+          "options": [
+            "K",
+            "L",
+            "N"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "How do you spell Mateo?",
+          "options": [
+            "M-A-T-E-O",
+            "M-E-T-A-O",
+            "M-A-T-O-E"
+          ],
+          "correct": 0
+        }
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "grammar-home",
-      "type": "grammar",
-      "title": "Grammar Lab 3 · There is / There are",
+      "type": "challenge",
+      "title": "Ask and answer",
       "grammarIndex": 3,
-      "body": "Describe a room, a home or a place in your town.",
-      "assistant": "Nick"
+      "body": "Student’s Book, p. 5, Exercise 9. Work in pairs. Ask and answer, then change the country and nationality.",
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "scenario": "You meet a new student at an international event. Introduce yourself and find out about the other person.",
+      "prompts": [
+        "What's your name?",
+        "How do you spell your name?",
+        "Where are you from?",
+        "How old are you?",
+        "Are you from ...?"
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "home-task",
-      "type": "choice",
-      "title": "Describe a place",
-      "body": "Choose the correct sentence.",
+      "type": "grammar",
+      "title": "Grammar Lab · Questions and short answers",
+      "body": "Student’s Book, p. 5, Exercises 10–11 · Grammar Reference W.1. Learn question order and short answers with be.",
       "questions": [
         {
           "q": "You can see one table.",
@@ -393,50 +566,80 @@
           "why": "Use There are with plural nouns."
         }
       ],
-      "assistant": "Nick"
+      "assistant": "Nick",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "grammarIndex": 0,
+      "prompt": "Compare Are you...? with You are... What changes in the word order?",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "listening",
-      "type": "listening",
-      "title": "Listening · A new friend",
-      "body": "Listen to the short introduction. Then answer the questions. If audio is unavailable, use the transcript toggle.",
+      "type": "choice",
+      "title": "Ask the right question",
+      "body": "Student’s Book, p. 5, Exercise 11 and Workbook, p. 4, Exercises 4–5.",
       "audioText": "Hello! I'm Ben. I'm twelve years old and I live in Bristol. I've got a big family: two sisters and one brother. I love skateboarding and I play basketball after school. My favourite place is the park near my home.",
       "questions": [
         {
-          "q": "How old is Ben?",
+          "q": "___ you from Australia?",
           "options": [
-            "Eleven",
-            "Twelve",
-            "Thirteen"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "How many sisters has Ben got?",
-          "options": [
-            "One",
-            "Two",
-            "Three"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "What does Ben do after school?",
-          "options": [
-            "Plays basketball",
-            "Plays the piano",
-            "Rides a horse"
+            "Are",
+            "Is",
+            "Am"
           ],
           "correct": 0
+        },
+        {
+          "q": "___ your best friend 16?",
+          "options": [
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ your cousins Italian?",
+          "options": [
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "A: Is Katie from Britain? B: No, ___. She's from Australia.",
+          "options": [
+            "she isn't",
+            "she aren't",
+            "she's"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "A: Are they German? B: No, ___. They're Russian.",
+          "options": [
+            "they isn't",
+            "they aren't",
+            "they are"
+          ],
+          "correct": 1
         }
       ],
-      "assistant": "Emma"
+      "assistant": "Emma",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "project-draft",
-      "type": "project",
-      "title": "Project Workshop · Build your profile",
-      "body": "Use the prompts to create the first version of your My World Profile. You can edit it before the final presentation.",
+      "type": "choice",
+      "title": "Workbook Practice · Welcome A",
+      "body": "Workbook, p. 4, Exercises 1–2. Complete the text with the correct form of be and connect countries with nationalities.",
       "fields": [
         {
           "id": "name",
@@ -464,13 +667,65 @@
           "placeholder": "I usually ... after school."
         }
       ],
-      "assistant": "Leo"
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "questions": [
+        {
+          "q": "Hi, I'm Yulia. I ___ 14.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "My home ___ in London.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I ___ British. I'm Russian.",
+          "options": [
+            "am not",
+            "isn't",
+            "aren't"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Thomas, Jonas, Ben and I ___ at the same school.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "My friend Maria ___ in this photo.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not"
+          ],
+          "correct": 0
+        }
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "challenge",
-      "type": "challenge",
-      "title": "Challenge · Your new classmate",
-      "body": "A new student joins your class. They do not know anyone yet. Help them feel welcome.",
+      "type": "project",
+      "title": "Project Workshop · My Identity Card",
+      "body": "Create the first artefact for your My World Profile. You may use your real details or invent a profile.",
       "scenario": "You have one minute to introduce yourself and ask two friendly questions.",
       "prompts": [
         "What is your name?",
@@ -478,13 +733,50 @@
         "What do you like doing?",
         "Have you got any brothers or sisters?"
       ],
-      "assistant": "Emma"
+      "assistant": "Emma",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "fields": [
+        {
+          "id": "identity-name",
+          "label": "Name",
+          "placeholder": "My name is ..."
+        },
+        {
+          "id": "identity-spelling",
+          "label": "Spell your name",
+          "placeholder": "It's ..."
+        },
+        {
+          "id": "identity-age",
+          "label": "Age",
+          "placeholder": "I'm ... years old."
+        },
+        {
+          "id": "identity-country",
+          "label": "Country and nationality",
+          "placeholder": "I'm from ... I'm ..."
+        },
+        {
+          "id": "identity-city",
+          "label": "City",
+          "placeholder": "My city is ..."
+        },
+        {
+          "id": "identity-intro",
+          "label": "A short introduction",
+          "placeholder": "Hello! My name is ..."
+        }
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "final",
-      "type": "final",
-      "title": "Present your world",
-      "body": "Bring your profile together. Read it aloud or record a 60–90 second presentation. Use the checklist before you finish.",
+      "type": "reflection",
+      "title": "Reflection · What can you do now?",
+      "body": "Check the statements that are true for you. Then identify one thing to practise again.",
       "checklist": [
         "I introduced myself.",
         "I described at least one person.",
@@ -492,20 +784,37 @@
         "I talked about two interests.",
         "I used complete simple sentences."
       ],
-      "assistant": "Leo"
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "questions": [
+        "I can introduce myself and spell my name.",
+        "I can say my age, country and nationality.",
+        "I can use affirmative and negative forms of be.",
+        "I can ask questions and give short answers with be."
+      ],
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "reflection",
-      "type": "reflection",
-      "title": "Look back · What can you do now?",
-      "body": "Think about your progress. Honest reflection helps you choose the next step.",
+      "type": "complete",
+      "title": "Identity Card created!",
+      "body": "You have completed Lesson 1 and created the first part of your My World Profile.",
       "questions": [
         "I can introduce myself in English.",
         "I can describe people and places.",
         "I can talk about my interests and routine.",
         "I can present my My World Profile."
       ],
-      "assistant": "Leo"
+      "assistant": "Leo",
+      "section": "LESSON 1 · ALL ABOUT ME",
+      "badge": "Identity Explorer",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     },
     {
       "id": "b-motivation",
@@ -671,7 +980,7 @@
       "type": "reading",
       "title": "Read a family tree",
       "body": "Study the family relationships. Max is the speaker in the family-tree activity in Student's Book, page 6, Exercise 1.",
-      "text": "Clive and Margaret are Max's grandparents. Paul and Caroline are Max's parents. Mark is his uncle and Sharon is his aunt. James is his brother. Harriet is his sister. Bella and Brendan are his cousins.",
+      "text": "Clive and Margaret are Max's grandparents. Their children are Paul and Mark. Paul is married to Caroline. Their children are James, Max and Harriet. Mark is married to Sharon. Their children are Bella and Brendan.",
       "questions": [
         {
           "q": "Who are Clive and Margaret?",
@@ -683,11 +992,11 @@
           "correct": 1
         },
         {
-          "q": "Who is Harriet?",
+          "q": "Who are James and Harriet?",
           "options": [
-            "Max's sister",
-            "Max's aunt",
-            "Max's grandmother"
+            "Max's brother and sister",
+            "Max's aunt and uncle",
+            "Max's grandparents"
           ],
           "correct": 0
         },
@@ -696,7 +1005,7 @@
           "options": [
             "Max's parents",
             "Max's aunt and uncle",
-            "Max's grandparents"
+            "Max's children"
           ],
           "correct": 1
         },
@@ -704,7 +1013,7 @@
           "q": "Who are Bella and Brendan?",
           "options": [
             "Max's cousins",
-            "Max's brother and sister",
+            "Max's grandparents",
             "Max's parents"
           ],
           "correct": 0
@@ -713,8 +1022,8 @@
       "assistant": "Emma",
       "prompt": "Use the family tree to explain how two people are related.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
-        "alt": "A multigenerational family"
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -800,8 +1109,8 @@
       "assistant": "Nick",
       "prompt": "Check the generations in the family tree before you answer.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Relatives smiling together"
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -810,7 +1119,7 @@
       "type": "grammar",
       "title": "Grammar Lab · Plural nouns",
       "grammarIndex": 0,
-      "body": "Student's Book, page 6: regular and irregular plural nouns. Welcome B practises both spelling patterns and irregular forms.",
+      "body": "Student’s Book, p. 6, Exercise 4. The page shows regular plurals (brothers, grannies) and irregular plurals (people, children, men, women).",
       "assistant": "Nick",
       "prompt": "Look for patterns. Which plural forms add -s, which add -ies, and which change completely?",
       "visual": {
@@ -889,8 +1198,8 @@
       "assistant": "Nick",
       "prompt": "Explain one spelling rule in your own words.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family members together"
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -899,7 +1208,7 @@
       "type": "grammar",
       "title": "Grammar Lab · Possessive adjectives",
       "grammarIndex": 2,
-      "body": "Use possessive adjectives to show who something belongs to. The complete set in Grammar Reference W.2 is: my, your, his, her, its, our, their.",
+      "body": "Student’s Book, p. 7, Exercise 6 · Grammar Reference W.2. The table pairs subject pronouns with possessive adjectives: I/my, you/your, he/his, she/her, it/its, we/our, they/their.",
       "assistant": "Nick",
       "prompt": "Remember: a possessive adjective comes before a noun.",
       "visual": {
@@ -981,8 +1290,8 @@
       "assistant": "Nick",
       "prompt": "Find the person or thing in brackets. Which pronoun does it match?",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family spending time together"
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -991,7 +1300,7 @@
       "type": "grammar",
       "grammarIndex": 2,
       "title": "Grammar Lab · This, that, these, those",
-      "body": "Use this and these for people or things near you (here). Use that and those for people or things farther away (there). This/that go with singular nouns; these/those go with plural nouns.",
+      "body": "Student’s Book, p. 7, Exercise 8 · Grammar Reference W.3. Near: this / these. Far: that / those. Singular: this / that. Plural: these / those.",
       "assistant": "Nick",
       "prompt": "First decide: is it near or far? Then decide: singular or plural.",
       "visual": {
@@ -1064,8 +1373,8 @@
       "assistant": "Nick",
       "prompt": "Say the full sentence aloud after choosing.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Relatives together"
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -1074,7 +1383,7 @@
       "type": "reading",
       "title": "Reading · A family photo",
       "body": "Read the short texts from the Student's Book, page 7, Exercise 5. Identify the family members and notice the possessive adjectives.",
-      "text": "James and Max are at a festival. Their friend Vicky is with them. She likes the band. James likes the festival. Harriet is with the family dog after a long walk. The family members are happy, excited, tired or hungry.",
+      "text": "The two captions describe James and Max with their friend Vicky at a festival, and Harriet with the family dog Hamlet after a long walk.",
       "questions": [
         {
           "q": "Who is Vicky?",
@@ -1107,8 +1416,8 @@
       "assistant": "Emma",
       "prompt": "Can you find three possessive adjectives in the text?",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family enjoying a day together"
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -1128,8 +1437,8 @@
       "assistant": "Emma",
       "prompt": "Use family words, possessive adjectives and the verb be.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family talking together"
+        "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -1168,8 +1477,8 @@
       "assistant": "Leo",
       "prompt": "Your project now has an identity card and a family tree. Keep your sentences simple and accurate.",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family portrait for a family tree"
+        "src": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -1188,8 +1497,8 @@
       "assistant": "Leo",
       "prompt": "Which part would you like to practise again?",
       "visual": {
-        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
-        "alt": "Family together"
+        "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
       }
     },
     {
@@ -1198,7 +1507,12 @@
       "title": "Mission complete!",
       "body": "You have completed the current learning route. Your My World Profile now includes your identity and family tree.",
       "badge": "My World Explorer",
-      "assistant": "Leo"
+      "assistant": "Leo",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Photorealistic learning scene"
+      }
     }
   ]
 }
