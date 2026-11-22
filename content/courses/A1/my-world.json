@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -177,35 +177,6 @@
       "audioTrack": "0.1",
       "audioSrc": null,
       "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
-      "questions": [
-        {
-          "q": "How does Mateo spell his name?",
-          "options": [
-            "M-A-T-E-O",
-            "M-A-T-T-E-O",
-            "M-A-T-I-O"
-          ],
-          "correct": 0
-        },
-        {
-          "q": "How old is Marie?",
-          "options": [
-            "14",
-            "15",
-            "16"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "Is Mateo from England?",
-          "options": [
-            "Yes, he is.",
-            "No, he isn't. He's Italian.",
-            "No, he isn't. He's British."
-          ],
-          "correct": 1
-        }
-      ],
       "visual": {
         "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
         "alt": "Friends meeting"
@@ -323,9 +294,9 @@
           "hint": "Thomas isn't … He's …"
         },
         {
-          "q": "you: from New Zealand / Greece ✓",
-          "answer": "You're from New Zealand. You're Greek.",
-          "hint": "You're …"
+          "q": "you: from New Zealand X / Greece ✓",
+          "answer": "You're not from New Zealand. You're from Greece.",
+          "hint": "You're not … You're from …"
         },
         {
           "q": "we: in London / in Oxford ✓",
@@ -667,24 +638,25 @@
           "No, I’m not."
         ],
         [
-          "Are you? / Is he / she / it?",
-          "Yes, you are. / Yes, he / she / it is.",
-          "No, you aren’t. / No, he / she / it isn’t."
+          "[Complete the question]",
+          "Yes, he / she / it is.",
+          "No, he / she / it isn’t."
         ],
         [
-          "Are we / you / they?",
-          "Yes, we / you / they are.",
-          "No, we / you / they aren’t."
+          "Are you / we / they?",
+          "Yes, you / we / they are.",
+          "No, you / we / they aren’t."
         ]
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 · STUDENT’S BOOK p. 5"
+      "section": "LESSON 1 · STUDENT’S BOOK p. 5",
+      "missingQuestion": "Is he / she / it?"
     },
     {
-      "id": "wb-p90-w1",
+      "id": "wb-p90-w1-ex1",
       "type": "workbookW1",
-      "title": "Grammar Reference and Practice · W.1 be",
-      "body": "Workbook, p. 90, Grammar Reference and Practice · Welcome unit. Complete Exercise 1 with affirmative and negative forms of be, then write questions and short answers in Exercise 2.",
+      "title": "Workbook p. 90 · W.1 · Exercise 1",
+      "body": "Complete the sentences. Use the affirmative form first and then the negative form of be.",
       "exercise1": [
         "She’s a student. She isn’t a teacher.",
         "They ______ big. They ______ small.",
@@ -693,6 +665,22 @@
         "My mother ______ in the garden. My mother ______ in the house.",
         "I ______ 15. I ______ 18."
       ],
+      "exercise2": [
+        "you / English? (Yes)",
+        "the girl / happy? (No)",
+        "they / 16? (Yes)",
+        "we / in London? (No)",
+        "you / my friend? (No)",
+        "the boy / your brother? (Yes)"
+      ],
+      "assistant": "Nick",
+      "section": "LESSON 1 · WORKBOOK p. 90"
+    },
+    {
+      "id": "wb-p90-w1-ex2",
+      "type": "workbookW1b",
+      "title": "Workbook p. 90 · W.1 · Exercise 2",
+      "body": "Write questions and short answers with be. Follow the model in the Grammar Reference.",
       "exercise2": [
         "you / English? (Yes)",
         "the girl / happy? (No)",
