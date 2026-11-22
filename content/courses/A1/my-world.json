@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -233,7 +233,7 @@
       "body": "Complete the tables with the full and short forms of be.",
       "tables": [
         {
-          "title": "Exercise 3 · Affirmative",
+          "title": "Affirmative forms",
           "rows": [
             [
               "Full form",
@@ -254,7 +254,7 @@
           ]
         },
         {
-          "title": "Exercise 4 · Negative",
+          "title": "Negative forms",
           "rows": [
             [
               "Full form",
@@ -709,7 +709,7 @@
       "id": "sb-p5-ex10",
       "type": "grammarQuestions",
       "title": "Grammar Insight · be: questions and short answers",
-      "body": "Read the dialogue in Exercise 1 again. Complete the table with the questions and short answers for be.",
+      "body": "Read the introductory dialogue again. Complete the table with the questions and short answers for be.",
       "table": [
         [
           "Questions",
@@ -739,7 +739,7 @@
     {
       "id": "wb-p90-w1-ex1",
       "type": "W1",
-      "title": "· W.1 · Exercise 1",
+      "title": "Grammar practice · Complete the sentences",
       "body": "Complete the sentences. Use the affirmative form first and then the negative form of be.",
       "exercise1": [
         "She’s a student. She isn’t a teacher.",
@@ -763,7 +763,7 @@
     {
       "id": "wb-p90-w1-ex2",
       "type": "W1b",
-      "title": "· W.1 · Exercise 2",
+      "title": "Grammar practice · Questions and short answers",
       "body": "Write questions and short answers with be. Follow the model in the Grammar Reference.",
       "exercise2": [
         "you / English? (Yes)",
@@ -795,14 +795,14 @@
       "id": "sb-p5-ex12",
       "type": "speaking",
       "title": "Work in pairs · Ask and answer",
-      "body": "Work in pairs. Ask and answer the questions from Exercise 11. Give short answers and add one more detail.",
+      "body": "Work in pairs. Ask and answer the questions you have written. Give short answers and add one more detail.",
       "assistant": "Emma",
       "section": "LESSON 1 ·"
     },
     {
       "id": "wb-p9-assess",
       "type": "selfAssessment",
-      "title": "Assess your progress · Lesson WA",
+      "title": "My learning check",
       "body": "Give yourself a mark for each learning objective: 1 = I found this difficult; 2 = This was OK; 3 = I can do this well. Then complete “How can I improve?”",
       "objectives": [
         "I can use the verb be.",
