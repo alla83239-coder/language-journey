@@ -1,0 +1,846 @@
+{
+  "grammar": [
+    {
+      "n": 1,
+      "q": "I like ice cream, but it                     my favourite food.",
+      "opts": [
+        "aren’t",
+        "isn’t",
+        "am not"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 2,
+      "q": "My best                        name is Kate.",
+      "opts": [
+        "friend’s",
+        "friend",
+        "friends"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 3,
+      "q": "a nice café next to the park.",
+      "opts": [
+        "There",
+        "There is",
+        "There are"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 4,
+      "q": "There aren’t                       tall buildings in my town.",
+      "opts": [
+        "any",
+        "some",
+        "a"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 5,
+      "q": "My dad                        my music.",
+      "opts": [
+        "doesn’t like",
+        "don’t like",
+        "isn’t like"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 6,
+      "q": "I haven’t got                      to do my homework.",
+      "opts": [
+        "times",
+        "a time",
+        "time"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 7,
+      "q": "Maria                       play volleyball – she isn’t good at it.",
+      "opts": [
+        "can",
+        "can’t",
+        "no can"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 8,
+      "q": "My brother                        to music with his headphones – he can’t hear you.",
+      "opts": [
+        "is listening",
+        "listening",
+        "is listen"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 9,
+      "q": "You                        forget to buy a birthday present for Paula today.",
+      "opts": [
+        "mustn’t",
+        "must",
+        "don’t must"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 10,
+      "q": "At Lucy’s party last night,                        40 people.",
+      "opts": [
+        "there are",
+        "there was",
+        "there were"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 11,
+      "q": "Mark                         a big burger for dinner yesterday.",
+      "opts": [
+        "eat",
+        "ate",
+        "is eating"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 12,
+      "q": "Trains are usually                        buses.",
+      "opts": [
+        "expensiver than",
+        "expensive than",
+        "more expensive than"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 13,
+      "q": "I enjoy                       on my own.",
+      "opts": [
+        "being",
+        "be",
+        "to be"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 14,
+      "q": "I                     late for school.",
+      "opts": [
+        "occasionally",
+        "occasionally am",
+        "am occasionally"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 15,
+      "q": "My father usually works in an office, but today, he                           at home.",
+      "opts": [
+        "is working",
+        "works",
+        "is work"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 16,
+      "q": "There aren’t                        biscuits in the kitchen.",
+      "opts": [
+        "a",
+        "any",
+        "some"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 17,
+      "q": "This pen isn’t yours, it’s                     .",
+      "opts": [
+        "my",
+        "mine",
+        "me"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 18,
+      "q": "We                        a very good film last night.",
+      "opts": [
+        "see",
+        "seeing",
+        "saw"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 19,
+      "q": "I                    wake up early on Saturday. There is no school.",
+      "opts": [
+        "don’t have to",
+        "mustn’t",
+        "don’t must"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 20,
+      "q": "I                    between 11pm and 6am yesterday.",
+      "opts": [
+        "was sleeping",
+        "am sleeping",
+        "sleeping"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 21,
+      "q": "Brazil is                     country in the world.",
+      "opts": [
+        "the most",
+        "the most interesting",
+        "more interesting"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 22,
+      "q": "My parents and I                        have a holiday this year.",
+      "opts": [
+        "are not going to",
+        "are not going",
+        "are not having to"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 23,
+      "q": "If you don’t sleep, you                       tired tomorrow.",
+      "opts": [
+        "are being",
+        "are",
+        "will be"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 24,
+      "q": "Have you                        to London?",
+      "opts": [
+        "ever been",
+        "ever",
+        "been ever"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 25,
+      "q": "I haven’t done my homework                            .",
+      "opts": [
+        "already",
+        "just",
+        "yet"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 26,
+      "q": "I’ve known my best friend                          three years.",
+      "opts": [
+        "in",
+        "for",
+        "since"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 27,
+      "q": "Cola                       water.",
+      "opts": [
+        "isn’t as healthy as",
+        "isn’t healthy as",
+        "isn’t as healthy"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 28,
+      "q": "Please speak                        – I don’t understand you.",
+      "opts": [
+        "more slower",
+        "more slow",
+        "more slowly"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 29,
+      "q": "We                        here since 2012.",
+      "opts": [
+        "have been living",
+        "are living",
+        "live"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 30,
+      "q": "You will be late                       now.",
+      "opts": [
+        "if you leave",
+        "unless you don’t leave",
+        "unless you leave"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 31,
+      "q": "The plane                       at 6:40 tomorrow.",
+      "opts": [
+        "leaves",
+        "is leave",
+        "leaving"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 32,
+      "q": "to watch a lot of TV when you were younger?",
+      "opts": [
+        "Did you used",
+        "Did you use",
+        "Did you"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 33,
+      "q": "If I was ill, I                  in bed.",
+      "opts": [
+        "would stay",
+        "will stay",
+        "stayed"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 34,
+      "q": "We were tired after we                        all over the city.",
+      "opts": [
+        "were walking",
+        "had walked",
+        "have walked"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 35,
+      "q": "My friend told me that he                       an amazing holiday in Greece last year.",
+      "opts": [
+        "has",
+        "has had",
+        "had had"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 36,
+      "q": "I would have been hungry if I                       a big lunch.",
+      "opts": [
+        "ate",
+        "hadn’t eaten",
+        "had eaten"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 37,
+      "q": "I’m sure                    later, so I’m taking an umbrella.",
+      "opts": [
+        "it will rain",
+        "it’s raining",
+        "it rains"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 38,
+      "q": "I                   like chocolate when I was younger.",
+      "opts": [
+        "wouldn’t",
+        "would",
+        "used to"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 39,
+      "q": "It’s late – I                 go to sleep.",
+      "opts": [
+        "had better",
+        "better had",
+        "have better"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 40,
+      "q": "I wish Laura                    the phone.",
+      "opts": [
+        "did answer",
+        "would answer",
+        "will answer"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 41,
+      "q": "Stephen Hawking,                         in Cambridge, is a famous scientist.",
+      "opts": [
+        "where lives",
+        "who lives",
+        "that lives"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 42,
+      "q": "I want to have                    the next time I go to the dentist.",
+      "opts": [
+        "cleaned my teeth",
+        "my teeth clean",
+        "my teeth cleaned"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 43,
+      "q": "My father                     my room.",
+      "opts": [
+        "made tidy me",
+        "made me to tidy",
+        "made me tidy"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 44,
+      "q": "John asked                     to go to the cinema.",
+      "opts": [
+        "me if I wanted",
+        "me I wanted",
+        "if me I wanted"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 45,
+      "q": "Mike didn’t eat anything – he                       hungry.",
+      "opts": [
+        "can’t have been",
+        "mustn’t have been",
+        "can’t be"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 46,
+      "q": "I                   my work by 6pm, so I can go out at 7.",
+      "opts": [
+        "am finishing",
+        "will have finished",
+        "have finished"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 47,
+      "q": "I managed                     all my exams.",
+      "opts": [
+        "passing",
+        "pass to",
+        "to pass"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 48,
+      "q": "We need to look                      .",
+      "opts": [
+        "into",
+        "the problem into",
+        "into the problem"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 49,
+      "q": "I regret                  with my brother.",
+      "opts": [
+        "fight",
+        "to fight",
+        "fighting"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 50,
+      "q": "I’m sorry, I have                   time at the moment, so I can’t meet you.",
+      "opts": [
+        "a few",
+        "hardly any",
+        "not many"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 51,
+      "q": "My father is Spanish, so I’m                      this language.",
+      "opts": [
+        "used to hearing",
+        "used to hear",
+        "used"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 52,
+      "q": "I                    finding someone to fix my computer.",
+      "opts": [
+        "was able to",
+        "managed",
+        "succeeded in"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 53,
+      "q": "the weather was terrible, we had a good time.",
+      "opts": [
+        "Nevertheless",
+        "Even though",
+        "Despite"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 54,
+      "q": "This time tomorrow, we                         on a plane over the Atlantic.",
+      "opts": [
+        "are sitting",
+        "will sit",
+        "will be sitting"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 55,
+      "q": "I                    to see that film yesterday if I liked action movies.",
+      "opts": [
+        "would have gone",
+        "would go",
+        "went"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 56,
+      "q": "Laura doesn’t like that café, so she’d rather                      somewhere else.",
+      "opts": [
+        "we will go",
+        "we went",
+        "we go"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 57,
+      "q": "My mother asked                          late home last night.",
+      "opts": [
+        "me why I was",
+        "why I am",
+        "if why I was"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 58,
+      "q": "Emma                      got lost – she knows this area very well.",
+      "opts": [
+        "can’t have",
+        "mustn’t have",
+        "is bound to have"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 59,
+      "q": "heavy rain, parts of the city are flooded.",
+      "opts": [
+        "Consequently",
+        "As a result",
+        "Due to"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 60,
+      "q": "Dolphins                       call each other by ‘name’.",
+      "opts": [
+        "are believed",
+        "are believed to",
+        "believed to"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 61,
+      "q": "Richard                     listen to loud music when he feels upset.",
+      "opts": [
+        "tends",
+        "is always",
+        "will typically"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 62,
+      "q": "It’s time                   back to work. It’s nearly 2 o’clock.",
+      "opts": [
+        "if we went",
+        "we go",
+        "we went"
+      ],
+      "correct": 2
+    },
+    {
+      "n": 63,
+      "q": "We’ll definitely be able to catch the bus                        we leave now.",
+      "opts": [
+        "otherwise",
+        "as long as",
+        "unless"
+      ],
+      "correct": 1
+    },
+    {
+      "n": 64,
+      "q": "All                    to do to stay healthy is eat well, and get enough sleep and exercise.",
+      "opts": [
+        "you need",
+        "it is",
+        "what is you need"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 65,
+      "q": "in 2012 with just two people, the company is now a great success, employing more than 200.",
+      "opts": [
+        "Having set up",
+        "Setting up",
+        "Set up"
+      ],
+      "correct": 0
+    },
+    {
+      "n": 66,
+      "q": "I’ve checked everything, so hopefully, there                        be any more problems.",
+      "opts": [
+        "shouldn’t",
+        "mustn’t",
+        "can’t"
+      ],
+      "correct": 0
+    }
+  ],
+  "functionalOptions": [
+    [
+      "A",
+      "Why don’t we try them?"
+    ],
+    [
+      "B",
+      "I’m Martina."
+    ],
+    [
+      "C",
+      "I’d advise against that one."
+    ],
+    [
+      "D",
+      "I’d prefer it if you didn’t."
+    ],
+    [
+      "E",
+      "I’m always doing that."
+    ],
+    [
+      "F",
+      "What are you trying to say?"
+    ],
+    [
+      "G",
+      "Have you got any good suits?"
+    ],
+    [
+      "H",
+      "I’ve got my fingers crossed for you."
+    ],
+    [
+      "I",
+      "That would be great."
+    ],
+    [
+      "J",
+      "I’m sorry, I can’t."
+    ],
+    [
+      "K",
+      "Can you lend me a hand?"
+    ],
+    [
+      "L",
+      "If I’m honest, I don’t really like them."
+    ],
+    [
+      "M",
+      "Don’t worry about it."
+    ],
+    [
+      "N",
+      "This is pointless."
+    ]
+  ],
+  "functionalKey": [
+    "B",
+    "G",
+    "A",
+    "F",
+    "I",
+    "K",
+    "C",
+    "M",
+    "L",
+    "N",
+    "D",
+    "H"
+  ],
+  "readingText": "Hello, I’m Kaali. I’m 18 and I live in France. This is my blog! I love travelling. So, this blog is about me and the places I go to. It’s about all the things I see and do, around the world.\n\nNot everyone enjoys travelling, but I do. The first place I visited, when I was only 2 years old, was London. My parents wanted to visit my grandparents. We went there every year for a long time, so I saw a lot of the UK. It was good because I learnt a lot of English.\n\nI’ve been to many countries. My father used to be a journalist and went to different places, although he’s now working as a university teacher. So far, I’ve been to 12 European countries, and two more in Africa.\n\nIf I had the chance to go anywhere, it would be Japan. My dad has been there, and he said it wasn’t like any other place he had been to. However, he also said that communication was sometimes a problem. If I went there, I would need to learn some phrases, which would be hard, because it’s so different to English or French.\n\nOne of the best experiences you can have while travelling is meeting the locals. That’s why it’s important to do more than just go sightseeing, or visiting restaurants. You understand much more from spending time with people than looking at an old building, or having a meal.\n\nSo, why am I doing this blog? Showing off about how many places I’ve been to shouldn’t be the reason why I write about my travel experiences. It is said that travel broadens the mind, and I’d prefer to focus on how travelling improves our understanding of the world. I’m getting used to the idea that although we’re all different, people around the world actually have a lot in common with each other. If I’d decided to make my blog all about photos of whatever food I’m having, or various tourist attractions, I may have got bored with it a long time ago! I’ll be visiting a lot of places over the next few years, I’m sure, and hopefully, I should have built up a large number of articles. Provided you like the sound of this, please check my blog every week for something new!",
+  "readingQuestions": [
+    "How old is Kaali?",
+    "What does she like doing?",
+    "When did she start travelling?",
+    "Why did she go to London?",
+    "What was her father’s job?",
+    "How many countries has Kaali visited?",
+    "Who has visited Japan?",
+    "What would Kaali find difficult about Japan?",
+    "What does she think is most important when you travel?",
+    "What is the reason that Kaali is writing her blog?",
+    "What is Kaali now beginning to find normal?",
+    "Why might Kaali have stopped doing her blog?"
+  ],
+  "readingKey": [
+    "18",
+    "Travelling",
+    "When she was 2 years old",
+    "To visit her grandparents",
+    "A journalist",
+    "14",
+    "Her dad / father",
+    "The language / communication",
+    "Meeting / spending time with local people",
+    "To improve understanding of the world",
+    "That people around the world have a lot in common",
+    "If it had only been about food photos or tourist attractions"
+  ],
+  "dictation": [
+    "There isn’t any milk in the kitchen.",
+    "You don’t have to go unless you want to.",
+    "If I hadn’t run more quickly, I would have missed the bus.",
+    "My friend said he’d already seen the film which we wanted to see.",
+    "It is believed that in 30 years’ time, computers will have become as intelligent as humans, as long as they don’t stop developing."
+  ],
+  "listenA": [
+    "He was born in",
+    "He worked in a",
+    "He was chosen for the space program because he was a good pilot, fit, and",
+    "He enjoyed playing",
+    "He travelled into space in",
+    "After his journey, there were many"
+  ],
+  "listenAKey": [
+    "1934",
+    "factory",
+    "(quite) short",
+    "ice hockey",
+    "(April) 1961",
+    "statues"
+  ],
+  "listenB": [
+    "What is the boy asking the girl about?",
+    "When is their next lesson with Mr James?",
+    "Before which day does the boy need to complete his work?",
+    "Why is the boy sometimes late with his homework?",
+    "What does the girl want to start doing?",
+    "What does the boy think he needs to do next?"
+  ],
+  "listenBKey": [
+    "His Maths homework",
+    "On Monday",
+    "Before Friday",
+    "He doesn’t like Maths",
+    "The Geography homework",
+    "Get back to work"
+  ],
+  "cases": [
+    {
+      "title": "A welcome for an international guest",
+      "scenario": "A new student from another country has arrived at your college. You are helping them feel welcome and understand the first day.",
+      "q": "Choose the most natural response: “Would you like me to show you around the campus?”",
+      "opts": [
+        "That would be great, thank you.",
+        "I am agree with it.",
+        "I look forward yesterday.",
+        "It depends of the weather."
+      ],
+      "correct": 0,
+      "why": "“That would be great, thank you” is a natural response to an offer."
+    },
+    {
+      "title": "A problem with a booking",
+      "scenario": "You are writing to a small hotel. You booked a room for two nights, but the confirmation shows only one night.",
+      "q": "Choose the clearest polite sentence for your message.",
+      "opts": [
+        "You made it wrong. Fix it.",
+        "I’m writing because my booking confirmation appears to show one night instead of two.",
+        "Why you don't understand my booking?",
+        "I want room two nights yesterday."
+      ],
+      "correct": 1,
+      "why": "The sentence explains the discrepancy politely and precisely."
+    },
+    {
+      "title": "A sustainable café idea",
+      "scenario": "Your class is planning a small café. The budget is limited, and you want to reduce food waste without reducing the quality of the menu.",
+      "q": "Which action is the most practical first step?",
+      "opts": [
+        "Prepare the same large quantity of every dish daily.",
+        "Buy ingredients without checking demand.",
+        "Track sales and adjust preparation quantities to demand.",
+        "Remove all fresh food from the menu."
+      ],
+      "correct": 2,
+      "why": "Tracking sales helps forecast demand and reduce overproduction."
+    }
+  ],
+  "functionalText": "In a clothes shop\n\nCustomer: Hello, do you work here?\nShop assistant: Yes. [1]. Can I help you?\nCustomer: Yes. I have a job interview next week, and I need smart clothes. [2].\nShop assistant: Yes, of course. There are some very nice suits over there. [3].\nCustomer: OK, I like these ones here.\nShop assistant: But perhaps they’re not right for you.\nCustomer: [4].\nShop assistant: Well, these are the most expensive suits we have. Over there, we have a cheaper selection. Would you like me to show you?\nCustomer: OK. [5].\nShop assistant: These jackets are only £50, and they’re very smart, I think.\nCustomer: [6]. I’d like to try on that jacket there. Can you pass it to me?\nShop assistant: Of course. Here you are. Hmm. It’s a bit small. [7]. I’m sorry about that.\nCustomer: [8]. Do you have any bigger ones?\nShop assistant: Yes, we have these red or brown jackets here.\nCustomer: [9]. The colour isn’t very nice.\nShop assistant: Or, we have this white jacket, here.\nCustomer: No, no. [10]. Sorry, but I think I’ll try another shop. Thank you very much.\nShop assistant: If you give us your email address, we can send you some special offers, and news about our latest fashions.\nCustomer: [11]. Thanks for all your help.\nShop assistant: Good bye, and good luck with your interview. [12]."
+}

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Language Journey · Student Cabinet</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root{--ink:#28202a;--muted:#766d7b;--paper:#fff;--bg:#f7f4fb;--line:#e9e3ee;--pink:#df6aa4;--orange:#ef9a5a;--yellow:#e5c45c;--green:#63b69b;--blue:#64a9d5;--violet:#9179ce;--plum:#654477;--shadow:0 14px 40px #30203d12}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff8f6,#f5f1ff 48%,#effaf7);font:14px Montserrat,Arial,sans-serif;color:var(--ink);min-height:100vh}button{font:inherit;cursor:pointer}.shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr}.side{background:#fff9;border-right:1px solid #fff;padding:24px 16px;display:flex;flex-direction:column;gap:22px}.logo{font-weight:800;letter-spacing:.12em;font-size:13px;padding:0 10px}.logo span{background:linear-gradient(90deg,var(--pink),var(--orange),var(--yellow),var(--green),var(--blue),var(--violet));color:transparent;background-clip:text}.profile{display:flex;align-items:center;gap:11px;padding:13px;border:1px solid var(--line);border-radius:16px;background:#fff}.avatar{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--pink),var(--violet));display:grid;place-items:center;color:white;font-weight:800}.profile b{display:block;font-size:12px}.profile small{color:var(--muted);font-size:10px}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;text-align:left;padding:12px 13px;border-radius:12px;color:#655b6a;font-weight:650;font-size:12px}.nav button.active,.nav button:hover{background:linear-gradient(100deg,#fceaf3,#f1edff);color:var(--plum)}.sidefoot{margin-top:auto;font-size:10px;color:var(--muted);line-height:1.6;padding:8px 10px}.main{min-width:0;display:flex;flex-direction:column}.top{height:68px;padding:0 clamp(18px,4vw,48px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #fff;background:#ffffff9c;backdrop-filter:blur(12px)}.crumb{font-size:11px;color:var(--muted);font-weight:700}.topright{display:flex;align-items:center;gap:10px}.pill{border:1px solid var(--line);background:#fff;border-radius:30px;padding:8px 12px;font-size:10px;font-weight:700}.content{width:min(1180px,100%);margin:0 auto;padding:28px clamp(16px,4vw,48px) 48px}.view{display:none}.view.active{display:block}.eyebrow{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--plum);margin-bottom:9px}.h1{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:0 0 9px}.sub{color:var(--muted);line-height:1.65;margin:0 0 22px;max-width:760px}.hero{background:linear-gradient(115deg,#704779,#8e70bc 48%,#5da9ae);color:white;border-radius:24px;padding:clamp(22px,4vw,36px);display:grid;grid-template-columns:1.4fr .6fr;gap:20px;align-items:center;box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-90px;top:-150px;background:#ffffff18}.hero .eyebrow{color:#f7dce9}.hero h2{font-size:clamp(22px,3vw,31px);margin:0 0 10px}.hero p{color:#f5edf8;line-height:1.65;max-width:620px}.heroArt{justify-self:center;font-size:78px;filter:drop-shadow(0 10px 10px #33204455)}.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:800;font-size:11px;color:#fff;background:linear-gradient(135deg,var(--pink),var(--violet));box-shadow:0 5px 0 #674b87,0 9px 18px #674b8728;transition:.15s}.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #674b87}.btn.light{background:white;color:var(--plum);box-shadow:0 4px 0 #d7c9e4}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:15px;margin-top:18px}.panel{background:#fff;border:1px solid #fff;border-radius:19px;padding:20px;box-shadow:var(--shadow);min-width:0}.span-3{grid-column:span 3}.span-4{grid-column:span 4}.span-5{grid-column:span 5}.span-6{grid-column:span 6}.span-7{grid-column:span 7}.span-8{grid-column:span 8}.span-12{grid-column:span 12}.panel h3{margin:0 0 7px;font-size:14px}.muted{color:var(--muted)}.small{font-size:10px;line-height:1.55}.metric{font-size:30px;font-weight:800;letter-spacing:-.04em}.level{display:inline-flex;align-items:center;gap:7px;border-radius:30px;padding:7px 11px;background:#f0eafa;color:#634477;font-size:11px;font-weight:800}.bar{height:8px;background:#eee9f1;border-radius:20px;overflow:hidden;margin:12px 0}.bar i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--pink),var(--orange),var(--yellow),var(--green),var(--blue),var(--violet))}.skill{display:grid;grid-template-columns:90px 1fr 32px;gap:10px;align-items:center;margin:12px 0;font-size:10px;font-weight:700}.skill .bar{margin:0}.module{display:flex;align-items:center;gap:14px;padding:15px;border:1px solid var(--line);border-radius:15px;margin-top:10px;background:#fff}.moduleIcon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,#fce6f0,#eae5ff);font-size:20px;flex:none}.moduleBody{flex:1;min-width:0}.moduleBody b{display:block;font-size:12px;margin-bottom:4px}.moduleBody small{font-size:10px;color:var(--muted)}.status{font-size:9px;font-weight:800;padding:6px 9px;border-radius:20px;background:#e8f5ef;color:#39866b;white-space:nowrap}.status.lock{background:#f2eff4;color:#89808e}.status.next{background:#fff2df;color:#a56a28}.pathrow{display:grid;grid-template-columns:35px 1fr auto;gap:12px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}.pathrow:last-child{border:0}.num{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#f5dce9,#e4def8);font-weight:800;color:var(--plum)}.badge{display:inline-flex;padding:8px 10px;border-radius:11px;background:linear-gradient(120deg,#fff0d4,#f9e5f1);font-size:10px;font-weight:800;margin:4px}.helper{display:flex;gap:12px;align-items:center;margin-top:12px}.helper img{width:54px;height:54px;object-fit:cover;border-radius:15px}.helper b{font-size:11px}.helper p{font-size:10px;color:var(--muted);line-height:1.5;margin:4px 0}.notice{padding:13px 15px;border-radius:13px;background:#f8f4fb;border:1px solid #eee5f5;font-size:10px;line-height:1.6;color:#66596c}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.table{width:100%;border-collapse:collapse;font-size:10px}.table td{padding:10px 6px;border-bottom:1px solid var(--line)}.table td:last-child{text-align:right;font-weight:800}.mobileMenu{display:none}
+@media(max-width:800px){.shell{grid-template-columns:1fr}.side{position:sticky;top:0;z-index:5;padding:10px 12px;flex-direction:row;align-items:center;gap:10px;border-right:0;border-bottom:1px solid var(--line);overflow-x:auto}.logo{white-space:nowrap}.profile{display:none}.nav{display:flex;gap:4px}.nav button{white-space:nowrap;padding:10px}.sidefoot{display:none}.top{height:52px}.hero{grid-template-columns:1fr}.heroArt{display:none}.span-8,.span-4,.span-6{grid-column:span 12}.content{padding-top:20px}.module{align-items:flex-start}.status{white-space:normal;text-align:center}}
+
+/* Teacher workspace additions */
+.modeSwitch{display:flex;gap:5px;background:#f0ebf4;padding:4px;border-radius:12px}
+.modeSwitch button{border:0;background:transparent;padding:8px 11px;border-radius:9px;font-size:10px;font-weight:800;color:#766d7b}
+.modeSwitch button.active{background:#fff;color:#654477;box-shadow:0 2px 8px #30203d12}
+.teacherOnly{display:none}.teacherOnly.active{display:block}
+.kpi{display:flex;align-items:center;justify-content:space-between;gap:10px}.kpi .metric{font-size:27px}
+.delta{font-size:9px;font-weight:800;color:#39866b;background:#e8f5ef;padding:6px 8px;border-radius:20px}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:13px 0}
+.filters input,.filters select{font:inherit;font-size:10px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px;color:var(--ink);min-width:150px}
+.dataTable{width:100%;border-collapse:collapse;font-size:10px;min-width:620px}
+.dataTable th{text-align:left;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.08em;padding:11px 9px;border-bottom:1px solid var(--line)}
+.dataTable td{padding:12px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
+.dataTable tr:last-child td{border-bottom:0}
+.studentCell{display:flex;align-items:center;gap:9px;font-weight:800}
+.studentAvatar{width:29px;height:29px;border-radius:10px;background:linear-gradient(135deg,#f3d6e6,#dcd6f6);display:grid;place-items:center;color:#654477;font-size:10px}
+.levelTag{font-size:9px;font-weight:800;border-radius:20px;padding:5px 8px;background:#eee9fa;color:#674b87;display:inline-block}
+.scoreBar{height:6px;background:#eee9f1;border-radius:20px;width:75px;overflow:hidden;display:inline-block;vertical-align:middle;margin-right:6px}
+.scoreBar i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--orange),var(--green))}
+.tableWrap{overflow-x:auto}
+.teacherHero{background:linear-gradient(115deg,#3e344f,#654477 52%,#4d8790);color:white;border-radius:22px;padding:25px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.teacherHero p{color:#eee5f3;font-size:11px;line-height:1.6;max-width:650px}
+.teacherHero .eyebrow{color:#f3d6e6}
+.teacherHero .heroArt{font-size:56px}
+.miniBars{display:grid;gap:12px;margin-top:16px}
+.miniBar{display:grid;grid-template-columns:95px 1fr 30px;gap:10px;align-items:center;font-size:10px;font-weight:700}
+.miniBar .bar{margin:0}
+.alertRow{padding:12px;border-radius:12px;background:#fff7ed;border:1px solid #f6e7d5;font-size:10px;line-height:1.55;margin-top:9px}
+.detailBtn{border:1px solid var(--line);background:#fff;color:var(--plum);padding:7px 10px;border-radius:9px;font-size:9px;font-weight:800}
+.modalBack{position:fixed;inset:0;background:#21172e66;display:none;align-items:center;justify-content:center;padding:16px;z-index:20}
+.modalBack.open{display:flex}.modal{background:white;border-radius:20px;padding:24px;width:min(540px,100%);box-shadow:0 20px 60px #1b102b44}
+.modalHead{display:flex;justify-content:space-between;align-items:center;gap:12px}.modalHead button{border:0;background:#f4eff7;border-radius:9px;padding:7px 10px}
+@media(max-width:800px){.modeSwitch{margin-left:auto}.teacherHero .heroArt{display:none}.dataTable{min-width:600px}}
+
+
+/* v0.6 layout corrections */
+.grid>.panel{min-width:0}
+.teacherHero{width:100%;min-width:0}
+.teacherHero>div:first-child{min-width:0}
+.teacherHero p{max-width:760px}
+#teacher .grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:stretch}
+#teacher .grid>.panel{height:100%}
+#teacher .miniBar{grid-template-columns:42px minmax(0,1fr) 26px}
+#teacherGroups .grid{grid-template-columns:repeat(12,minmax(0,1fr))}
+#teacherGroups .panel.span-4{grid-column:span 4}
+#teacherAnalytics .grid,#teacherSettings .grid{grid-template-columns:repeat(12,minmax(0,1fr))}
+#teacherStudents .panel{width:100%}
+@media(max-width:900px){
+ .span-3,.span-4,.span-5,.span-6,.span-7,.span-8{grid-column:span 12}
+ #teacher .grid>.panel,#teacherGroups .panel.span-4{grid-column:span 12}
+ #teacherAnalytics .grid>.panel,#teacherSettings .grid>.panel{grid-column:span 12}
+ .teacherHero{align-items:flex-start}
+}
+
+
+/* Teacher pages: compact, information-dense workspace */
+.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.sectionHead h3{margin:0 0 4px}
+.actionRow{width:100%;display:flex;align-items:center;gap:11px;text-align:left;border:0;border-top:1px solid var(--line);background:transparent;padding:13px 2px;color:var(--ink)}
+.actionRow>span{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:#f5eafa;color:var(--plum);font-size:17px;flex:none}
+.actionRow div{flex:1;min-width:0}.actionRow b,.actionRow small{display:block}.actionRow b{font-size:11px}.actionRow small{font-size:9px;color:var(--muted);margin-top:3px}
+.attentionItem{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid var(--line)}
+.attentionItem>div{flex:1;min-width:0}.attentionItem b,.attentionItem small{display:block}.attentionItem b{font-size:11px}.attentionItem small{font-size:9px;color:var(--muted);margin-top:3px}
+.attentionDot{width:9px;height:9px;border-radius:50%;background:#e9a05d;flex:none}
+.activityLine{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:11px 0;border-top:1px solid var(--line)}
+.activityLine b{font-size:10px}.activityLine span{font-size:9px;color:var(--muted)}.activityLine small{font-size:9px;color:var(--muted);grid-column:2;grid-row:1/3}
+.tableFooter{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:13px;border-top:1px solid var(--line)}
+.pager{display:flex;align-items:center;gap:9px;font-size:10px;font-weight:700}
+.compareRow{display:grid;grid-template-columns:82px 1fr 65px;gap:12px;align-items:center;margin:17px 0;font-size:10px}
+.compareRow .bar{margin:0}.compareRow strong{text-align:right;font-size:10px}
+.recommendation{padding:11px 0;border-top:1px solid var(--line)}
+.recommendation b{font-size:10px}.recommendation p{font-size:9px;color:var(--muted);line-height:1.5;margin:5px 0 0}
+.courseSetting{display:flex;align-items:center;gap:11px;padding:13px 0;border-top:1px solid var(--line)}
+.courseBadge{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#f4dce9,#e7e1fb);display:grid;place-items:center;font-weight:800;color:var(--plum)}
+.courseSetting>div:nth-child(2){flex:1;min-width:0}.courseSetting b,.courseSetting small{display:block}.courseSetting b{font-size:11px}.courseSetting small{font-size:9px;color:var(--muted);margin-top:3px}
+.ruleRow{display:flex;justify-content:space-between;padding:7px 2px;border-bottom:1px solid var(--line);font-size:10px}.ruleRow span{color:var(--muted)}.ruleRow b{color:var(--plum)}
+.settingLine{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.settingLine span{min-width:0}.settingLine b,.settingLine small{display:block}.settingLine b{font-size:10px}.settingLine small{font-size:9px;color:var(--muted);margin-top:3px}
+.settingLine input[type=checkbox]{width:17px;height:17px;accent-color:#8b65b4;flex:none}
+.settingsForm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.settingsForm label{font-size:9px;font-weight:700;color:var(--muted)}
+.settingsForm input,.settingsForm select{display:block;width:100%;margin-top:6px;padding:10px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:10px;background:#fff;color:var(--ink)}
+#teacherGroups .grid,#teacherStudents .grid,#teacherAnalytics .grid,#teacherSettings .grid{align-items:stretch}
+#teacherGroups .panel,#teacherStudents .panel,#teacherAnalytics .panel,#teacherSettings .panel{height:100%}
+#teacherGroups .span-4{grid-column:span 4}
+#teacherGroups .span-8{grid-column:span 8}
+#teacherGroups .span-4:last-child{grid-column:span 4}
+@media(max-width:900px){
+ #teacherGroups .span-4,#teacherGroups .span-8,
+ #teacherStudents .span-3,#teacherStudents .span-6,
+ #teacherAnalytics .span-3,#teacherAnalytics .span-4,#teacherAnalytics .span-6,#teacherAnalytics .span-8,
+ #teacherSettings .span-6{grid-column:span 12}
+ .settingsForm{grid-template-columns:1fr}
+ .tableFooter{align-items:flex-start;flex-direction:column}
+}
+
+</style></head><body>
+<div class="shell">
+<aside class="side"><div class="logo">LANGUAGE <span>JOURNEY</span></div>
+<div class="profile"><div class="avatar">A</div><div><b>Alex Morgan</b><small id="roleCaption">Student · My workspace</small></div></div>
+<nav class="nav">
+<button class="active" data-view="home">⌂ Главная</button><button data-view="path">◈ Мой маршрут</button><button data-view="skills">◎ Мои навыки</button><button data-view="achievements">✦ Достижения</button><button data-view="profile">⚙ Профиль</button>
+</nav><div class="sidefoot">LANGUAGE JOURNEY<br>Learn · Practise · Create<br><br>Демонстрационный кабинет<br>v0.1 · prototype</div></aside>
+<section class="main"><header class="top"><div class="crumb" id="crumb">STUDENT WORKSPACE / OVERVIEW</div><div class="topright"><div class="modeSwitch"><button id="studentMode" class="active" onclick="setMode('student')">STUDENT</button><button id="teacherMode" onclick="setMode('teacher')">TEACHER</button></div><span class="pill" id="topPill">✦ 120 XP</span></div></header>
+<div class="content">
+<section class="view active" id="home">
+<div class="eyebrow">Your learning journey starts here</div><h1 class="h1">Welcome back, Alex!</h1><p class="sub">Твой личный кабинет — место, где собраны учебный маршрут, результаты диагностики, достижения и следующие шаги.</p>
+<div class="hero"><div><div class="eyebrow">Your next step</div><h2>Let’s build your English confidence.</h2><p>Диагностика определила предварительный уровень A2. Начни с первого проекта и постепенно открывай новые этапы своего маршрута.</p><button class="btn light" onclick="show('path')">Открыть мой маршрут →</button></div><div class="heroArt">🌈</div></div>
+<div class="grid">
+<div class="panel span-8"><h3>Текущий учебный маршрут</h3><p class="small muted">Think · Level 2 → Platform A2</p>
+<div style="display:flex;align-items:end;gap:14px;margin-top:14px"><div class="metric">12%</div><div class="small muted">прогресс по учебному маршруту</div></div><div class="bar"><i style="width:12%"></i></div>
+<div class="module"><div class="moduleIcon">🌍</div><div class="moduleBody"><b>Module 1 · My World, My Story</b><small>Project: create your personal digital introduction</small></div><span class="status next">Следующий</span></div>
+<div class="actions"><button class="btn" onclick="show('path')">Продолжить обучение</button></div></div>
+<div class="panel span-4"><h3>Результат диагностики</h3><div style="margin:15px 0"><span class="level">A2 · Elementary</span></div><div class="metric">43<span style="font-size:14px;color:var(--muted)"> / 112</span></div><p class="small muted">Think Level 2 · результат демонстрационного тестирования</p><div class="notice">Рекомендованный старт: A2. Следующий шаг — укрепить грамматику и словарный запас в контексте реальных проектов.</div></div>
+<div class="panel span-6"><h3>Навыки по результатам диагностики</h3><div class="skill"><span>Grammar</span><div class="bar"><i style="width:58%"></i></div><b>58%</b></div><div class="skill"><span>Vocabulary</span><div class="bar"><i style="width:64%"></i></div><b>64%</b></div><div class="skill"><span>Reading</span><div class="bar"><i style="width:72%"></i></div><b>72%</b></div><div class="skill"><span>Listening</span><div class="bar"><i style="width:48%"></i></div><b>48%</b></div><div class="skill"><span>Writing</span><div class="bar"><i style="width:42%"></i></div><b>42%</b></div><p class="small muted">Пример визуализации. В рабочей версии значения будут рассчитаны из ответов Placement Test.</p></div>
+<div class="panel span-6"><h3>Твои помощники</h3><div class="helper"><img src="media/helper_nick.jpg"><div><b>Nick · Language Coach</b><p>Помогает разобраться с грамматикой и расширить словарный запас.</p></div></div><div class="helper"><img src="media/helper_emma.jpg"><div><b>Emma · Communication Coach</b><p>Помогает развивать общение, понимание речи и уверенность.</p></div></div><div class="helper"><img src="media/helper_leo.jpg"><div><b>Leo · Project Mentor</b><p>Следит за прогрессом и помогает довести учебный проект до результата.</p></div></div></div>
+</div></section>
+<section class="view" id="path"><div class="eyebrow">Your personalised pathway</div><h1 class="h1">Мой учебный маршрут</h1><p class="sub">Путь формируется по результатам Placement Test. Каждый модуль — отдельный проект, а каждое занятие приближает тебя к его завершению.</p>
+<div class="grid"><div class="panel span-8"><h3>Level A2 · Elementary</h3><p class="small muted">Think Level 2 · 10 учебных модулей</p>
+<div class="pathrow"><div class="num">01</div><div><b>My World, My Story</b><div class="small muted">Create a personal digital introduction</div></div><span class="status next">Открыт</span></div>
+<div class="pathrow"><div class="num">02</div><div><b>Food for Thought</b><div class="small muted">Design a balanced café menu</div></div><span class="status lock">Закрыт</span></div>
+<div class="pathrow"><div class="num">03</div><div><b>Our Planet, Our Future</b><div class="small muted">Create an eco-awareness campaign</div></div><span class="status lock">Закрыт</span></div>
+<div class="pathrow"><div class="num">04</div><div><b>Travel Smart</b><div class="small muted">Plan a sustainable city trip</div></div><span class="status lock">Закрыт</span></div>
+<div class="pathrow"><div class="num">05–10</div><div><b>Следующие проекты</b><div class="small muted">Откроются после прохождения предыдущих этапов</div></div><span class="status lock">Закрыты</span></div>
+<div class="notice" style="margin-top:15px">Демонстрационные названия модулей. Состав и последовательность будут сверены с утверждённой программой курса и учебными материалами.</div></div>
+<div class="panel span-4"><h3>Почему назначен этот уровень?</h3><p class="small muted">Тест показал уверенное владение базовыми структурами и необходимость дальнейшей практики в аудировании и письменной речи.</p><table class="table"><tr><td>Think band</td><td>Level 2</td></tr><tr><td>Score</td><td>43 / 112</td></tr><tr><td>Platform level</td><td>A2</td></tr><tr><td>Course</td><td>Level A2</td></tr></table></div></div></section>
+<section class="view" id="skills"><div class="eyebrow">Diagnostic profile</div><h1 class="h1">Мои навыки</h1><p class="sub">Здесь отображается не только общий уровень, но и профиль сильных сторон и зон развития.</p>
+<div class="grid"><div class="panel span-6"><h3>Skill profile</h3><div class="skill"><span>Grammar</span><div class="bar"><i style="width:58%"></i></div><b>58%</b></div><div class="skill"><span>Vocabulary</span><div class="bar"><i style="width:64%"></i></div><b>64%</b></div><div class="skill"><span>Reading</span><div class="bar"><i style="width:72%"></i></div><b>72%</b></div><div class="skill"><span>Listening</span><div class="bar"><i style="width:48%"></i></div><b>48%</b></div><div class="skill"><span>Writing</span><div class="bar"><i style="width:42%"></i></div><b>42%</b></div></div><div class="panel span-6"><h3>Рекомендации</h3><div class="notice"><b>Listening</b><br>Регулярно выполняй задания на понимание основной мысли и деталей аудиотекстов.</div><div class="notice" style="margin-top:10px"><b>Writing</b><br>Практикуй короткие связные тексты и используй лексику текущего модуля.</div><div class="notice" style="margin-top:10px"><b>Grammar & Vocabulary</b><br>Закрепляй изученные структуры в коммуникативных ситуациях, а не только в отдельных упражнениях.</div></div></div></section>
+<section class="view" id="achievements"><div class="eyebrow">Milestones & rewards</div><h1 class="h1">Мои достижения</h1><p class="sub">Значки отражают реальные учебные действия и освоенные навыки.</p><div class="grid"><div class="panel span-4"><div style="font-size:38px">🧭</div><h3>First Step</h3><p class="small muted">Пройден Placement Test</p><span class="status">Получен</span></div><div class="panel span-4"><div style="font-size:38px">🎧</div><h3>Good Listener</h3><p class="small muted">Выполнены задания Listening</p><span class="status lock">В процессе</span></div><div class="panel span-4"><div style="font-size:38px">🚀</div><h3>Project Starter</h3><p class="small muted">Начат первый проект</p><span class="status lock">Впереди</span></div></div></section>
+<section class="view" id="profile"><div class="eyebrow">Personal settings</div><h1 class="h1">Профиль студента</h1><p class="sub">Демонстрационные данные. В рабочей системе профиль будет связан с учётной записью LMS.</p><div class="grid"><div class="panel span-6"><h3>Личные данные</h3><table class="table"><tr><td>Имя</td><td>Alex Morgan</td></tr><tr><td>Student ID</td><td>ST-2048</td></tr><tr><td>Назначенный уровень</td><td>A2</td></tr><tr><td>Курс</td><td>English · A2</td></tr><tr><td>Статус</td><td>Active</td></tr></table></div><div class="panel span-6"><h3>Интеграция и данные</h3><div class="notice">В этой версии вход, хранение результатов и синхронизация с Moodle не подключены. Это интерактивный UX-прототип, а не готовая LMS-авторизация.</div></div></div></section>
+
+<section class="view" id="placement">
+<div class="eyebrow">Placement test · diagnostic assessment</div>
+<h1 class="h1">Think Placement Test</h1>
+<p class="sub">Пройди диагностический тест, чтобы определить стартовый уровень английского и получить персональный учебный маршрут.</p>
+<div class="notice" style="margin-bottom:14px">Тест занимает до 80 минут. Результат и профиль навыков будут переданы в личный кабинет после завершения. Открытые ответы и диктант могут требовать проверки преподавателем.</div>
+<div class="panel" style="margin:0 0 14px;padding:15px">
+ <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+  <div><b style="font-size:12px">Режим разработки</b><div class="small muted">Для проверки кабинета можно подставить демонстрационный результат и не проходить тест заново.</div></div>
+  <span class="level">DEV TOOLS</span>
+ </div>
+ <div class="actions" style="margin-top:10px">
+  <button class="detailBtn" onclick="applyDemoLevel('A1')">Тест A1</button>
+  <button class="detailBtn" onclick="applyDemoLevel('A2')">Тест A2</button>
+  <button class="detailBtn" onclick="applyDemoLevel('B1')">Тест B1</button>
+  <button class="detailBtn" onclick="applyDemoLevel('B2')">Тест B2</button>
+  <button class="detailBtn" onclick="applyDemoLevel('C1')">Тест C1</button>
+  <button class="detailBtn" onclick="clearPlacementDemo()">Сбросить результат</button>
+ </div>
+ <div id="placementStatus" class="small muted" style="margin-top:9px">Выбери уровень для быстрой проверки интерфейса или пройди настоящий тест ниже.</div>
+</div>
+<div style="height:calc(100vh - 280px);min-height:600px;border-radius:18px;overflow:hidden;border:1px solid #e9e3ee;background:white;box-shadow:var(--shadow)">
+<iframe id="placementFrame" src="placement-test/index.html" title="Think Placement Test" style="width:100%;height:100%;border:0;background:white" allow="autoplay"></iframe>
+</div>
+</section>
+
+<section class="view" id="teacher">
+<div class="eyebrow">Teacher workspace · overview</div>
+<h1 class="h1">Teacher Dashboard</h1>
+<p class="sub">Управление группами, диагностикой и учебной динамикой. Здесь преподаватель видит не только оценки, но и то, где студентам нужна поддержка.</p>
+<div class="teacherHero"><div><div class="eyebrow">Academic overview · 2026/27</div><h2 style="font-size:25px;margin:0 0 7px">Your students. Their progress. One view.</h2><p>Сводная аналитика по результатам Placement Test и продвижению по проектным модулям. Данные ниже демонстрационные — интеграция с реальными аккаунтами будет подключена на следующем этапе.</p></div><div class="heroArt">📊</div></div>
+<div class="grid">
+<div class="panel span-3"><div class="kpi"><div><div class="small muted">Students</div><div class="metric">24</div></div><span class="delta">+3 this month</span></div></div>
+<div class="panel span-3"><div class="kpi"><div><div class="small muted">Test completed</div><div class="metric">19<span style="font-size:13px;color:var(--muted)"> / 24</span></div></div></div></div>
+<div class="panel span-3"><div class="kpi"><div><div class="small muted">Average score</div><div class="metric">61<span style="font-size:13px;color:var(--muted)"> / 112</span></div></div></div></div>
+<div class="panel span-3"><div class="kpi"><div><div class="small muted">At-risk students</div><div class="metric">4</div></div><span class="delta" style="background:#fff2df;color:#a56a28">Needs review</span></div></div>
+<div class="panel span-7"><h3>Распределение по уровням</h3><p class="small muted">По завершённым диагностическим тестам · демонстрационные данные</p>
+<div class="miniBars"><div class="miniBar"><span>A1</span><div class="bar"><i style="width:16%"></i></div><b>3</b></div><div class="miniBar"><span>A2</span><div class="bar"><i style="width:37%"></i></div><b>7</b></div><div class="miniBar"><span>B1</span><div class="bar"><i style="width:26%"></i></div><b>5</b></div><div class="miniBar"><span>B2</span><div class="bar"><i style="width:16%"></i></div><b>3</b></div><div class="miniBar"><span>C1</span><div class="bar"><i style="width:5%"></i></div><b>1</b></div></div></div>
+<div class="panel span-5"><h3>Группы и курсы</h3><div class="pathrow"><div class="num">A</div><div><b>English A1–A2</b><div class="small muted">10 студентов · 8 завершили тест</div></div><span class="status">Active</span></div><div class="pathrow"><div class="num">B</div><div><b>English B1</b><div class="small muted">8 студентов · 7 завершили тест</div></div><span class="status">Active</span></div><div class="pathrow"><div class="num">C</div><div><b>English B2–C1</b><div class="small muted">6 студентов · 4 завершили тест</div></div><span class="status">Active</span></div></div>
+<div class="panel span-8"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap"><div><h3>Список студентов</h3><p class="small muted">Поиск, фильтрация и просмотр диагностического профиля</p></div><button class="btn" onclick="alert('В рабочей версии здесь будет экспорт отчёта CSV/XLSX.')">Экспорт отчёта ↓</button></div>
+<div class="filters"><input id="studentSearch" placeholder="Поиск по имени..." oninput="filterStudents()"><select id="levelFilter" onchange="filterStudents()"><option value="">Все уровни</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select><select id="testFilter" onchange="filterStudents()"><option value="">Все статусы</option><option value="done">Тест пройден</option><option value="pending">Ожидает тест</option></select></div>
+<div class="tableWrap"><table class="dataTable"><thead><tr><th>Student</th><th>Group</th><th>Score</th><th>Level</th><th>Progress</th><th>Status</th><th></th></tr></thead><tbody id="studentRows">
+<tr data-name="alex morgan" data-group="A" data-level="A2" data-test="done"><td><div class="studentCell"><span class="studentAvatar">AM</span>Alex Morgan</div></td><td>A</td><td>43/112</td><td><span class="levelTag">A2</span></td><td><span class="scoreBar"><i style="width:12%"></i></span>12%</td><td><span class="status">Active</span></td><td><button class="detailBtn" onclick="openStudent('Alex Morgan','A2','43','12','Listening, Writing')">Открыть</button></td></tr>
+<tr data-name="sophia lee" data-group="B" data-level="B1" data-test="done"><td><div class="studentCell"><span class="studentAvatar">SL</span>Sophia Lee</div></td><td>B</td><td>58/112</td><td><span class="levelTag">B1</span></td><td><span class="scoreBar"><i style="width:35%"></i></span>35%</td><td><span class="status">Active</span></td><td><button class="detailBtn" onclick="openStudent('Sophia Lee','B1','58','35','Grammar, Listening')">Открыть</button></td></tr>
+<tr data-name="liam parker" data-group="A" data-level="A1" data-test="done"><td><div class="studentCell"><span class="studentAvatar">LP</span>Liam Parker</div></td><td>A</td><td>24/112</td><td><span class="levelTag">A1</span></td><td><span class="scoreBar"><i style="width:8%"></i></span>8%</td><td><span class="status next">Support</span></td><td><button class="detailBtn" onclick="openStudent('Liam Parker','A1','24','8','Grammar, Vocabulary, Reading')">Открыть</button></td></tr>
+<tr data-name="olivia brown" data-group="C" data-level="B2" data-test="done"><td><div class="studentCell"><span class="studentAvatar">OB</span>Olivia Brown</div></td><td>C</td><td>76/112</td><td><span class="levelTag">B2</span></td><td><span class="scoreBar"><i style="width:61%"></i></span>61%</td><td><span class="status">Active</span></td><td><button class="detailBtn" onclick="openStudent('Olivia Brown','B2','76','61','Writing')">Открыть</button></td></tr>
+<tr data-name="noah wilson" data-group="B" data-level="" data-test="pending"><td><div class="studentCell"><span class="studentAvatar">NW</span>Noah Wilson</div></td><td>B</td><td>—</td><td>—</td><td>—</td><td><span class="status lock">Test pending</span></td><td><button class="detailBtn" onclick="openStudent('Noah Wilson','Not assigned','—','0','Placement Test not completed')">Открыть</button></td></tr>
+<tr data-name="ava martin" data-group="A" data-level="A2" data-test="done"><td><div class="studentCell"><span class="studentAvatar">AM</span>Ava Martin</div></td><td>A</td><td>39/112</td><td><span class="levelTag">A2</span></td><td><span class="scoreBar"><i style="width:18%"></i></span>18%</td><td><span class="status next">Support</span></td><td><button class="detailBtn" onclick="openStudent('Ava Martin','A2','39','18','Listening, Grammar')">Открыть</button></td></tr>
+</tbody></table></div></div>
+<div class="panel span-4"><h3>Зоны внимания</h3><p class="small muted">Навыки с наиболее частыми затруднениями</p><div class="skill"><span>Listening</span><div class="bar"><i style="width:78%"></i></div><b>78%</b></div><div class="skill"><span>Writing</span><div class="bar"><i style="width:66%"></i></div><b>66%</b></div><div class="skill"><span>Grammar</span><div class="bar"><i style="width:52%"></i></div><b>52%</b></div><div class="alertRow"><b>Рекомендация</b><br>Запланировать дополнительную практику Listening и Writing для студентов групп A и B.</div><div class="alertRow" style="background:#f5f1fb;border-color:#e8def2"><b>Teacher note</b><br>Данные агрегированы для демонстрации интерфейса. Не использовать как реальные результаты.</div></div>
+</div></section>
+</section></div>
+
+<section class="view" id="teacherGroups">
+<div class="eyebrow">Teacher workspace · groups</div><h1 class="h1">Мои группы</h1><p class="sub">Состав групп, назначенные курсы и общая динамика обучения.</p>
+<div class="grid">
+<div class="panel span-4"><div class="kpi"><div><div class="small muted">Всего студентов</div><div class="metric">10</div></div><span class="level">A1–A2</span></div><h3>Group A · Foundation</h3><p class="small muted">Курс English A1–A2 · 10 модулей</p><div class="bar"><i style="width:80%"></i></div><div class="small muted">8 из 10 завершили Placement Test</div><div class="actions"><button class="detailBtn" onclick="openGroup('A')">Открыть группу</button><span class="status">Active</span></div></div>
+<div class="panel span-4"><div class="kpi"><div><div class="small muted">Всего студентов</div><div class="metric">8</div></div><span class="level">B1</span></div><h3>Group B · Intermediate</h3><p class="small muted">Курс English B1 · 10 модулей</p><div class="bar"><i style="width:87.5%"></i></div><div class="small muted">7 из 8 завершили Placement Test</div><div class="actions"><button class="detailBtn" onclick="openGroup('B')">Открыть группу</button><span class="status">Active</span></div></div>
+<div class="panel span-4"><div class="kpi"><div><div class="small muted">Всего студентов</div><div class="metric">6</div></div><span class="level">B2–C1</span></div><h3>Group C · Advanced</h3><p class="small muted">Курс English B2–C1 · 10 модулей</p><div class="bar"><i style="width:66%"></i></div><div class="small muted">4 из 6 завершили Placement Test</div><div class="actions"><button class="detailBtn" onclick="openGroup('C')">Открыть группу</button><span class="status">Active</span></div></div>
+<div class="panel span-8"><div class="sectionHead"><div><h3>Сводка по группам</h3><p class="small muted">Диагностика и текущая учебная активность</p></div><button class="btn" onclick="teacherToast('Создание группы')">＋ Создать группу</button></div><div class="tableWrap"><table class="dataTable"><thead><tr><th>Группа</th><th>Курс</th><th>Студенты</th><th>Тест завершён</th><th>Средний балл</th><th>Активность</th></tr></thead><tbody><tr><td><b>Group A</b></td><td>A1–A2</td><td>10</td><td>8 / 10</td><td>38 / 112</td><td><span class="status">Active</span></td></tr><tr><td><b>Group B</b></td><td>B1</td><td>8</td><td>7 / 8</td><td>61 / 112</td><td><span class="status">Active</span></td></tr><tr><td><b>Group C</b></td><td>B2–C1</td><td>6</td><td>4 / 6</td><td>82 / 112</td><td><span class="status">Active</span></td></tr></tbody></table></div></div>
+<div class="panel span-4"><h3>Быстрые действия</h3><button class="actionRow" onclick="teacherToast('Импорт списка студентов')"><span>⇧</span><div><b>Импортировать студентов</b><small>Загрузить список из CSV/XLSX</small></div><icon name="chevron-right"/></button><button class="actionRow" onclick="teacherToast('Назначение курса группе')"><span>◈</span><div><b>Назначить курс</b><small>Связать группу с уровнем A1–C1</small></div><icon name="chevron-right"/></button><button class="actionRow" onclick="teacherToast('Отчёт по группам')"><span>▤</span><div><b>Отчёт по группам</b><small>Сводка диагностики и прогресса</small></div><icon name="chevron-right"/></button></div>
+</div></section>
+<section class="view" id="teacherStudents">
+<div class="eyebrow">Teacher workspace · students</div><h1 class="h1">Студенты</h1><p class="sub">Единый список студентов, результаты диагностики, назначенные уровни и учебная активность.</p>
+<div class="grid">
+<div class="panel span-3"><div class="small muted">Всего студентов</div><div class="metric">24</div><div class="small muted">В 3 учебных группах</div></div><div class="panel span-3"><div class="small muted">Завершили тест</div><div class="metric">19 <small class="muted">/ 24</small></div><div class="bar"><i style="width:79%"></i></div></div><div class="panel span-3"><div class="small muted">Назначен уровень</div><div class="metric">19</div><div class="small muted">A1–C1</div></div><div class="panel span-3"><div class="small muted">Нужна поддержка</div><div class="metric">4</div><div class="small muted">По результатам диагностики</div></div>
+<div class="panel span-12"><div class="sectionHead"><div><h3>Список студентов</h3><p class="small muted">Поиск, фильтрация и просмотр диагностического профиля</p></div><button class="btn" onclick="teacherToast('Экспорт списка студентов')">Экспорт отчёта ↓</button></div>
+<div class="filters"><input id="studentSearch2" placeholder="Поиск по имени..." oninput="filterStudents2()"><select id="levelFilter2" onchange="filterStudents2()"><option value="">Все уровни</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select><select id="testFilter2" onchange="filterStudents2()"><option value="">Все статусы</option><option value="done">Тест пройден</option><option value="pending">Ожидает тест</option></select><select id="groupFilter2" onchange="filterStudents2()"><option value="">Все группы</option><option>A</option><option>B</option><option>C</option></select></div>
+<div class="tableWrap"><table class="dataTable"><thead><tr><th>Student</th><th>Group</th><th>Score</th><th>Level</th><th>Progress</th><th>Status</th><th></th></tr></thead><tbody id="studentRows2"></tbody></table></div>
+<div class="tableFooter"><span class="small muted" id="studentCount">Показано 6 из 24 студентов · демонстрационные данные</span><div class="pager"><button class="detailBtn" disabled>‹</button><span>1 / 4</span><button class="detailBtn" onclick="teacherToast('Следующая страница')">›</button></div></div></div>
+<div class="panel span-6"><h3>Требуют внимания</h3><div class="attentionItem"><span class="attentionDot"></span><div><b>Liam Parker</b><small>Низкий результат · A1 · Grammar и Vocabulary</small></div><button class="detailBtn" onclick="openStudent('Liam Parker','A1','24','8','Grammar, Vocabulary, Reading')">Карточка</button></div><div class="attentionItem"><span class="attentionDot"></span><div><b>Ava Martin</b><small>Listening · требуется дополнительная практика</small></div><button class="detailBtn" onclick="openStudent('Ava Martin','A2','39','18','Listening, Grammar')">Карточка</button></div></div>
+<div class="panel span-6"><h3>Недавняя активность</h3><div class="activityLine"><b>Sophia Lee</b><span>Завершила Module 1</span><small>Сегодня</small></div><div class="activityLine"><b>Olivia Brown</b><span>Получила значок Project Starter</span><small>Вчера</small></div><div class="activityLine"><b>Alex Morgan</b><span>Начал Placement Test</span><small>Недавно</small></div></div>
+</div></section>
+<section class="view" id="teacherAnalytics">
+<div class="eyebrow">Teacher workspace · analytics</div><h1 class="h1">Аналитика обучения</h1><p class="sub">Сводные результаты диагностики, динамика групп и навыки, требующие педагогического внимания.</p>
+<div class="grid">
+<div class="panel span-3"><div class="small muted">Средний балл</div><div class="metric">61<span class="small muted"> / 112</span></div><span class="delta">По 19 тестам</span></div><div class="panel span-3"><div class="small muted">Средний прогресс</div><div class="metric">29%</div><span class="small muted">По открытым модулям</span></div><div class="panel span-3"><div class="small muted">Сильная сторона</div><div class="metric" style="font-size:22px">Reading</div><span class="delta">72% average</span></div><div class="panel span-3"><div class="small muted">Зона роста</div><div class="metric" style="font-size:22px">Listening</div><span class="status next">Needs practice</span></div>
+<div class="panel span-6"><h3>Распределение по уровням</h3><p class="small muted">19 завершённых диагностик</p><div class="miniBars"><div class="miniBar"><span>A1</span><div class="bar"><i style="width:16%"></i></div><b>3</b></div><div class="miniBar"><span>A2</span><div class="bar"><i style="width:37%"></i></div><b>7</b></div><div class="miniBar"><span>B1</span><div class="bar"><i style="width:26%"></i></div><b>5</b></div><div class="miniBar"><span>B2</span><div class="bar"><i style="width:16%"></i></div><b>3</b></div><div class="miniBar"><span>C1</span><div class="bar"><i style="width:5%"></i></div><b>1</b></div></div></div>
+<div class="panel span-6"><h3>Средний результат по навыкам</h3><div class="skill"><span>Grammar</span><div class="bar"><i style="width:52%"></i></div><b>52%</b></div><div class="skill"><span>Vocabulary</span><div class="bar"><i style="width:64%"></i></div><b>64%</b></div><div class="skill"><span>Reading</span><div class="bar"><i style="width:72%"></i></div><b>72%</b></div><div class="skill"><span>Listening</span><div class="bar"><i style="width:48%"></i></div><b>48%</b></div><div class="skill"><span>Dictation</span><div class="bar"><i style="width:66%"></i></div><b>66%</b></div></div>
+<div class="panel span-8"><h3>Сравнение учебных групп</h3><p class="small muted">Средний диагностический балл по группам</p><div class="compareRow"><b>Group A</b><div class="bar"><i style="width:34%"></i></div><strong>38 / 112</strong></div><div class="compareRow"><b>Group B</b><div class="bar"><i style="width:54%"></i></div><strong>61 / 112</strong></div><div class="compareRow"><b>Group C</b><div class="bar"><i style="width:73%"></i></div><strong>82 / 112</strong></div><div class="notice">Сравнение помогает увидеть различия между группами, но не заменяет анализ индивидуальных профилей.</div></div>
+<div class="panel span-4"><h3>Педагогические рекомендации</h3><div class="recommendation"><b>01 · Listening practice</b><p>Запланировать дополнительные задания на понимание деталей и ключевой информации.</p></div><div class="recommendation"><b>02 · Writing support</b><p>Добавить короткие письменные продукты в проектные занятия.</p></div><div class="recommendation"><b>03 · Differentiation</b><p>Предусмотреть задания разной сложности для студентов A1–B2.</p></div></div>
+</div></section>
+<section class="view" id="teacherSettings">
+<div class="eyebrow">Teacher workspace · settings</div><h1 class="h1">Настройки преподавателя</h1><p class="sub">Параметры учебных курсов, оценивания, уведомлений и рабочего профиля.</p>
+<div class="grid">
+<div class="panel span-6"><div class="sectionHead"><div><h3>Мои курсы</h3><p class="small muted">Курсы, доступные в рабочем пространстве</p></div><button class="detailBtn" onclick="teacherToast('Добавление курса')">＋ Добавить</button></div><div class="courseSetting"><div class="courseBadge">A</div><div><b>English A1–A2</b><small>10 модулей · 3 группы назначены</small></div><span class="status">Active</span></div><div class="courseSetting"><div class="courseBadge">B</div><div><b>English B1</b><small>10 модулей · 1 группа назначена</small></div><span class="status">Active</span></div><div class="courseSetting"><div class="courseBadge">C</div><div><b>English B2–C1</b><small>10 модулей · 1 группа назначена</small></div><span class="status">Active</span></div></div>
+<div class="panel span-6"><h3>Правила назначения уровня</h3><p class="small muted">Предварительная проектная схема по результатам Think Placement Test</p><div class="ruleRow"><span>0–33</span><b>A1</b></div><div class="ruleRow"><span>34–51</span><b>A2</b></div><div class="ruleRow"><span>52–69</span><b>B1</b></div><div class="ruleRow"><span>70–87</span><b>B2</b></div><div class="ruleRow"><span>88–112</span><b>C1</b></div><div class="notice">Шкала требует педагогического утверждения; это не официальная таблица Cambridge CEFR.</div></div>
+<div class="panel span-6"><h3>Настройки оценивания</h3><label class="settingLine"><span><b>Показывать игровые штрафы</b><small>Отдельно от исходного диагностического балла</small></span><input type="checkbox" checked></label><label class="settingLine"><span><b>Учитывать бонусные кейсы</b><small>Не влияют на назначение уровня</small></span><input type="checkbox" checked></label><label class="settingLine"><span><b>Проверка диктанта преподавателем</b><small>Для неоднозначных и неточных ответов</small></span><input type="checkbox" checked></label></div>
+<div class="panel span-6"><h3>Уведомления</h3><label class="settingLine"><span><b>Незавершённые тесты</b><small>Напоминание о студентах без результата</small></span><input type="checkbox" checked></label><label class="settingLine"><span><b>Низкие результаты</b><small>Сигнал при необходимости поддержки</small></span><input type="checkbox" checked></label><label class="settingLine"><span><b>Завершение модулей</b><small>Уведомлять о новых достижениях</small></span><input type="checkbox"></label></div>
+<div class="panel span-12"><div class="sectionHead"><div><h3>Профиль преподавателя</h3><p class="small muted">Демонстрационные настройки текущего пользователя</p></div><button class="btn" onclick="teacherToast('Настройки сохранены в демонстрационном режиме')">Сохранить настройки</button></div><div class="settingsForm"><label>Имя преподавателя<input value="Teacher Account"></label><label>Рабочая почта<input value="teacher@example.com"></label><label>Учебный год<select><option>2026/2027</option><option>2027/2028</option></select></label></div></div>
+</div></section>
+</div>
+
+<div class="modalBack" id="studentModal" onclick="if(event.target===this)closeStudent()"><div class="modal"><div class="modalHead"><div><div class="eyebrow">Student diagnostic card</div><h2 id="modalName" style="margin:0;font-size:21px">Student</h2></div><button onclick="closeStudent()">✕</button></div><div class="grid"><div class="panel span-6"><div class="small muted">Assigned level</div><div class="metric" id="modalLevel">A2</div></div><div class="panel span-6"><div class="small muted">Placement score</div><div class="metric" id="modalScore">43</div></div><div class="panel span-12"><h3>Progress</h3><div class="bar"><i id="modalProgressBar" style="width:12%"></i></div><div class="small muted" id="modalProgress">12% complete</div><div class="notice" style="margin-top:12px"><b>Areas for support</b><br><span id="modalWeak">Listening, Writing</span></div></div></div><p class="small muted">В рабочей версии карточка будет показывать историю попыток, ответы по разделам, ошибки, назначенный курс и комментарии преподавателя.</p></div></div>
+<script>
+const labels={home:'STUDENT WORKSPACE / OVERVIEW',placement:'PLACEMENT TEST / DIAGNOSTICS',path:'MY LEARNING PATHWAY',skills:'MY SKILLS / DIAGNOSTIC PROFILE',achievements:'MY ACHIEVEMENTS',profile:'STUDENT PROFILE',teacher:'TEACHER WORKSPACE / OVERVIEW',teacherGroups:'TEACHER WORKSPACE / GROUPS',teacherStudents:'TEACHER WORKSPACE / STUDENTS',teacherAnalytics:'TEACHER WORKSPACE / ANALYTICS',teacherSettings:'TEACHER WORKSPACE / SETTINGS'};
+const studentNav=[['home','⌂ Главная'],['placement','✎ Placement Test'],['path','◈ Мой маршрут'],['skills','◎ Мои навыки'],['achievements','✦ Достижения'],['profile','⚙ Профиль']];
+const teacherNav=[['teacher','▦ Обзор'],['teacherGroups','▤ Мои группы'],['teacherStudents','♙ Студенты'],['teacherAnalytics','◫ Аналитика'],['teacherSettings','⚙ Настройки']];
+let currentMode='student';
+function renderNav(){
+ const nav=document.querySelector('.nav'),items=currentMode==='teacher'?teacherNav:studentNav;
+ nav.innerHTML=items.map(([id,label])=>`<button data-view="${id}" class="${(currentMode==='teacher'?id==='teacher':id==='home')?'active':''}" onclick="show('${id}')">${label}</button>`).join('');
+}
+function show(id){
+ const teacherIds=['teacher','teacherGroups','teacherStudents','teacherAnalytics','teacherSettings'];
+ const studentIds=['home','placement','path','skills','achievements','profile'];
+ const isTeacher=teacherIds.includes(id);
+ if(isTeacher && currentMode!=='teacher') setMode('teacher',false);
+ if(!isTeacher && currentMode!=='student') setMode('student',false);
+ document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+ document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+ const crumb=document.getElementById('crumb'); if(crumb) crumb.textContent=labels[id]||'WORKSPACE';
+}
+function setMode(mode,goDefault=true){
+ currentMode=mode;
+ const isTeacher=mode==='teacher';
+ document.getElementById('studentMode').classList.toggle('active',!isTeacher);
+ document.getElementById('teacherMode').classList.toggle('active',isTeacher);
+ document.getElementById('topPill').textContent=isTeacher?'24 STUDENTS · 3 GROUPS':'✦ 120 XP';
+ const caption=document.getElementById('roleCaption');
+ if(caption) caption.textContent=isTeacher?'Teacher · Teaching workspace':'Student · My workspace';
+ renderNav();
+ const id=isTeacher?'teacher':'home';
+ document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+ document.getElementById('crumb').textContent=labels[id];
+}
+function filterStudents(){
+ const q=(document.getElementById('studentSearch')?.value||'').toLowerCase();
+ const level=document.getElementById('levelFilter')?.value||'';
+ const status=document.getElementById('testFilter')?.value||'';
+ document.querySelectorAll('#studentRows tr').forEach(r=>{r.style.display=r.dataset.name.includes(q)&&(!level||r.dataset.level===level)&&(!status||r.dataset.test===status)&&(!group||r.dataset.group===group)?'':'none';});
+ const visible=[...document.querySelectorAll('#studentRows2 tr')].filter(r=>r.style.display!=='none').length;const count=document.getElementById('studentCount');if(count)count.textContent='Показано '+visible+' студентов · демонстрационные данные';
+}
+function filterStudents2(){
+ const group=document.getElementById('groupFilter2')?.value||'';
+ const q=(document.getElementById('studentSearch2')?.value||'').toLowerCase();
+ const level=document.getElementById('levelFilter2')?.value||'';
+ const status=document.getElementById('testFilter2')?.value||'';
+ document.querySelectorAll('#studentRows2 tr').forEach(r=>{
+  r.style.display=r.dataset.name.includes(q)&&(!level||r.dataset.level===level)&&(!status||r.dataset.test===status)&&(!group||r.dataset.group===group)?'':'none';
+ });
+ const visible=[...document.querySelectorAll('#studentRows2 tr')].filter(r=>r.style.display!=='none').length;
+ const count=document.getElementById('studentCount');if(count)count.textContent='Показано '+visible+' студентов · демонстрационные данные';
+}
+function copyStudentRows(){
+ const source=document.getElementById('studentRows'),target=document.getElementById('studentRows2');
+ if(source&&target) target.innerHTML=source.innerHTML;
+}
+function openStudent(name,level,score,progress,weak){
+ document.getElementById('modalName').textContent=name;document.getElementById('modalLevel').textContent=level;
+ document.getElementById('modalScore').textContent=score==='—'?'—':score+'/112';
+ document.getElementById('modalProgress').textContent=progress+'% complete';
+ document.getElementById('modalProgressBar').style.width=progress+'%';document.getElementById('modalWeak').textContent=weak;
+ document.getElementById('studentModal').classList.add('open');
+}
+function closeStudent(){document.getElementById('studentModal').classList.remove('open')}
+function teacherToast(msg){alert(msg+' — демонстрационный режим.')}
+function openGroup(group){teacherToast('Открыта группа '+group+' — карточка группы будет расширена в следующем этапе')}
+
+function applyPlacementResult(data,save=true){
+ if(save){try{localStorage.setItem('languageJourneyPlacementResult',JSON.stringify(data));}catch(e){}}
+ const level=data.level||'—',score=Number(data.raw||0);
+ const top=document.getElementById('topPill'); if(top&&currentMode==='student')top.textContent=level+' · Assigned';
+ const home=document.getElementById('home');
+ if(home){
+  const levelChip=home.querySelector('.level'); if(levelChip)levelChip.textContent=level+' · '+(data.label||'');
+  const metrics=home.querySelectorAll('.metric'); if(metrics.length>1)metrics[1].innerHTML=score+'<span style="font-size:14px;color:var(--muted)"> / 112</span>';
+  const sub=home.querySelector('.hero p');if(sub)sub.textContent='Диагностика завершена. Твой предварительный уровень — '+level+'. Открой учебный маршрут и начни первый проект.';
+  const skillPanel=[...home.querySelectorAll('.panel')].find(p=>p.textContent.includes('Навыки по результатам диагностики'));
+  if(skillPanel&&data.skill){
+   const rows=skillPanel.querySelectorAll('.skill');
+   const mapping=[['Grammar & Vocabulary','Grammar'],['Functional Language','Vocabulary'],['Reading','Reading'],['Listening','Listening'],['Dictation','Writing']];
+   mapping.forEach(([key],i)=>{const row=rows[i],v=data.skill[key];if(row&&v){const pct=Math.round(v.got/v.max*100);row.querySelector('.bar i').style.width=pct+'%';row.lastElementChild.textContent=pct+'%';}});
+  }
+ }
+ const resultText=document.getElementById('placementStatus');
+ if(resultText)resultText.textContent='Последний результат: '+level+' · '+score+'/112. Его можно использовать для проверки интерфейса без повторного прохождения теста.';
+}
+function applyDemoLevel(level){
+ const bands={A1:{raw:24,label:'Beginner'},A2:{raw:43,label:'Elementary'},B1:{raw:60,label:'Intermediate'},B2:{raw:78,label:'Upper-Intermediate'},C1:{raw:96,label:'Advanced'}};
+ const v=bands[level]||bands.A2;
+ const skill={'Grammar & Vocabulary':{got:Math.round(v.raw*.40),max:66},'Functional Language':{got:Math.round(v.raw*.10),max:12},'Reading':{got:Math.round(v.raw*.11),max:12},'Listening':{got:Math.round(v.raw*.11),max:12},'Dictation':{got:Math.round(v.raw*.09),max:10}};
+ const payload={raw:v.raw,penalty:0,bonus:0,wrong:0,answered:107,skill,level,label:v.label,dictationPending:0,unanswered:0,demo:true};
+ applyPlacementResult(payload,true);
+ show('home');
+}
+function clearPlacementDemo(){
+ try{localStorage.removeItem('languageJourneyPlacementResult')}catch(e){}
+ location.reload();
+}
+window.addEventListener('message',event=>{
+ const frame=document.getElementById('placementFrame');
+ if(frame && event.source===frame.contentWindow && event.data&&event.data.type==='LANGUAGE_JOURNEY_PLACEMENT_COMPLETE'){
+   applyPlacementResult(event.data.payload||{});
+   alert('Результат Placement Test передан в личный кабинет. Проверь диагностический профиль.');
+ }
+});
+
+copyStudentRows();renderNav();
+try{const saved=localStorage.getItem('languageJourneyPlacementResult');if(saved){const data=JSON.parse(saved);applyPlacementResult(data,false);const st=document.getElementById('placementStatus');if(st)st.textContent='Последний сохранённый результат: '+(data.level||'—')+' · '+(data.raw||0)+'/112. Для повторной проверки выбери демо-уровень.';}}catch(e){}
+
+</script></body></html>
