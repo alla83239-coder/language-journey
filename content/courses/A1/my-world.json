@@ -182,7 +182,54 @@
         "alt": "Friends meeting"
       },
       "assistant": "Emma",
-      "section": "LESSON 1 ·"
+      "section": "LESSON 1 ·",
+      "questions": [
+        {
+          "q": "What is the boy’s name?",
+          "options": [
+            "Markos",
+            "Mateo",
+            "Thomas"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "How do you spell his name?",
+          "options": [
+            "M-A-T-E-O",
+            "M-A-R-I-O",
+            "M-A-T-T-E-O"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "How old is Marie?",
+          "options": [
+            "16",
+            "14",
+            "15"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Where is Mateo from?",
+          "options": [
+            "England",
+            "Italy",
+            "Brazil"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Is Mateo from Rome?",
+          "options": [
+            "Yes, he is.",
+            "No, he isn’t.",
+            "The dialogue doesn’t say."
+          ],
+          "correct": 2
+        }
+      ]
     },
     {
       "id": "sb-p4-ex2",
@@ -731,7 +778,25 @@
         ]
       ],
       "assistant": "Emma",
-      "section": "LESSON 1 ·"
+      "section": "LESSON 1 ·",
+      "chatPrompts": [
+        {
+          "bot": "What’s your name?",
+          "follow": "How do you spell your name?"
+        },
+        {
+          "bot": "How do you spell your name?",
+          "follow": "Where are you from?"
+        },
+        {
+          "bot": "Where are you from?",
+          "follow": "What nationality are you?"
+        },
+        {
+          "bot": "Oh, you’re Brazilian!",
+          "follow": "Can you introduce yourself in one more sentence?"
+        }
+      ]
     },
     {
       "id": "sb-p5-ex10",
@@ -786,7 +851,14 @@
         "the boy / your brother? (Yes)"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 ·"
+      "section": "LESSON 1 ·",
+      "exercise1Answers": [
+        "They are big. They aren't small.",
+        "We are hot. We aren't cold.",
+        "It is a good school. It isn't a bad school.",
+        "My mother is in the garden. My mother isn't in the house.",
+        "I am 15. I am not 18."
+      ]
     },
     {
       "id": "wb-p90-w1-ex2",
@@ -802,7 +874,15 @@
         "the boy / your brother? (Yes)"
       ],
       "assistant": "Nick",
-      "section": "LESSON 1 ·"
+      "section": "LESSON 1 ·",
+      "exercise2Answers": [
+        "Are you English? Yes, I am.",
+        "Is the girl happy? No, she isn't.",
+        "Are they 16? Yes, they are.",
+        "Are we in London? No, we aren't.",
+        "Are you my friend? No, I'm not.",
+        "Is the boy your brother? Yes, he is."
+      ]
     },
     {
       "id": "sb-p5-ex11",
