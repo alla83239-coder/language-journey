@@ -236,7 +236,7 @@ const teacherNav=[['teacher','▦ Обзор'],['teacherGroups','▤ Мои гр
 let currentMode='student';
 function renderNav(){
  const nav=document.querySelector('.nav'),items=currentMode==='teacher'?teacherNav:studentNav;
- nav.innerHTML=items.map(([id,label])=>`<button data-view="${id}" class="${(currentMode==='teacher'?id==='teacher':id==='home')?'active':''}" onclick="show('${id}')">${label}</button>`).join('');
+ nav.innerHTML=items.map(([id,label])=>`<button data-view="${id}" class="${(currentMode==='teacher'?id==='teacher':id==='home')?'active':''}" onclick="show('${id}')">${label}</button>`).join('')+'<button onclick="location.href=\'library/\'">▦ Course Library</button>';
 }
 function show(id){
  const teacherIds=['teacher','teacherGroups','teacherStudents','teacherAnalytics','teacherSettings'];
