@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -332,56 +332,26 @@
       }
     },
     {
-      "id": "reading",
-      "type": "reading",
+      "id": "world-quiz",
+      "type": "motivation",
       "title": "A world of people",
-      "body": "Student’s Book, p. 5, Exercise 6. Look at the world quiz pictures and connect each clue with a country.",
-      "text": "Hi! My name is Mia and I’m 13. I live in a small town near the sea. I’ve got one brother and a friendly dog called Max. My best friend is Lily. We are in the same class. I like drawing and listening to music. At weekends, I usually ride my bike with Lily. There is a lovely park near my house.",
-      "questions": [
-        {
-          "q": "Where does Mia live?",
-          "options": [
-            "In a small town near the sea",
-            "In a big city",
-            "In the mountains"
-          ],
-          "correct": 0
-        },
-        {
-          "q": "Who is Max?",
-          "options": [
-            "Her brother",
-            "Her dog",
-            "Her friend"
-          ],
-          "correct": 1
-        },
-        {
-          "q": "What does Mia do at weekends?",
-          "options": [
-            "She rides her bike",
-            "She plays tennis",
-            "She watches films"
-          ],
-          "correct": 0
-        }
-      ],
+      "body": "Student’s Book, p. 5, Exercise 6. Study the pictures and use the clues to identify the countries. What do the places and people tell you about the world?",
       "assistant": "Emma",
       "section": "LESSON 1 · ALL ABOUT ME",
       "images": [
         {
           "src": "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
-          "alt": "Rio de Janeiro",
+          "alt": "Rio de Janeiro city view",
           "caption": "Brazil"
         },
         {
           "src": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85",
-          "alt": "Taj Mahal",
+          "alt": "Taj Mahal in India",
           "caption": "India"
         },
         {
           "src": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85",
-          "alt": "Koala",
+          "alt": "Koala in Australia",
           "caption": "Australia"
         }
       ],
@@ -395,7 +365,8 @@
       "visual": {
         "src": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1100&q=85",
         "alt": "Photorealistic learning scene"
-      }
+      },
+      "prompt": "Look carefully at the three photographs. Share your associations before choosing."
     },
     {
       "id": "grammar-have",
@@ -548,32 +519,10 @@
       "type": "grammar",
       "title": "Grammar Lab · Questions and short answers",
       "body": "Student’s Book, p. 5, Exercises 10–11 · Grammar Reference W.1. Learn question order and short answers with be.",
-      "questions": [
-        {
-          "q": "You can see one table.",
-          "options": [
-            "There is a table.",
-            "There are a table.",
-            "It are a table."
-          ],
-          "correct": 0,
-          "why": "Use There is with one thing."
-        },
-        {
-          "q": "You can see three posters.",
-          "options": [
-            "There is three posters.",
-            "There are three posters.",
-            "There am three posters."
-          ],
-          "correct": 1,
-          "why": "Use There are with plural nouns."
-        }
-      ],
       "assistant": "Nick",
       "section": "LESSON 1 · ALL ABOUT ME",
       "grammarIndex": 0,
-      "prompt": "Compare Are you...? with You are... What changes in the word order?",
+      "prompt": "Put am, is or are before the subject to form a question. Practise short answers: Yes, I am. / No, she isn't.",
       "visual": {
         "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
         "alt": "Photorealistic learning scene"
@@ -583,8 +532,7 @@
       "id": "listening",
       "type": "choice",
       "title": "Ask the right question",
-      "body": "Student’s Book, p. 5, Exercise 11 and Workbook, p. 4, Exercises 4–5.",
-      "audioText": "Hello! I'm Ben. I'm twelve years old and I live in Bristol. I've got a big family: two sisters and one brother. I love skateboarding and I play basketball after school. My favourite place is the park near my home.",
+      "body": "Practise question forms and short answers with be. These are adapted practice items for the language focus in Student’s Book, p. 5, Exercises 10–11 and Workbook, p. 4.",
       "questions": [
         {
           "q": "___ you from Australia?",
@@ -643,34 +591,7 @@
       "id": "project-draft",
       "type": "choice",
       "title": "Workbook Practice · Welcome A",
-      "body": "Workbook, p. 4, Exercises 1–2. Complete the text with the correct form of be and connect countries with nationalities.",
-      "fields": [
-        {
-          "id": "name",
-          "label": "My name and age",
-          "placeholder": "My name is ... I am ... years old."
-        },
-        {
-          "id": "place",
-          "label": "Where I live",
-          "placeholder": "I live in ..."
-        },
-        {
-          "id": "people",
-          "label": "People important to me",
-          "placeholder": "I have got ... My best friend is ..."
-        },
-        {
-          "id": "interests",
-          "label": "My interests",
-          "placeholder": "I like ... My favourite ... is ..."
-        },
-        {
-          "id": "routine",
-          "label": "My everyday life",
-          "placeholder": "I usually ... after school."
-        }
-      ],
+      "body": "Workbook, p. 4, Welcome A. Complete each sentence with the correct form of be. The items shown here are adapted practice, not a verbatim reproduction of the workbook.",
       "assistant": "Leo",
       "section": "LESSON 1 · ALL ABOUT ME",
       "questions": [
@@ -723,13 +644,14 @@
       "visual": {
         "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85",
         "alt": "Photorealistic learning scene"
-      }
+      },
+      "prompt": "Complete all five items. Your result will be reviewed after the activity."
     },
     {
       "id": "challenge",
       "type": "project",
       "title": "Project Workshop · My Identity Card",
-      "body": "Create the first artefact for your My World Profile. You may use your real details or invent a profile.",
+      "body": "Create the first artefact for your My World Profile. You may use your real details or invent a profile. This task applies the language from Welcome A.",
       "scenario": "You have one minute to introduce yourself and ask two friendly questions.",
       "prompts": [
         "What is your name?",
@@ -780,14 +702,7 @@
       "id": "final",
       "type": "reflection",
       "title": "Reflection · What can you do now?",
-      "body": "Check the statements that are true for you. Then identify one thing to practise again.",
-      "checklist": [
-        "I introduced myself.",
-        "I described at least one person.",
-        "I said where I live.",
-        "I talked about two interests.",
-        "I used complete simple sentences."
-      ],
+      "body": "Check the statements that are true for you. Think about what you can now do with the language from Welcome A.",
       "assistant": "Leo",
       "section": "LESSON 1 · ALL ABOUT ME",
       "questions": [
@@ -805,13 +720,7 @@
       "id": "reflection",
       "type": "complete",
       "title": "Identity Card created!",
-      "body": "You have completed Lesson 1 and created the first part of your My World Profile.",
-      "questions": [
-        "I can introduce myself in English.",
-        "I can describe people and places.",
-        "I can talk about my interests and routine.",
-        "I can present my My World Profile."
-      ],
+      "body": "You have completed Lesson 1 and created the first part of your My World Profile. In Lesson 2, you will add the people in your family.",
       "assistant": "Leo",
       "section": "LESSON 1 · ALL ABOUT ME",
       "badge": "Identity Explorer",
