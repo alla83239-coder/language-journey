@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -480,7 +480,7 @@
     {
       "id": "vocabulary-extra-132",
       "type": "flagMatch",
-      "title": "Countries around the world",
+      "title": "Extended Vocabulary · Countries and nationalities",
       "body": "Match each country to its flag. Use all 30 countries.",
       "flags": [
         {
@@ -792,7 +792,7 @@
       "id": "wb-p90-w1-ex2",
       "type": "W1b",
       "title": "Grammar practice · Questions and short answers",
-      "body": "Write questions and short answers with be. Follow the model in the Grammar Reference.",
+      "body": "Write questions and short answers with be. Follow the model in the Grammar Hub.",
       "exercise2": [
         "you / English? (Yes)",
         "the girl / happy? (No)",
@@ -1044,7 +1044,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "choice",
       "title": "Sort the family words",
-      "body": "Choose the correct category for each word. Based on the family vocabulary table in , page 5.",
+      "body": "Choose the correct category for each word. the family vocabulary table in , .",
       "questions": [
         {
           "q": "Which word belongs in the FEMALE column?",
@@ -1099,7 +1099,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "reading",
       "title": "Read a family tree",
-      "body": "Study the family relationships. Max is the speaker in the family-tree activity in Student's Book, page 6.",
+      "body": "Study the family relationships. Max is the speaker in this family-tree activity.",
       "text": "Clive and Margaret are Max's grandparents. Their children are Paul and Mark. Paul is married to Caroline. Their children are James, Max and Harriet. Mark is married to Sharon. Their children are Bella and Brendan.",
       "questions": [
         {
@@ -1151,7 +1151,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "choice",
       "title": "Who is who?",
-      "body": "Practise the relationships from Student's Book, page 6. Choose the correct word for each relationship.",
+      "body": "Practise family relationships. Choose the correct word for each relationship.",
       "questions": [
         {
           "q": "Paul is Caroline's …",
@@ -1252,7 +1252,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "choice",
       "title": "Make it plural",
-      "body": "Choose the correct plural form. Based on Student's Book, page 6 and , page 5.",
+      "body": "Choose the correct plural form.",
       "questions": [
         {
           "q": "one woman → two …",
@@ -1328,7 +1328,7 @@
       "type": "grammar",
       "title": "Grammar Lab · Possessive adjectives",
       "grammarIndex": 2,
-      "body": "Grammar Reference W.2. The table pairs subject pronouns with possessive adjectives: I/my, you/your, he/his, she/her, it/its, we/our, they/their.",
+      "body": "Use possessive adjectives to show who something belongs to: I/my, you/your, he/his, she/her, it/its, we/our, they/their.",
       "assistant": "Nick",
       "prompt": "Remember: a possessive adjective comes before a noun.",
       "visual": {
@@ -1341,7 +1341,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "choice",
       "title": "Whose family is it?",
-      "body": "Choose the correct possessive adjective. Based on Student's Book, page 7 and , page 5, Exercises 3–4.",
+      "body": "Choose the correct possessive adjective.",
       "questions": [
         {
           "q": "This is a photo of ___ family. (I)",
@@ -1420,7 +1420,7 @@
       "type": "grammar",
       "grammarIndex": 2,
       "title": "Grammar Lab · This, that, these, those",
-      "body": "Grammar Reference W.3. Near: this / these. Far: that / those. Singular: this / that. Plural: these / those.",
+      "body": "Near: this / these. Far: that / those. Singular: this / that. Plural: these / those.",
       "assistant": "Nick",
       "prompt": "First decide: is it near or far? Then decide: singular or plural.",
       "visual": {
@@ -1433,7 +1433,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "choice",
       "title": "Here or there? One or more?",
-      "body": "Choose the demonstrative and the correct form of be. Based on Student's Book, page 7, and , page 5.",
+      "body": "Choose the demonstrative and the correct form of be.",
       "questions": [
         {
           "q": "One photo near you: ___ is my photo.",
@@ -1502,7 +1502,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "reading",
       "title": "Reading · A family photo",
-      "body": "Read the short texts from the Student's Book, page 7. Identify the family members and notice the possessive adjectives.",
+      "body": "Read the short texts. Identify the family members and notice the possessive adjectives.",
       "text": "The two captions describe James and Max with their friend Vicky at a festival, and Harriet with the family dog Hamlet after a long walk.",
       "questions": [
         {
@@ -1545,7 +1545,7 @@
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "challenge",
       "title": "Speaking task · Guess the relative",
-      "body": "Based on Student's Book, page 6 and page 7.",
+      "body": "Talk about your family and ask your partner about theirs.",
       "scenario": "Work with a partner. Write five sentences about people in your family tree. Your partner guesses the person. Then draw a simple family tree and ask questions about it.",
       "prompts": [
         "Sharon's my mum. Who is she?",
