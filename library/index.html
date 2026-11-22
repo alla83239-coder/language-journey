@@ -52,7 +52,7 @@ let selectedLevel="A1",moduleData=null,screenIndex=0,answers={},screenDone=false
 const levelDescriptions={A1:"Beginner · стартовый уровень",A2:"Elementary · базовый",B1:"Intermediate · средний",B2:"Upper-Intermediate · выше среднего",C1:"Advanced · продвинутый"};
 function shuffleItems(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function renderLevels(){document.getElementById("levels").innerHTML=levels.map(l=>'<button class="level '+(l.code===selectedLevel?'active':'')+'" onclick="selectLevel(\''+l.code+'\')"><strong>'+l.code+'</strong><small>'+l.name+'</small></button>').join("");}
-function selectLevel(code){selectedLevel=code;
+function selectLevel(code){selectedLevel=code;renderLevels();renderModules();
 function closeWorkspace(e){if(e&&e.target!==document.getElementById("workspaceBackdrop"))return;document.getElementById("workspaceBackdrop").classList.remove("open");}
 async function openWorkspace(kind){
  if(!moduleData){try{const response=await fetch("../content/courses/A1/my-world.json");if(!response.ok)throw new Error("HTTP "+response.status);moduleData=await response.json();}catch(error){console.error("Workspace data could not be loaded",error);}}
