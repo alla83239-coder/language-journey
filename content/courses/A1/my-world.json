@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -230,10 +230,10 @@
       "id": "sb-p4-ex3-4",
       "type": "grammarTables",
       "title": "Grammar Insight · be: affirmative and negative",
-      "body": "Complete the tables with the full and short forms of be.",
+      "body": "Complete only the missing short forms.",
       "tables": [
         {
-          "title": "Affirmative forms",
+          "title": "Exercise 3 · Affirmative",
           "rows": [
             [
               "Full form",
@@ -251,10 +251,24 @@
               "you / we / they are",
               "you’re / we’re / they’re"
             ]
+          ],
+          "gaps": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
           ]
         },
         {
-          "title": "Negative forms",
+          "title": "Exercise 4 · Negative",
           "rows": [
             [
               "Full form",
@@ -271,6 +285,20 @@
             [
               "you / we / they are not",
               "you / we / they aren’t"
+            ]
+          ],
+          "gaps": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
             ]
           ]
         }
@@ -795,15 +823,37 @@
       "id": "sb-p5-ex12",
       "type": "speaking",
       "title": "Work in pairs · Ask and answer",
-      "body": "Work in pairs. Ask and answer the questions you have written. Give short answers and add one more detail.",
+      "body": "Have a short conversation with Emma. Answer each question, then add one detail.",
       "assistant": "Emma",
-      "section": "LESSON 1 ·"
+      "section": "LESSON 1 ·",
+      "chatPrompts": [
+        {
+          "bot": "Are you from Australia?",
+          "follow": "Where are you from?"
+        },
+        {
+          "bot": "Is your best friend sixteen?",
+          "follow": "How old is your best friend?"
+        },
+        {
+          "bot": "Are your cousins Italian?",
+          "follow": "What nationality are they?"
+        },
+        {
+          "bot": "Are you good at sport?",
+          "follow": "What sport do you like?"
+        },
+        {
+          "bot": "Is your home in a city?",
+          "follow": "Where is your home?"
+        }
+      ]
     },
     {
       "id": "wb-p9-assess",
       "type": "selfAssessment",
       "title": "My learning check",
-      "body": "Give yourself a mark for each learning objective: 1 = I found this difficult; 2 = This was OK; 3 = I can do this well. Then complete “How can I improve?”",
+      "body": "Choose the face that best describes how confident you feel about each learning objective.",
       "objectives": [
         "I can use the verb be.",
         "I can talk about countries and nationalities.",
