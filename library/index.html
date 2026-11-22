@@ -62,7 +62,7 @@ function questionAnswer(qi,oi){const s=moduleData.screens[screenIndex],q=s.quest
 function toggleTranscript(){document.getElementById("transcript").classList.toggle("show");}
 function previousScreen(){if(screenIndex>0){screenIndex--;renderScreen();}}
 function nextScreen(){const s=moduleData.screens[screenIndex];if(s.type==="motivation"&&answers.motivation===undefined){showFeedback("Choose one idea before continuing.");return;}
-if(s.questions){let missing=s.questions.some((q,i)=>answers[s.id+"-"+i]===undefined);if(missing){showFeedback("Answer each question before continuing.");return;}}
+if(["choice","reading","listening"].includes(s.type)&&s.questions){let missing=s.questions.some((q,i)=>answers[s.id+"-"+i]===undefined);if(missing){showFeedback("Answer each question before continuing.");return;}}
 if(s.type==="fill"){let missing=s.items.some((x,i)=>!document.getElementById("fill"+i).value.trim());if(missing){showFeedback("Complete each sentence before continuing.");return;}s.items.forEach((x,i)=>answers[s.id+"-"+i]=document.getElementById("fill"+i).value.trim());}
 if(s.type==="project"){s.fields.forEach(f=>answers[f.id]=document.getElementById("project-"+f.id).value.trim());try{localStorage.setItem("lj-a1-my-world-project",JSON.stringify(answers));}catch(e){}}
 if(s.type==="challenge"){answers.challenge=document.getElementById("challengeText").value.trim();if(!answers.challenge){showFeedback("Write a short introduction first.");return;}}
