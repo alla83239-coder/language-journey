@@ -4,28 +4,29 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
   "estimatedMinutes": 90,
   "project": {
     "title": "My World Profile",
-    "description": "Create a personal profile and present your world in simple English.",
-    "deliverable": "A one-page profile or a 60–90 second spoken presentation.",
+    "description": "Create a personal profile and introduce the people who are important to you. The project grows lesson by lesson.",
+    "deliverable": "A personal My World profile with an identity card and a family tree, presented in simple English.",
     "successCriteria": [
-      "I can introduce myself.",
-      "I can describe people and places that are important to me.",
-      "I can say what I like and what I do every day.",
-      "I can present my profile using simple sentences."
+      "I can introduce myself and give basic personal information.",
+      "I can talk about family members and relationships.",
+      "I can use plural nouns and possessive adjectives.",
+      "I can use this, that, these and those to identify people and things.",
+      "I can present my family tree in simple English."
     ]
   },
   "objectives": [
     "Introduce yourself and ask for basic personal information.",
-    "Describe family, friends and familiar places.",
-    "Use be, have got, possessive adjectives and there is/are.",
-    "Talk about likes, routines and everyday life.",
-    "Create and present a short personal profile."
+    "Name family members and describe family relationships.",
+    "Use regular and irregular plural nouns.",
+    "Use possessive adjectives and this, that, these and those.",
+    "Create and present a personal profile and family tree."
   ],
   "skills": [
     "Vocabulary",
@@ -507,10 +508,639 @@
       "assistant": "Leo"
     },
     {
+      "id": "b-motivation",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "motivation",
+      "title": "Look closer: who is part of your world?",
+      "body": "Look at the three photographs. What connects the people? Think about the different generations and relationships in a family.",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85",
+          "alt": "A family spending time together outdoors",
+          "caption": "A family together"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85",
+          "alt": "A family enjoying time together",
+          "caption": "Different generations"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=900&q=85",
+          "alt": "Family members spending time together",
+          "caption": "Brothers and sisters"
+        }
+      ],
+      "question": "What is today's topic?",
+      "options": [
+        "Family and relationships",
+        "A school timetable",
+        "A city tour"
+      ],
+      "correct": 0,
+      "assistant": "Emma",
+      "prompt": "Who is important in your family? Can you name three people in English?"
+    },
+    {
+      "id": "b-family-words",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "familyVocabulary",
+      "title": "Family words",
+      "body": "Study the family words from Welcome B. Say each word aloud and connect it with someone in the family tree.",
+      "items": [
+        {
+          "term": "mum / dad",
+          "meaning": "мама / папа",
+          "example": "This is my mum."
+        },
+        {
+          "term": "parents",
+          "meaning": "родители",
+          "example": "My parents are kind."
+        },
+        {
+          "term": "brother / sister",
+          "meaning": "брат / сестра",
+          "example": "I've got one brother."
+        },
+        {
+          "term": "grandmother / grandfather",
+          "meaning": "бабушка / дедушка",
+          "example": "My grandmother is 70."
+        },
+        {
+          "term": "grandparents",
+          "meaning": "бабушка и дедушка",
+          "example": "My grandparents live nearby."
+        },
+        {
+          "term": "aunt / uncle",
+          "meaning": "тётя / дядя",
+          "example": "My aunt is my mum's sister."
+        },
+        {
+          "term": "cousin",
+          "meaning": "двоюродный брат / сестра",
+          "example": "My cousin is 12."
+        },
+        {
+          "term": "daughter / son",
+          "meaning": "дочь / сын",
+          "example": "They have got a son."
+        },
+        {
+          "term": "granddaughter / grandson",
+          "meaning": "внучка / внук",
+          "example": "He is their grandson."
+        },
+        {
+          "term": "niece / nephew",
+          "meaning": "племянница / племянник",
+          "example": "My niece is very funny."
+        },
+        {
+          "term": "wife / husband",
+          "meaning": "жена / муж",
+          "example": "This is her husband."
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Notice the relationship words. Some describe women, some men, and some can describe both."
+    },
+    {
+      "id": "b-family-categories",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "choice",
+      "title": "Sort the family words",
+      "body": "Choose the correct category for each word. Based on the family vocabulary table in Workbook, page 5, Exercise 1.",
+      "questions": [
+        {
+          "q": "Which word belongs in the FEMALE column?",
+          "options": [
+            "nephew",
+            "niece",
+            "uncle"
+          ],
+          "correct": 1,
+          "why": "Niece means a brother's or sister's daughter."
+        },
+        {
+          "q": "Which word belongs in the MALE column?",
+          "options": [
+            "aunt",
+            "granddaughter",
+            "nephew"
+          ],
+          "correct": 2,
+          "why": "Nephew means a brother's or sister's son."
+        },
+        {
+          "q": "Which word can describe BOTH male and female family members?",
+          "options": [
+            "cousin",
+            "husband",
+            "grandmother"
+          ],
+          "correct": 0,
+          "why": "Cousin can be a boy or a girl."
+        },
+        {
+          "q": "Which plural family word includes mum and dad?",
+          "options": [
+            "parents",
+            "grandparents",
+            "children"
+          ],
+          "correct": 0,
+          "why": "Parents means a mother and a father."
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Can you think of one example for each category?"
+    },
+    {
+      "id": "b-family-tree",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "reading",
+      "title": "Read a family tree",
+      "body": "Study the family relationships. Max is the speaker in the family-tree activity in Student's Book, page 6, Exercise 1.",
+      "text": "Clive and Margaret are Max's grandparents. Paul and Caroline are Max's parents. Mark and Sharon are his aunt and uncle. James is his brother. Harriet is his sister. Bella and Brendan are his cousins.",
+      "questions": [
+        {
+          "q": "Who are Clive and Margaret?",
+          "options": [
+            "Max's parents",
+            "Max's grandparents",
+            "Max's cousins"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Who is Harriet?",
+          "options": [
+            "Max's sister",
+            "Max's aunt",
+            "Max's grandmother"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Who are Mark and Sharon?",
+          "options": [
+            "Max's parents",
+            "Max's aunt and uncle",
+            "Max's grandparents"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Who are Bella and Brendan?",
+          "options": [
+            "Max's cousins",
+            "Max's brother and sister",
+            "Max's parents"
+          ],
+          "correct": 0
+        }
+      ],
+      "assistant": "Emma",
+      "prompt": "Use the family tree to explain how two people are related."
+    },
+    {
+      "id": "b-family-relations",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "choice",
+      "title": "Who is who?",
+      "body": "Practise the relationships from Student's Book, page 6, Exercise 2. Choose the correct word for each relationship.",
+      "questions": [
+        {
+          "q": "Paul is Caroline's …",
+          "options": [
+            "husband",
+            "nephew",
+            "grandson"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "James is Margaret's …",
+          "options": [
+            "son",
+            "grandson",
+            "uncle"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Harriet is Sharon's …",
+          "options": [
+            "niece",
+            "daughter",
+            "grandmother"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Brendan is Paul's …",
+          "options": [
+            "brother",
+            "nephew",
+            "grandfather"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Mark is Clive's …",
+          "options": [
+            "son",
+            "uncle",
+            "cousin"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Sharon is Mark's …",
+          "options": [
+            "aunt",
+            "wife",
+            "daughter"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Harriet is Clive's …",
+          "options": [
+            "granddaughter",
+            "niece",
+            "wife"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Bella is Sharon's …",
+          "options": [
+            "sister",
+            "daughter",
+            "grandmother"
+          ],
+          "correct": 1
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Check the generations in the family tree before you answer."
+    },
+    {
+      "id": "b-plurals-grammar",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "grammar",
+      "title": "Grammar Lab · Plural nouns",
+      "grammarIndex": 0,
+      "body": "Student's Book, page 6: regular and irregular plural nouns. Welcome B practises both spelling patterns and irregular forms.",
+      "assistant": "Nick",
+      "prompt": "Look for patterns. Which plural forms add -s, which add -ies, and which change completely?"
+    },
+    {
+      "id": "b-plurals-practice",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "choice",
+      "title": "Make it plural",
+      "body": "Choose the correct plural form. Based on Student's Book, page 6, Exercise 4 and Workbook, page 5, Exercise 2.",
+      "questions": [
+        {
+          "q": "one woman → two …",
+          "options": [
+            "womans",
+            "women",
+            "womens"
+          ],
+          "correct": 1,
+          "why": "Woman has an irregular plural: women."
+        },
+        {
+          "q": "one child → two …",
+          "options": [
+            "childs",
+            "childes",
+            "children"
+          ],
+          "correct": 2,
+          "why": "Child has an irregular plural: children."
+        },
+        {
+          "q": "one person → eleven …",
+          "options": [
+            "people",
+            "persons",
+            "persones"
+          ],
+          "correct": 0,
+          "why": "The plural used here is people."
+        },
+        {
+          "q": "one granny → two …",
+          "options": [
+            "grannys",
+            "grannies",
+            "grannyies"
+          ],
+          "correct": 1,
+          "why": "A consonant + y changes to -ies."
+        },
+        {
+          "q": "one country → two …",
+          "options": [
+            "countrys",
+            "countries",
+            "countryes"
+          ],
+          "correct": 1,
+          "why": "A consonant + y changes to -ies."
+        },
+        {
+          "q": "one team → two …",
+          "options": [
+            "teams",
+            "teames",
+            "teamies"
+          ],
+          "correct": 0,
+          "why": "Most nouns add -s."
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Explain one spelling rule in your own words."
+    },
+    {
+      "id": "b-possessive-grammar",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "grammar",
+      "title": "Grammar Lab · Possessive adjectives",
+      "grammarIndex": 2,
+      "body": "Use possessive adjectives to show who something belongs to. The complete set in Grammar Reference W.2 is: my, your, his, her, its, our, their.",
+      "assistant": "Nick",
+      "prompt": "Remember: a possessive adjective comes before a noun."
+    },
+    {
+      "id": "b-possessive-practice",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "choice",
+      "title": "Whose family is it?",
+      "body": "Choose the correct possessive adjective. Based on Student's Book, page 7, Exercise 7 and Workbook, page 5, Exercises 3–4.",
+      "questions": [
+        {
+          "q": "This is a photo of ___ family. (I)",
+          "options": [
+            "my",
+            "his",
+            "their"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ favourite music is samba. (my brother)",
+          "options": [
+            "Her",
+            "His",
+            "Our"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "My grandfather is ___ dad. (my mum)",
+          "options": [
+            "his",
+            "her",
+            "their"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "My dad is ___ brother. (my uncle)",
+          "options": [
+            "his",
+            "its",
+            "our"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ name is Glastonbury. (the festival)",
+          "options": [
+            "Their",
+            "Its",
+            "Her"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "This is ___ cat. (me and my brother)",
+          "options": [
+            "our",
+            "your",
+            "their"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Is that ___ house? (Joel and Maisie)",
+          "options": [
+            "his",
+            "her",
+            "their"
+          ],
+          "correct": 2
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Find the person or thing in brackets. Which pronoun does it match?"
+    },
+    {
+      "id": "b-demonstratives-grammar",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "grammar",
+      "grammarIndex": 2,
+      "title": "Grammar Lab · This, that, these, those",
+      "body": "Use this and these for people or things near you (here). Use that and those for people or things farther away (there). This/that go with singular nouns; these/those go with plural nouns.",
+      "assistant": "Nick",
+      "prompt": "First decide: is it near or far? Then decide: singular or plural."
+    },
+    {
+      "id": "b-demonstratives-practice",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "choice",
+      "title": "Here or there? One or more?",
+      "body": "Choose the demonstrative and the correct form of be. Based on Student's Book, page 7, and Workbook, page 5, Exercise 5.",
+      "questions": [
+        {
+          "q": "One photo near you: ___ is my photo.",
+          "options": [
+            "This",
+            "These",
+            "Those"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Two dogs near you: ___ are my dogs.",
+          "options": [
+            "That",
+            "These",
+            "This"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "One house farther away: ___ is my house.",
+          "options": [
+            "Those",
+            "That",
+            "These"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Several cousins near you: ___ are my cousins.",
+          "options": [
+            "This",
+            "That",
+            "These"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "One phone near you: ___ is my new phone.",
+          "options": [
+            "This",
+            "Those",
+            "These"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Several brothers farther away: ___ are my brothers.",
+          "options": [
+            "This",
+            "That",
+            "Those"
+          ],
+          "correct": 2
+        }
+      ],
+      "assistant": "Nick",
+      "prompt": "Say the full sentence aloud after choosing."
+    },
+    {
+      "id": "b-reading",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "reading",
+      "title": "Reading · A family photo",
+      "body": "Read the short texts from the Student's Book, page 7, Exercise 5. Identify the family members and notice the possessive adjectives.",
+      "text": "This is a photo of my sons, James and Max. They're at a festival with their friend Vicky. She's excited because they're at a concert and it's her favourite band. James is happy because it's his favourite festival.\\n\\nThis is a photo of my daughter, Harriet. She's with our dog Hamlet after a long walk. They're tired and hungry.",
+      "questions": [
+        {
+          "q": "Who is Vicky?",
+          "options": [
+            "Their friend",
+            "Their sister",
+            "Their mother"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Whose favourite band is it?",
+          "options": [
+            "James's",
+            "Vicky's",
+            "Harriet's"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Who is with Hamlet?",
+          "options": [
+            "Harriet",
+            "Vicky",
+            "James"
+          ],
+          "correct": 0
+        }
+      ],
+      "assistant": "Emma",
+      "prompt": "Can you find three possessive adjectives in the text?"
+    },
+    {
+      "id": "b-speaking-task",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "challenge",
+      "title": "Speaking task · Guess the relative",
+      "body": "Based on Student's Book, page 6, Exercise 3 and page 7, Exercise 10.",
+      "scenario": "Work with a partner. Write five sentences about people in your family tree. Your partner guesses the person. Then draw a simple family tree and ask questions about it.",
+      "prompts": [
+        "Sharon's my mum. Who is she?",
+        "Are you Bella?",
+        "No, I'm not. Are you Brendan?",
+        "Yes, that's right!",
+        "Who is Ben? He's her brother."
+      ],
+      "assistant": "Emma",
+      "prompt": "Use family words, possessive adjectives and the verb be."
+    },
+    {
+      "id": "b-project",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "project",
+      "title": "Project Workshop · My Family Tree",
+      "body": "Add a family tree to your My World Profile. You can use real relatives, or invent a family if you prefer not to share personal information.",
+      "fields": [
+        {
+          "id": "family-person-1",
+          "label": "Person 1 · name and relationship",
+          "placeholder": "This is my ..."
+        },
+        {
+          "id": "family-person-2",
+          "label": "Person 2 · name and relationship",
+          "placeholder": "He / She is my ..."
+        },
+        {
+          "id": "family-person-3",
+          "label": "Person 3 · name and relationship",
+          "placeholder": "They are my ..."
+        },
+        {
+          "id": "family-description",
+          "label": "Describe your family",
+          "placeholder": "My family is ... I've got ..."
+        },
+        {
+          "id": "family-photo-caption",
+          "label": "Caption for your family tree",
+          "placeholder": "This is my family. These are ..."
+        }
+      ],
+      "assistant": "Leo",
+      "prompt": "Your project now has an identity card and a family tree. Keep your sentences simple and accurate."
+    },
+    {
+      "id": "b-reflection",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "type": "reflection",
+      "title": "Reflection · My family, my words",
+      "body": "Check what you can do now. This self-assessment contributes to your learning record.",
+      "questions": [
+        "I can name close and extended family members.",
+        "I can explain simple family relationships.",
+        "I can make regular and irregular plural nouns.",
+        "I can use possessive adjectives.",
+        "I can use this, that, these and those."
+      ],
+      "assistant": "Leo",
+      "prompt": "Which part would you like to practise again?"
+    },
+    {
       "id": "complete",
       "type": "complete",
       "title": "Mission complete!",
-      "body": "You have built your first English project. Your My World Profile is the starting point for real communication. Keep it — you can improve it as your English grows.",
+      "body": "You have completed the current learning route. Your My World Profile now includes your identity and family tree.",
       "badge": "My World Explorer",
       "assistant": "Leo"
     }
