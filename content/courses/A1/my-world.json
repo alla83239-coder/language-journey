@@ -1,0 +1,518 @@
+{
+  "id": "a1-my-world",
+  "courseId": "english-a1",
+  "level": "A1",
+  "title": "My World",
+  "subtitle": "All About Me",
+  "version": "1.0.0",
+  "status": "Published",
+  "language": "en",
+  "interfaceLanguage": "ru",
+  "estimatedMinutes": 90,
+  "project": {
+    "title": "My World Profile",
+    "description": "Create a personal profile and present your world in simple English.",
+    "deliverable": "A one-page profile or a 60–90 second spoken presentation.",
+    "successCriteria": [
+      "I can introduce myself.",
+      "I can describe people and places that are important to me.",
+      "I can say what I like and what I do every day.",
+      "I can present my profile using simple sentences."
+    ]
+  },
+  "objectives": [
+    "Introduce yourself and ask for basic personal information.",
+    "Describe family, friends and familiar places.",
+    "Use be, have got, possessive adjectives and there is/are.",
+    "Talk about likes, routines and everyday life.",
+    "Create and present a short personal profile."
+  ],
+  "skills": [
+    "Vocabulary",
+    "Grammar",
+    "Reading",
+    "Listening",
+    "Writing",
+    "Speaking"
+  ],
+  "vocabulary": [
+    {
+      "term": "name",
+      "meaning": "имя",
+      "example": "My name is Alex."
+    },
+    {
+      "term": "hometown",
+      "meaning": "родной город",
+      "example": "My hometown is small."
+    },
+    {
+      "term": "family",
+      "meaning": "семья",
+      "example": "My family is important to me."
+    },
+    {
+      "term": "friend",
+      "meaning": "друг",
+      "example": "This is my friend Sam."
+    },
+    {
+      "term": "favourite",
+      "meaning": "любимый",
+      "example": "My favourite colour is blue."
+    },
+    {
+      "term": "hobby",
+      "meaning": "увлечение",
+      "example": "My hobby is drawing."
+    },
+    {
+      "term": "live",
+      "meaning": "жить",
+      "example": "I live in a flat."
+    },
+    {
+      "term": "near",
+      "meaning": "рядом с",
+      "example": "My school is near my home."
+    },
+    {
+      "term": "usually",
+      "meaning": "обычно",
+      "example": "I usually walk to school."
+    },
+    {
+      "term": "together",
+      "meaning": "вместе",
+      "example": "We play games together."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Verb be",
+      "rule": "I am · You are · He/She/It is · We/They are",
+      "examples": [
+        "I am 12.",
+        "My best friend is kind.",
+        "We are from Spain."
+      ]
+    },
+    {
+      "title": "Have got",
+      "rule": "I/You/We/They have got · He/She has got",
+      "examples": [
+        "I have got a sister.",
+        "She has got a dog."
+      ]
+    },
+    {
+      "title": "Possessive adjectives",
+      "rule": "my · your · his · her · our · their",
+      "examples": [
+        "This is my room.",
+        "Her name is Mia."
+      ]
+    },
+    {
+      "title": "There is / There are",
+      "rule": "There is + one thing · There are + two or more things",
+      "examples": [
+        "There is a desk in my room.",
+        "There are two parks near my home."
+      ]
+    },
+    {
+      "title": "Present Simple: likes and routines",
+      "rule": "I like / I play / I go · He likes / He plays / He goes",
+      "examples": [
+        "I like music.",
+        "He plays football every Saturday."
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "id": "welcome",
+      "type": "welcome",
+      "title": "Welcome to My World",
+      "body": "Every person has a world: people, places, interests and everyday moments. Let’s discover yours — and learn how to talk about it in English.",
+      "assistant": "Leo",
+      "prompt": "Your final mission is to create a My World Profile. Each activity will help you build one part of it."
+    },
+    {
+      "id": "motivation",
+      "type": "motivation",
+      "title": "Look. Think. Connect.",
+      "body": "Look at the three photographs. What connects them? Choose the ideas that come to your mind, then make a guess about our topic.",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85",
+          "alt": "Family spending time together",
+          "caption": "People who matter"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85",
+          "alt": "Warm and welcoming home interior",
+          "caption": "Places we belong"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85",
+          "alt": "Friends spending time outdoors",
+          "caption": "Things we enjoy"
+        }
+      ],
+      "question": "What can connect people, places and interests?",
+      "options": [
+        "My World",
+        "A Shopping List",
+        "The Weather"
+      ],
+      "correct": 0,
+      "feedback": "Think about the people around you, the places you know and the things you enjoy. They are all part of your world.",
+      "assistant": "Emma"
+    },
+    {
+      "id": "mission",
+      "type": "mission",
+      "title": "Your mission",
+      "body": "Create a personal profile in English. Imagine you are introducing yourself to a new international friend.",
+      "steps": [
+        "Introduce yourself.",
+        "Describe people who are important to you.",
+        "Talk about your home and hometown.",
+        "Share your interests and daily routine.",
+        "Present your My World Profile."
+      ],
+      "assistant": "Leo"
+    },
+    {
+      "id": "vocabulary",
+      "type": "vocabulary",
+      "title": "Words for your world",
+      "body": "Explore the key words. Read each example aloud and think of a true sentence about your own life.",
+      "assistant": "Nick"
+    },
+    {
+      "id": "check-vocab",
+      "type": "choice",
+      "title": "Vocabulary check",
+      "body": "Choose the best word to complete each sentence.",
+      "questions": [
+        {
+          "q": "My ___ is Anna. Nice to meet you.",
+          "options": [
+            "name",
+            "near",
+            "usually"
+          ],
+          "correct": 0,
+          "why": "We use name to say what a person is called."
+        },
+        {
+          "q": "I ___ in a small town.",
+          "options": [
+            "live",
+            "favourite",
+            "together"
+          ],
+          "correct": 0,
+          "why": "Live means to have your home in a place."
+        },
+        {
+          "q": "My ___ hobby is reading.",
+          "options": [
+            "favourite",
+            "family",
+            "near"
+          ],
+          "correct": 0,
+          "why": "Favourite means the one you like most."
+        },
+        {
+          "q": "We play football ___.",
+          "options": [
+            "together",
+            "hometown",
+            "name"
+          ],
+          "correct": 0,
+          "why": "Together means with each other."
+        }
+      ],
+      "assistant": "Nick"
+    },
+    {
+      "id": "grammar-be",
+      "type": "grammar",
+      "title": "Grammar Lab 1 · Verb be",
+      "grammarIndex": 0,
+      "body": "Use be to give basic information and describe people and places.",
+      "assistant": "Nick"
+    },
+    {
+      "id": "practice-be",
+      "type": "choice",
+      "title": "Build a sentence",
+      "body": "Choose the correct form of be.",
+      "questions": [
+        {
+          "q": "I ___ from Poland.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 0,
+          "why": "Use am with I."
+        },
+        {
+          "q": "My friends ___ very funny.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 2,
+          "why": "Use are with plural subjects."
+        },
+        {
+          "q": "Her brother ___  ten.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "correct": 1,
+          "why": "Use is with he, she and it."
+        }
+      ],
+      "assistant": "Nick"
+    },
+    {
+      "id": "reading",
+      "type": "reading",
+      "title": "Reading · Meet Mia",
+      "body": "Read Mia’s profile. Notice how she introduces herself and describes her world.",
+      "text": "Hi! My name is Mia and I’m 13. I live in a small town near the sea. I’ve got one brother and a friendly dog called Max. My best friend is Lily. We are in the same class. I like drawing and listening to music. At weekends, I usually ride my bike with Lily. There is a lovely park near my house.",
+      "questions": [
+        {
+          "q": "Where does Mia live?",
+          "options": [
+            "In a small town near the sea",
+            "In a big city",
+            "In the mountains"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Who is Max?",
+          "options": [
+            "Her brother",
+            "Her dog",
+            "Her friend"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "What does Mia do at weekends?",
+          "options": [
+            "She rides her bike",
+            "She plays tennis",
+            "She watches films"
+          ],
+          "correct": 0
+        }
+      ],
+      "assistant": "Emma"
+    },
+    {
+      "id": "grammar-have",
+      "type": "grammar",
+      "title": "Grammar Lab 2 · Have got",
+      "grammarIndex": 1,
+      "body": "Use have got to talk about family members, pets and possessions.",
+      "assistant": "Nick"
+    },
+    {
+      "id": "family-task",
+      "type": "fill",
+      "title": "My people",
+      "body": "Complete the sentences with have got, has got, my or her.",
+      "items": [
+        {
+          "q": "I ___ a brother.",
+          "answer": "have got",
+          "hint": "Use have got with I."
+        },
+        {
+          "q": "She ___ a cat.",
+          "answer": "has got",
+          "hint": "Use has got with she."
+        },
+        {
+          "q": "This is ___ best friend.",
+          "answer": "my",
+          "hint": "Use a possessive adjective before a noun."
+        }
+      ],
+      "assistant": "Nick"
+    },
+    {
+      "id": "grammar-home",
+      "type": "grammar",
+      "title": "Grammar Lab 3 · There is / There are",
+      "grammarIndex": 3,
+      "body": "Describe a room, a home or a place in your town.",
+      "assistant": "Nick"
+    },
+    {
+      "id": "home-task",
+      "type": "choice",
+      "title": "Describe a place",
+      "body": "Choose the correct sentence.",
+      "questions": [
+        {
+          "q": "You can see one table.",
+          "options": [
+            "There is a table.",
+            "There are a table.",
+            "It are a table."
+          ],
+          "correct": 0,
+          "why": "Use There is with one thing."
+        },
+        {
+          "q": "You can see three posters.",
+          "options": [
+            "There is three posters.",
+            "There are three posters.",
+            "There am three posters."
+          ],
+          "correct": 1,
+          "why": "Use There are with plural nouns."
+        }
+      ],
+      "assistant": "Nick"
+    },
+    {
+      "id": "listening",
+      "type": "listening",
+      "title": "Listening · A new friend",
+      "body": "Listen to the short introduction. Then answer the questions. If audio is unavailable, use the transcript toggle.",
+      "audioText": "Hello! I'm Ben. I'm twelve years old and I live in Bristol. I've got a big family: two sisters and one brother. I love skateboarding and I play basketball after school. My favourite place is the park near my home.",
+      "questions": [
+        {
+          "q": "How old is Ben?",
+          "options": [
+            "Eleven",
+            "Twelve",
+            "Thirteen"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "How many sisters has Ben got?",
+          "options": [
+            "One",
+            "Two",
+            "Three"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "What does Ben do after school?",
+          "options": [
+            "Plays basketball",
+            "Plays the piano",
+            "Rides a horse"
+          ],
+          "correct": 0
+        }
+      ],
+      "assistant": "Emma"
+    },
+    {
+      "id": "project-draft",
+      "type": "project",
+      "title": "Project Workshop · Build your profile",
+      "body": "Use the prompts to create the first version of your My World Profile. You can edit it before the final presentation.",
+      "fields": [
+        {
+          "id": "name",
+          "label": "My name and age",
+          "placeholder": "My name is ... I am ... years old."
+        },
+        {
+          "id": "place",
+          "label": "Where I live",
+          "placeholder": "I live in ..."
+        },
+        {
+          "id": "people",
+          "label": "People important to me",
+          "placeholder": "I have got ... My best friend is ..."
+        },
+        {
+          "id": "interests",
+          "label": "My interests",
+          "placeholder": "I like ... My favourite ... is ..."
+        },
+        {
+          "id": "routine",
+          "label": "My everyday life",
+          "placeholder": "I usually ... after school."
+        }
+      ],
+      "assistant": "Leo"
+    },
+    {
+      "id": "challenge",
+      "type": "challenge",
+      "title": "Challenge · Your new classmate",
+      "body": "A new student joins your class. They do not know anyone yet. Help them feel welcome.",
+      "scenario": "You have one minute to introduce yourself and ask two friendly questions.",
+      "prompts": [
+        "What is your name?",
+        "Where are you from?",
+        "What do you like doing?",
+        "Have you got any brothers or sisters?"
+      ],
+      "assistant": "Emma"
+    },
+    {
+      "id": "final",
+      "type": "final",
+      "title": "Present your world",
+      "body": "Bring your profile together. Read it aloud or record a 60–90 second presentation. Use the checklist before you finish.",
+      "checklist": [
+        "I introduced myself.",
+        "I described at least one person.",
+        "I said where I live.",
+        "I talked about two interests.",
+        "I used complete simple sentences."
+      ],
+      "assistant": "Leo"
+    },
+    {
+      "id": "reflection",
+      "type": "reflection",
+      "title": "Look back · What can you do now?",
+      "body": "Think about your progress. Honest reflection helps you choose the next step.",
+      "questions": [
+        "I can introduce myself in English.",
+        "I can describe people and places.",
+        "I can talk about my interests and routine.",
+        "I can present my My World Profile."
+      ],
+      "assistant": "Leo"
+    },
+    {
+      "id": "complete",
+      "type": "complete",
+      "title": "Mission complete!",
+      "body": "You have built your first English project. Your My World Profile is the starting point for real communication. Keep it — you can improve it as your English grows.",
+      "badge": "My World Explorer",
+      "assistant": "Leo"
+    }
+  ]
+}
