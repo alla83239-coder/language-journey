@@ -175,7 +175,7 @@
       "title": "First meeting · Marie and Mateo",
       "body": "Listen to the original dialogue. Then work in pairs and practise reading it.",
       "audioTrack": "0.1",
-      "audioSrc": null,
+      "audioSrc": "../media/audio/Insight2e_Elem_SB_Track_0.1.mp3",
       "audioText": "Marie: Hello. I'm Marie. What's your name? Mateo: My name's Mateo. Marie: It's nice to meet you, Mateo. How do you spell your name? Mateo: M-A-T-E-O. Marie: How old are you? Mateo: I'm 16. And you? Marie: I'm 15. Are you from England? Mateo: No, I'm not. I'm Italian. Marie: Are you from Rome? Is it nice? Mateo: Yes, it's very nice.",
       "visual": {
         "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
@@ -508,7 +508,7 @@
         }
       ],
       "audioTrack": "0.2",
-      "audioSrc": null,
+      "audioSrc": "../media/audio/Insight2e_Elem_SB_Track_0.2.mp3",
       "assistant": "Nick",
       "section": "LESSON 1 ·",
       "options": [
@@ -722,7 +722,7 @@
       "title": "The alphabet · Listen and click",
       "body": "Listen to the alphabet and click each letter in the order you hear it. Use Reset to try again.",
       "audioTrack": "0.3",
-      "audioSrc": null,
+      "audioSrc": "../media/audio/Insight2e_Elem_SB_Track_0.3.mp3",
       "letters": [
         "A",
         "B",
