@@ -1442,6 +1442,26 @@
       }
     },
     {
+      "id": "b-friends-writing",
+      "type": "challenge",
+      "section": "LESSON 2 · PEOPLE AROUND ME",
+      "title": "Workbook Task · Friends in photos",
+      "body": "Workbook, p. 5, Exercise 6. Find two or three photos of your friends. Write sentences about each photo. Use the questions to help you.",
+      "scenario": "Describe who is in each photo. Say whether the people are the same age, have the same nationality and are in the same class at school.",
+      "prompts": [
+        "Who is in the photo?",
+        "Are they the same age as you?",
+        "Are they the same nationality as you?",
+        "Are they in the same class as you at school?"
+      ],
+      "assistant": "Emma",
+      "prompt": "Use the language from Welcome A and B. You can invent the people in the photos if you prefer not to share personal pictures.",
+      "visual": {
+        "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85",
+        "alt": "Friends posing together"
+      }
+    },
+    {
       "id": "b-project",
       "section": "LESSON 2 · PEOPLE AROUND ME",
       "type": "project",
@@ -1504,7 +1524,7 @@
     {
       "id": "complete",
       "type": "complete",
-      "title": "Mission complete!",
+      "title": "Family Tree created!",
       "body": "You have completed the current learning route. Your My World Profile now includes your identity and family tree.",
       "badge": "My World Explorer",
       "assistant": "Leo",
