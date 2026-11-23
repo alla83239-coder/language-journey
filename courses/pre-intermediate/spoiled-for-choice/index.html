@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spoiled for Choice — Premium CLIL Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="no-bar" data-lesson="3a">
+
+<header id="topbar">
+  <button class="logo" data-action="nav" data-page="missions" aria-label="Missions dashboard">
+    <span class="leaf-badge" id="logoIc"></span>
+    <span class="logo-text">SPOILED FOR CHOICE<small>PREMIUM CLIL CASE</small></span>
+  </button>
+  <nav class="mainnav" id="mainNav" aria-label="Main navigation"></nav>
+  <div class="tb-right"><button class="sound-btn icon-btn" data-action="sound" aria-label="Toggle system sounds" title="System sounds"></button>
+    <span class="streak" id="streakBox" style="display:none"></span>
+    <span class="err-pill" id="errPill" title="Mistakes: −5 XP each"></span>
+    <div class="xp-pill"><span class="lvl" id="lvlTag">L1</span><span id="xpVal">0</span><span class="xptxt">&nbsp;XP</span></div>
+    
+  </div>
+</header>
+
+
+<main id="app"></main>
+<div id="modal"><div class="modal-card" id="modalCard"></div></div>
+<div id="toasts"></div>
+<div id="printArea"></div>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="medalG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F4E3AE"/><stop offset="45%" stop-color="#E9CE7E"/><stop offset="100%" stop-color="#9A7426"/></linearGradient>
+<radialGradient id="avbg-harper" cx="35%" cy="30%"><stop offset="0%" stop-color="#7ADCC9"/><stop offset="100%" stop-color="#177E77"/></radialGradient>
+<radialGradient id="avbg-will" cx="35%" cy="30%"><stop offset="0%" stop-color="#8ED8A8"/><stop offset="100%" stop-color="#1C6B4F"/></radialGradient>
+<radialGradient id="avbg-jess" cx="35%" cy="30%"><stop offset="0%" stop-color="#FFC670"/><stop offset="100%" stop-color="#B4632C"/></radialGradient>
+<radialGradient id="avbg-jordan" cx="35%" cy="30%"><stop offset="0%" stop-color="#8FBCFB"/><stop offset="100%" stop-color="#2F6F8F"/></radialGradient>
+<radialGradient id="avbg-roxanna" cx="35%" cy="30%"><stop offset="0%" stop-color="#F79AB0"/><stop offset="100%" stop-color="#7C2D3E"/></radialGradient>
+<radialGradient id="avbg-sam" cx="35%" cy="30%"><stop offset="0%" stop-color="#FFDE8A"/><stop offset="100%" stop-color="#9A7426"/></radialGradient>
+<radialGradient id="avbg-ben" cx="35%" cy="30%"><stop offset="0%" stop-color="#9BE3D8"/><stop offset="100%" stop-color="#2F6F8F"/></radialGradient>
+</defs></svg>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -129,12 +129,14 @@
 <script>
 const levels=[
 {code:"A1",name:"Beginner",desc:"Начальное общение: о себе, семье, доме, повседневной жизни."},
+{code:"PI",name:"Pre-Intermediate",desc:"Расширяем словарный запас, обсуждаем питание, здоровье, устойчивый выбор и оцениваем информацию."},
 {code:"A2",name:"Elementary",desc:"Расширяем повседневное общение, описываем опыт и планы."},
 {code:"B1",name:"Intermediate",desc:"Обсуждаем опыт, аргументируем мнение и решаем практические задачи."},
 {code:"B2",name:"Upper-Intermediate",desc:"Развиваем беглость, критическое мышление и профессиональную коммуникацию."},
 {code:"C1",name:"Advanced",desc:"Сложные идеи, академическая и профессиональная коммуникация."}
 ];
 const titles={
+PI:["Spoiled for Choice"],
 A1:["My World","People Around Me","My Daily Life","My Town, My Place","Food and Feelings","Let’s Go Shopping","Time for Fun","My School Life","Travel Ready","A Better World"],
 A2:["My Life, My Choices","People and Relationships","Healthy Habits","Around My City","Food Stories","Money Matters","Digital Life","Past Adventures","Future Plans","Our Community"],
 B1:["Identity and Culture","Stories That Shape Us","Healthy Mind, Healthy Life","Cities of Tomorrow","Food for Thought","Media Detectives","Work and Ambition","Travel with Purpose","The Natural World","Make a Difference"],
@@ -184,7 +186,19 @@ function sendChatMessage(){const input=document.getElementById("chatInput"),area
 function escapeChat(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 
 renderLevels();renderModules();
-function renderModules(){const l=levels.find(x=>x.code===selectedLevel);document.getElementById("courseTitle").textContent=l.code+" · "+l.name;document.getElementById("courseDesc").textContent=l.desc;document.getElementById("modules").innerHTML=titles[selectedLevel].map((t,i)=>{const ready=selectedLevel==="A1"&&i===0;return '<article class="moduleCard"><div class="moduleIcon"><img src="'+icons[i]+'" alt="" loading="lazy"></div><div class="moduleBody"><span class="status '+(ready?'':'draft')+'">'+(ready?'PUBLISHED':'IN DEVELOPMENT')+'</span><h4>'+String(i+1).padStart(2,"0")+' · '+t+'</h4><p>'+(ready?'Полный проектный модуль · A1 · My World Profile':'Проектный модуль готовится к наполнению и методической проверке.')+'</p>'+(ready?'<button class="btn" onclick="startModule()">Открыть модуль</button>':'<button class="btn ghost" disabled style="opacity:.55;cursor:not-allowed">Скоро</button>')+'</div></article>'}).join("");}
+function renderModules(){
+ const l=levels.find(x=>x.code===selectedLevel);
+ document.getElementById("courseTitle").textContent=l.code+" · "+l.name;
+ document.getElementById("courseDesc").textContent=l.desc;
+ const list=titles[selectedLevel]||[];
+ document.getElementById("modules").innerHTML=list.map((t,i)=>{
+  const ready=(selectedLevel==="A1"&&i===0)||(selectedLevel==="PI"&&i===0);
+  const image=selectedLevel==="PI"?"https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=85":icons[i];
+  const description=selectedLevel==="PI"?"CLIL case study · food choices, evidence, health and sustainability. Five missions, language practice and Green Canteen project.":(ready?"Полный проектный модуль · A1 · My World Profile":"Проектный модуль готовится к наполнению и методической проверке.");
+  const action=selectedLevel==="PI"?'<a class="btn" href="../courses/pre-intermediate/spoiled-for-choice/">Open module</a>':(ready?'<button class="btn" onclick="startModule()">Открыть модуль</button>':'<button class="btn ghost" disabled style="opacity:.55;cursor:not-allowed">Скоро</button>');
+  return '<article class="moduleCard"><div class="moduleIcon"><img src="'+image+'" alt="" loading="lazy"></div><div class="moduleBody"><span class="status '+(ready?'':'draft')+'">'+(ready?'PUBLISHED':'IN DEVELOPMENT')+'</span><h4>'+String(i+1).padStart(2,"0")+' · '+t+'</h4><p>'+description+'</p>'+action+'</div></article>';
+ }).join("");
+}
 async function startModule(){try{const r=await fetch("../content/courses/A1/my-world.json");if(!r.ok)throw new Error("HTTP "+r.status);moduleData=await r.json();document.getElementById("sideModuleLabel").textContent=moduleData.title||"My World";answers={};screenIndex=0;document.getElementById("catalog").style.display="none";document.getElementById("player").style.display="block";renderScreen();}catch(e){alert("Не удалось загрузить модуль. Проверьте, что сайт открыт через GitHub Pages, а не из локального файла. "+e.message);}}
 function backToCatalog(){document.getElementById("player").style.display="none";document.getElementById("catalog").style.display="block";}
 function helper(name,prompt){const people={Nick:["media/helper_nick.jpg","Nick · Grammar & Language"],Emma:["media/helper_emma.jpg","Emma · Communication"],Leo:["media/helper_leo.jpg","Leo · Learning Guide"]};const p=people[name]||people.Leo;return '<div class="helper"><img src="../'+p[0]+'" alt="" style="width:42px;height:42px;object-fit:contain;background:#f5f2f7;border-radius:12px"><div><b>'+p[1]+'</b><br>'+prompt+'</div></div>';}
