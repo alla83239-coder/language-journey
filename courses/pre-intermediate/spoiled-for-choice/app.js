@@ -155,8 +155,8 @@ meters:{eco:40,health:45,budget:500},results:{},logs:{},decisions:{},badges:[],a
 unlocked:0,stepPos:[0,0,0,0,0],completed:[false,false,false,false,false],
 route:{name:"start"},poster:null,trolley:null,menu:"",pledges:[],slogan:"",finished:false,rating:null,sound:true,vocabKnown:0,practiceRuns:0};}
 let S=defaultState();let saveT=null;
-function save(){clearTimeout(saveT);saveT=setTimeout(()=>{try{const j=JSON.stringify(S);localStorage.setItem(KEY,j);if(LMS.ok){LMS.set("cmi.suspend_data",j);LMS.set("cmi.core.score.raw",Math.round(clamp(S.xp/MAX_XP*100,0,100)));LMS.set("cmi.core.lesson_status",S.finished?"completed":"incomplete");LMS.commit();}}catch(e){}},250);}
-function load(){try{const j=localStorage.getItem(KEY);if(j){const p=JSON.parse(j);S=Object.assign(defaultState(),p);S.meters=Object.assign({eco:40,health:45,budget:500},p.meters||{});}}catch(e){}}
+function save(){clearTimeout(saveT);saveT=setTimeout(()=>{if(!LMS.ok)return;try{const j=JSON.stringify(S);LMS.set("cmi.suspend_data",j);LMS.set("cmi.core.score.raw",Math.round(clamp(S.xp/MAX_XP*100,0,100)));LMS.set("cmi.core.lesson_status",S.finished?"completed":"incomplete");LMS.commit();}catch(e){}},250);}
+function load(){if(!LMS.ok)return;try{const j=LMS.api.LMSGetValue("cmi.suspend_data");if(j){const p=JSON.parse(j);S=Object.assign(defaultState(),p);S.meters=Object.assign({eco:40,health:45,budget:500},p.meters||{});}}catch(e){}}
 const lvl=()=>clamp(Math.floor(S.xp/320),0,LEVELS.length-1);
 /* ================= UI HELPERS ================= */
 function toast(msg,kind="info",ic){const t=document.createElement("div");t.className="toast"+(kind==="gold"?" gold":kind==="pen"?" pen":"");t.innerHTML=`<span>${icon(ic||(kind==="gold"?"trophy":kind==="pen"?"alert":"info"))}</span><span>${msg}</span>`;$("#toasts").appendChild(t);setTimeout(()=>{t.classList.add("out");setTimeout(()=>t.remove(),400);},3400);while($("#toasts").children.length>3)$("#toasts").firstChild.remove();}
@@ -884,4 +884,4 @@ return coachPromptV11(ev);
 noteAnswer=function(ok,ev,amt){noteAnswerBaseCoachV11(ok,ev,amt);if(ok||!ev||!ev.target)return;var region=ev.target.closest(".task-zone")||ev.target.closest(".activity-panel")||ev.target.closest("#a-fad")||ev.target.closest(".gram-section");if(!region)return;region.querySelector(".coach-hint.v11")?.remove();region.insertAdjacentHTML("beforeend",coachFeedbackMarkupV11(coachPromptV13(ev)));};
 
 
-load();LMS.init();AudioSys.on=S.sound!==false;if(S.finished&&!S.rating)S.rating=ratingCalc();App.go({name:"start"});updateTopbar();
+LMS.init();load();AudioSys.on=S.sound!==false;if(S.finished&&!S.rating)S.rating=ratingCalc();App.go({name:"start"});updateTopbar();
