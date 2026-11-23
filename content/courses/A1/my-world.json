@@ -4,7 +4,7 @@
   "level": "A1",
   "title": "My World",
   "subtitle": "All About Me",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "status": "Published",
   "language": "en",
   "interfaceLanguage": "ru",
@@ -19,7 +19,9 @@
       "I can use be in affirmative, negative and question forms.",
       "I can talk about family members and relationships.",
       "I can use plural nouns, possessive adjectives and demonstratives.",
-      "I can present my family tree in simple English."
+      "I can present my family tree in simple English.",
+      "I can use have got in affirmative, negative and question forms.",
+      "I can use object pronouns and the articles a, an and the."
     ]
   },
   "objectives": [
@@ -27,7 +29,8 @@
     "Name family members and describe family relationships.",
     "Use regular and irregular plural nouns.",
     "Use possessive adjectives and this, that, these and those.",
-    "Create and present a personal profile and family tree."
+    "Create and present a personal profile and family tree.",
+    "Use have got, object pronouns and articles a / an / the."
   ],
   "skills": [
     "Vocabulary",
@@ -1722,17 +1725,387 @@
       }
     },
     {
+      "id": "welcome-w4-grammar",
+      "type": "grammarRef",
+      "title": "Grammar Insight · have got",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "grammarTitle": "have got",
+      "rule": "Affirmative: I / we / you / they have got (’ve got); he / she / it has got (’s got). Negative: haven’t got / hasn’t got. Questions: Have + I / we / you / they + got …? Has + he / she / it + got …? Short answers: Yes, I have. / No, we haven’t. Yes, he has. / No, she hasn’t.",
+      "examples": [
+        "He has got short hair and blue eyes.",
+        "Have you got a computer? — Yes, I have.",
+        "I’ve got three sisters.",
+        "My school has got 600 students."
+      ]
+    },
+    {
+      "id": "welcome-w4-practice",
+      "type": "choice",
+      "title": "Have you got it?",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "questions": [
+        {
+          "q": "We ___ a dog. (✘)",
+          "options": [
+            "haven’t got",
+            "hasn’t got",
+            "don’t got"
+          ],
+          "correct": 0,
+          "why": "With we, use haven’t got."
+        },
+        {
+          "q": "My parents ___ a car. (✘)",
+          "options": [
+            "hasn’t got",
+            "haven’t got",
+            "isn’t got"
+          ],
+          "correct": 1,
+          "why": "Parents is plural, so use haven’t got."
+        },
+        {
+          "q": "___ Anna got a new bag?",
+          "options": [
+            "Have",
+            "Has",
+            "Is"
+          ],
+          "correct": 1,
+          "why": "With he, she and it, use has got in affirmative forms and Has … got? in questions."
+        },
+        {
+          "q": "A: Has Anna got a new bag? B: No, she ___.",
+          "options": [
+            "haven’t",
+            "hasn’t",
+            "isn’t"
+          ],
+          "correct": 1,
+          "why": "The short negative answer is No, she hasn’t."
+        },
+        {
+          "q": "I ___ three sisters. (✔)",
+          "options": [
+            "has got",
+            "have got",
+            "am got"
+          ],
+          "correct": 1,
+          "why": "With I, use have got."
+        },
+        {
+          "q": "My school ___ 600 students. (✔)",
+          "options": [
+            "have got",
+            "has got",
+            "is got"
+          ],
+          "correct": 1,
+          "why": "With a singular subject, use has got."
+        },
+        {
+          "q": "Tom ___ a dictionary. (✘)",
+          "options": [
+            "hasn’t got",
+            "haven’t got",
+            "don’t got"
+          ],
+          "correct": 0,
+          "why": "With Tom (he), use hasn’t got."
+        }
+      ]
+    },
+    {
+      "id": "welcome-w4-match",
+      "type": "matching",
+      "title": "Match the sentence halves · have got",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "text": "Match each beginning with the correct ending. This activity is based on Grammar Reference W.4, Exercise 2.",
+      "items": [
+        {
+          "prompt": "1. Have you got a",
+          "options": [
+            "a. great shopping centre.",
+            "b. brother and a cat.",
+            "c. new laptop for homework?"
+          ],
+          "answer": "c. new laptop for homework?"
+        },
+        {
+          "prompt": "2. She’s got a lot of",
+          "options": [
+            "a. great shopping centre.",
+            "b. homework tonight.",
+            "c. new laptop for homework?"
+          ],
+          "answer": "b. homework tonight."
+        },
+        {
+          "prompt": "3. The town’s got a",
+          "options": [
+            "a. great shopping centre.",
+            "b. brother and a cat.",
+            "c. big house, but it’s nice."
+          ],
+          "answer": "a. great shopping centre."
+        },
+        {
+          "prompt": "4. They haven’t got a",
+          "options": [
+            "a. brother and a cat.",
+            "b. new laptop for homework?",
+            "c. great shopping centre."
+          ],
+          "answer": "a. brother and a cat."
+        },
+        {
+          "prompt": "5. I’ve got two sisters,",
+          "options": [
+            "a. great shopping centre.",
+            "b. a brother and a cat.",
+            "c. homework tonight."
+          ],
+          "answer": "b. a brother and a cat."
+        }
+      ]
+    },
+    {
+      "id": "welcome-w5-grammar",
+      "type": "grammarRef",
+      "title": "Grammar Insight · object pronouns",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "grammarTitle": "Object pronouns",
+      "rule": "Subject pronouns name the person or thing doing the action. Object pronouns receive the action or follow a preposition.",
+      "table": [
+        [
+          "Subject pronoun",
+          "Object pronoun"
+        ],
+        [
+          "I",
+          "me"
+        ],
+        [
+          "you",
+          "you"
+        ],
+        [
+          "he",
+          "him"
+        ],
+        [
+          "she",
+          "her"
+        ],
+        [
+          "it",
+          "it"
+        ],
+        [
+          "we",
+          "us"
+        ],
+        [
+          "they",
+          "them"
+        ]
+      ],
+      "examples": [
+        "I like the boy. → I like him.",
+        "Jude likes me and my friends.",
+        "We are with the girl. → We are with her."
+      ]
+    },
+    {
+      "id": "welcome-w5-practice",
+      "type": "choice",
+      "title": "Choose the correct object pronoun",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "questions": [
+        {
+          "q": "I like the boy. I like ___.",
+          "options": [
+            "he",
+            "him",
+            "his"
+          ],
+          "correct": 1,
+          "why": "Him is the object pronoun for he."
+        },
+        {
+          "q": "Jude likes me and my friends. Jude likes ___.",
+          "options": [
+            "we",
+            "us",
+            "our"
+          ],
+          "correct": 1,
+          "why": "Us is the object pronoun for we."
+        },
+        {
+          "q": "We are with the girl. We are with ___.",
+          "options": [
+            "she",
+            "her",
+            "hers"
+          ],
+          "correct": 1,
+          "why": "Her is the object pronoun for she."
+        },
+        {
+          "q": "I haven’t got your books. I haven’t got ___.",
+          "options": [
+            "they",
+            "their",
+            "them"
+          ],
+          "correct": 2,
+          "why": "Them is the object pronoun for they."
+        },
+        {
+          "q": "She’s got my bag. She’s got ___.",
+          "options": [
+            "it",
+            "its",
+            "them"
+          ],
+          "correct": 0,
+          "why": "It is the object pronoun for a singular thing."
+        }
+      ]
+    },
+    {
+      "id": "welcome-w6-grammar",
+      "type": "grammarRef",
+      "title": "Grammar Insight · articles a, an and the",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "grammarTitle": "Articles: a / an and the",
+      "rule": "Use a before a singular noun beginning with a consonant sound. Use an before a singular noun beginning with a vowel sound. Use a / an when mentioning something for the first time, describing a person or thing, or saying someone's job. Use the before singular or plural nouns when something has already been mentioned or there is only one of it in the context.",
+      "examples": [
+        "a ball · a desk · a tree",
+        "an apple · an insect",
+        "There is a house near my school.",
+        "I’ve got a new computer and a new phone. I like the computer but I don’t like the phone.",
+        "Her mother is a doctor."
+      ]
+    },
+    {
+      "id": "welcome-w6-practice",
+      "type": "choice",
+      "title": "A, an or the?",
+      "section": "WELCOME UNIT · LANGUAGE LAB",
+      "assistant": "Nick",
+      "questions": [
+        {
+          "q": "They’ve got ___ new house and a new car.",
+          "options": [
+            "a",
+            "an",
+            "the"
+          ],
+          "correct": 0,
+          "why": "New begins with a consonant sound, so use a."
+        },
+        {
+          "q": "They’ve got a new house and a new car. ___ car is red.",
+          "options": [
+            "A",
+            "An",
+            "The"
+          ],
+          "correct": 2,
+          "why": "The refers to the car already mentioned."
+        },
+        {
+          "q": "We’re at ___ cinema.",
+          "options": [
+            "a",
+            "an",
+            "the"
+          ],
+          "correct": 2,
+          "why": "The is used for a place understood as the one relevant in this context."
+        },
+        {
+          "q": "Has she got ___ brother?",
+          "options": [
+            "a",
+            "an",
+            "the"
+          ],
+          "correct": 0,
+          "why": "Brother begins with a consonant sound."
+        },
+        {
+          "q": "There’s ___ computer club and ___ music club at our school.",
+          "options": [
+            "a / a",
+            "an / a",
+            "the / the"
+          ],
+          "correct": 0,
+          "why": "Both computer and music begin with consonant sounds."
+        },
+        {
+          "q": "___ computer club is on Mondays.",
+          "options": [
+            "A",
+            "An",
+            "The"
+          ],
+          "correct": 2,
+          "why": "The club has already been mentioned."
+        },
+        {
+          "q": "He’s ___ old man and he’s got ___ big dog.",
+          "options": [
+            "a / a",
+            "an / a",
+            "an / an"
+          ],
+          "correct": 1,
+          "why": "Old begins with a vowel sound; big begins with a consonant sound."
+        },
+        {
+          "q": "We’ve got ___ maths exam tomorrow.",
+          "options": [
+            "a",
+            "an",
+            "the"
+          ],
+          "correct": 0,
+          "why": "Maths begins with a consonant sound."
+        }
+      ]
+    },
+    {
+      "id": "welcome-unit-self-check",
+      "type": "selfAssessment",
+      "title": "Welcome Unit · My grammar check",
+      "section": "WELCOME UNIT · REFLECTION",
+      "assistant": "Leo",
+      "objectives": [
+        "I can use be in affirmative, negative and question forms.",
+        "I can use possessive adjectives.",
+        "I can choose this, that, these and those.",
+        "I can use have got in statements and questions.",
+        "I can use object pronouns.",
+        "I can choose a, an and the."
+      ]
+    },
+    {
       "id": "complete",
       "type": "complete",
-      "title": "Family Tree created!",
-      "body": "You have completed the current learning route. Your My World Profile now includes your identity and family tree.",
-      "badge": "My World Explorer",
-      "assistant": "Leo",
-      "section": "LESSON 2 · PEOPLE AROUND ME",
-      "visual": {
-        "src": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1100&q=85",
-        "alt": "Photorealistic learning scene"
-      }
+      "title": "My World · Welcome Unit completed",
+      "section": "WELCOME UNIT · COMPLETE",
+      "assistant": "Leo"
     }
   ]
 }
