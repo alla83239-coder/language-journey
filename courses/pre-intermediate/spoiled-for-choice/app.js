@@ -930,7 +930,7 @@ function renderFoodChoiceDashboard(el){
  const desc=el.querySelector(".ph-content p");
  if(desc)desc.textContent="12 missions. One evidence-led project. Investigate food choices, test ideas and build a practical proposal for a smarter food environment.";
  const begin=el.querySelector('[data-action="begin-case"]');
- if(begin){begin.textContent="Open Mission 01 →";begin.dataset.action="open-fc-mission";begin.dataset.mission="0";}
+ if(begin){begin.textContent="Open Mission 01 →";begin.dataset.action="begin-case";delete begin.dataset.mission;}
  const nameInput=el.querySelector("#consultName");
  if(nameInput)nameInput.placeholder="Your name (for the project certificate)";
 }
