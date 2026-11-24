@@ -885,3 +885,83 @@ noteAnswer=function(ok,ev,amt){noteAnswerBaseCoachV11(ok,ev,amt);if(ok||!ev||!ev
 
 
 LMS.init();load();AudioSys.on=S.sound!==false;if(S.finished&&!S.rating)S.rating=ratingCalc();App.go({name:"start"});updateTopbar();
+
+
+/* ================= FOOD CHOICE ACADEMY · 12-MISSION JOURNEY =================
+   The original five source chapters and all task engines remain intact.
+   This layer reorganises access into twelve learner-facing missions. */
+const FOOD_CHOICE_MISSIONS = [
+ {title:"The Mystery",subtitle:"What connects these three pictures?",chapter:"Launch",image:"food",target:null,brief:"Study the three images. What do they have in common? What food-choice problem might connect them?"},
+ {title:"The Real Cost",subtitle:"Read the evidence behind everyday food",chapter:"3A · The Real Cost of Food",image:"l3a",target:{l:0,s:0},brief:"Investigate packaging, food waste and the environmental cost hidden behind ordinary food choices.",requires:["3a-vocab","3a-read"]},
+ {title:"Food Footprints",subtitle:"Follow a product from farm to table",chapter:"3A · Life Cycle",image:"market",target:{l:0,s:2},brief:"Trace the life cycle of orange juice and decide which packaging policy is defensible.",requires:["3a-cycle"],decision:"pack"},
+ {title:"Food for Thought",subtitle:"Understand real eating habits",chapter:"3B · What’s on the Menu?",image:"l3b",target:{l:1,s:0},brief:"Compare the clients’ food profiles and build a nutrition report from the information they provide.",requires:["3b-profiles","3b-odd","3b-survey"]},
+ {title:"Determiner Lab",subtitle:"Make quantities clear",chapter:"3B · Language Focus",image:"grammar",target:{l:1,s:2},brief:"Use countable and uncountable nouns, quantifiers and questions accurately in food-related situations.",requires:["3b-gaps","3b-expert"]},
+ {title:"Teenagers in the UK",subtitle:"Question claims and check evidence",chapter:"3B · Critical Reading",image:"berries",target:{l:1,s:5},brief:"Read the complete Workbook text about fad diets. Separate claims from evidence and decide what the text actually supports.",requires:["3b-fad","3b-plan"]},
+ {title:"Vending Machine Challenge",subtitle:"Listen, compare and decide",chapter:"3C · Consumer Choices",image:"l3c",target:{l:2,s:0},brief:"Use listening evidence to compare vending-machine experiences and respond to a supplier offer.",requires:["3c-keys","3c-stat"],decision:"vend"},
+ {title:"Keep Talking",subtitle:"Negotiate a plan in English",chapter:"3C · Functional Language",image:"chat",target:{l:2,s:2},brief:"Practise indefinite pronouns, invitations, polite refusals and alternative suggestions.",requires:["3c-pro","3c-invite"]},
+ {title:"Junk Food Investigation",subtitle:"Read critically and inspect packaging",chapter:"3D · Junk Food Heaven",image:"burger",target:{l:3,s:0},brief:"Analyse the writer’s viewpoint, then build accurate vocabulary for food containers.",requires:["3d-read","3d-cont"]},
+ {title:"Grammar Workshop",subtitle:"Add precise information",chapter:"3D · Relative Clauses",image:"grammar",target:{l:3,s:2},brief:"Use relative pronouns and adverbs to describe people, products, places, ownership and time.",requires:["3d-rel","3d-cook"]},
+ {title:"Message Studio",subtitle:"Write for a real audience",chapter:"3E · Spread the Word",image:"l3e",target:{l:4,s:0},brief:"Use abbreviations and concise note style, then respond to a message with a clear plan.",requires:["3e-abbr","3e-note","3e-chat"]},
+ {title:"Final Project Pitch",subtitle:"Present the Smart Food Choice Project",chapter:"Project Portfolio",image:"final",target:{l:4,s:2},brief:"Bring together the evidence, menu decisions and launch communication. Present a practical Smart Food Choice proposal.",requires:["3d-shop","3e-poster"]}
+];
+function fcMissionDone(i){
+ const m=FOOD_CHOICE_MISSIONS[i];
+ if(i===0)return !!S.mission1Done;
+ return (m.requires||[]).every(id=>!!S.results[id]) && (!m.decision || !!S.decisions[m.decision]);
+}
+function fcUnlocked(i){if(i===0)return true;for(let n=0;n<i;n++)if(!fcMissionDone(n))return false;return true;}
+function fcProgress(){return FOOD_CHOICE_MISSIONS.filter((m,i)=>fcMissionDone(i)).length;}
+function renderFoodChoiceDashboard(el){
+ const old=renderBrief;old(el);
+ const roadmap=el.querySelector(".roadmap");
+ if(roadmap){
+  roadmap.innerHTML=FOOD_CHOICE_MISSIONS.map((m,i)=>{
+   const done=fcMissionDone(i),open=fcUnlocked(i);
+   return '<div class="fc-roadmap-item '+(done?'is-done':open?'is-open':'is-locked')+'"><span class="fc-roadmap-num">'+(done?'✓':String(i+1).padStart(2,'0'))+'</span><div class="fc-roadmap-copy"><b>'+m.title+'</b><span>'+m.subtitle+'</span></div>'+(open?'<button class="link-btn" data-action="open-fc-mission" data-mission="'+i+'">'+(done?'Review':'Open mission')+' →</button>':'<span class="fc-lock">'+icon('lock')+'</span>')+'</div>';
+  }).join("");
+  const heading=roadmap.parentElement.querySelector("b");
+  if(heading)heading.innerHTML=icon("flag")+" Food Choice Academy · 12 missions";
+ }
+ const heading=el.querySelector(".ph-content h1");
+ if(heading)heading.textContent="Food Choice Academy";
+ const kicker=el.querySelector(".ph-content .kicker");
+ if(kicker)kicker.textContent="The Smart Food Choice Project";
+ const desc=el.querySelector(".ph-content p");
+ if(desc)desc.textContent="12 missions. One evidence-led project. Investigate food choices, test ideas and build a practical proposal for a smarter food environment.";
+ const begin=el.querySelector('[data-action="begin-case"]');
+ if(begin){begin.textContent="Open Mission 01 →";begin.dataset.action="open-fc-mission";begin.dataset.mission="0";}
+ const nameInput=el.querySelector("#consultName");
+ if(nameInput)nameInput.placeholder="Your name (for the project certificate)";
+}
+function renderFoodChoiceMission(el,index){
+ const m=FOOD_CHOICE_MISSIONS[index];
+ const done=fcMissionDone(index);
+ const img=(key,alt)=>imgHTML(key,alt,"","leaf",false);
+ let body='';
+ if(index===0){
+  body='<div class="fc-mystery-grid">'+
+   '<figure>'+img("market","Fresh produce at a market")+'<figcaption>Image 1 · Where does food come from?</figcaption></figure>'+
+   '<figure>'+img("burger","A fast-food meal")+'<figcaption>Image 2 · What influences our choices?</figcaption></figure>'+
+   '<figure>'+img("forest","A green natural landscape")+'<figcaption>Image 3 · What is the wider impact?</figcaption></figure>'+
+  '</div><div class="fc-coach"><b>Ms Harper · Project mentor</b><p>Look carefully. What links the three pictures? Which one shows a choice, which one shows a consequence, and what might connect them?</p><p class="small muted">Write your first hypothesis. There is no answer key on this screen — your idea will become the starting point for the investigation.</p></div><label class="fc-hypothesis">Our first hypothesis<textarea id="fcHypothesis" rows="3" placeholder="I think the pictures are connected because…">'+esc(S.missionHypothesis||"")+'</textarea></label>';
+ }else{
+  body='<div class="fc-mission-intro"><div class="fc-mission-photo">'+img(m.image,m.title)+'</div><div><span class="tag acc">Mission '+String(index+1).padStart(2,"0")+' / 12</span><h2>'+m.title+'</h2><p>'+m.brief+'</p><div class="fc-meta">'+m.chapter+'</div></div></div>'+
+  '<div class="fc-coach"><b>Project mentor</b><p>'+m.subtitle+'. Work through the source tasks in this mission, keep evidence for your portfolio and use the language support when you need it.</p><p class="small muted">If an answer is not correct, use the coach’s clue to return to the source text, audio or grammar reference. The module will not reveal the answer key.</p></div>'+
+  (done?'<p class="fc-done-note">This mission’s required tasks are recorded. You can revisit them at any time.</p>':'');
+ }
+ el.innerHTML='<section class="fc-mission-screen"><div class="fc-mission-top"><button class="btn btn-ghost btn-sm" data-action="nav" data-page="missions">← Mission map</button><span class="tag">Food Choice Academy</span></div><div class="fc-mission-hero"><div><div class="kicker">The Smart Food Choice Project</div><h1>'+(index===0?'The Mystery':m.title)+'</h1><p>'+(index===0?'Three pictures. One question. Start with your own hypothesis.':m.subtitle)+'</p></div><div class="fc-count">'+String(index+1).padStart(2,"0")+'<small> / 12</small></div></div><div class="card fc-mission-card">'+body+'<div class="footer-bar">'+(index===0?'<button class="btn btn-gold" data-action="submit-fc-mystery">Save hypothesis & continue →</button>':'<button class="btn btn-gold" data-action="start-fc-mission" data-mission="'+index+'">'+(done?'Revisit source tasks':'Start mission')+' →</button>')+'</div></div></section>';
+}
+const fcOriginalGo=App.go.bind(App);
+App.go=function(route){
+ if(route&&route.name==="fc-mission"){
+  this.clear();S.route=route;save();closeModal();document.body.classList.remove("no-bar");$("#topbar").classList.add("on");
+  document.body.dataset.lesson=route.i===0?"3a":(FOOD_CHOICE_MISSIONS[route.i].target?LESSONS[FOOD_CHOICE_MISSIONS[route.i].target.l].theme:"fin");
+  const app=$("#app");app.innerHTML="";const scr=document.createElement("div");scr.className="screen";app.appendChild(scr);renderFoodChoiceMission(scr,route.i);updateTopbar();window.scrollTo({top:0,behavior:"instant"});return;
+ }
+ return fcOriginalGo(route);
+};
+renderBrief=renderFoodChoiceDashboard;
+Actions["open-fc-mission"]=btn=>{const i=Number(btn.dataset.mission);if(fcUnlocked(i))App.go({name:"fc-mission",i});else toast("Complete the previous mission to unlock this one.","info","lock");};
+Actions["start-fc-mission"]=btn=>{const i=Number(btn.dataset.mission),m=FOOD_CHOICE_MISSIONS[i];if(!m||!fcUnlocked(i))return;if(i===11&&S.unlocked>=5){App.go({name:"final"});return;}if(m.target){S.started=true;save();App.go({name:"step",l:m.target.l,s:m.target.s});}};
+Actions["submit-fc-mystery"]=()=>{const field=$("#fcHypothesis"),value=field?field.value.trim():"";if(!value){toast("Add a short hypothesis before continuing.","info","bulb");return;}S.missionHypothesis=value;S.mission1Done=true;S.started=true;save();toast("Hypothesis saved to your project portfolio.","gold","check");App.go({name:"missions"});};
+Actions["begin-case"]=()=>{const inp=$("#consultName");if(inp&&inp.value.trim())S.name=inp.value.trim();S.started=true;save();App.go({name:"fc-mission",i:0});};
