@@ -966,3 +966,70 @@ Actions["open-fc-mission"]=btn=>{const i=Number(btn.dataset.mission);if(fcUnlock
 Actions["start-fc-mission"]=btn=>{const i=Number(btn.dataset.mission),m=FOOD_CHOICE_MISSIONS[i];if(!m||!fcUnlocked(i))return;if(i===11&&S.unlocked>=5){App.go({name:"final"});return;}if(m.target){S.started=true;save();App.go({name:"step",l:m.target.l,s:m.target.s});}};
 Actions["submit-fc-mystery"]=()=>{const field=$("#fcHypothesis"),value=field?field.value.trim():"";if(!value){toast("Add a short hypothesis before continuing.","info","bulb");return;}S.missionHypothesis=value;S.mission1Done=true;S.started=true;save();toast("Hypothesis saved to your project portfolio.","gold","check");App.go({name:"missions"});};
 Actions["begin-case"]=()=>{const inp=$("#consultName");if(inp&&inp.value.trim())S.name=inp.value.trim();S.started=true;save();App.go({name:"fc-mission",i:0});};
+
+/* Food Choice Academy · controlled mission hand-off and portfolio */
+const fcLegacyNextStep=Actions["next-step"];
+function fcMissionForStep(l,s){
+ return FOOD_CHOICE_MISSIONS.findIndex((m,i)=>i>0&&m.target&&m.target.l===l&&m.target.s===s);
+}
+function fcMissionTasksComplete(i){
+ const m=FOOD_CHOICE_MISSIONS[i];if(!m)return false;
+ return (m.requires||[]).every(id=>!!S.results[id])&&(!m.decision||!!S.decisions[m.decision]);
+}
+Actions["next-step"]=function(btn){
+ const r=S.route;
+ if(r&&r.name==="step"&&Number.isInteger(S.fcActiveMission)){
+  const active=S.fcActiveMission,m=FOOD_CHOICE_MISSIONS[active],st=LESSONS[r.l]?.steps[r.s];
+  // Once the current mission's required evidence is collected, return to the 12-mission map.
+  if(fcMissionTasksComplete(active)){
+   S.fcMissionCompletedAt=active;
+   S.fcActiveMission=null;
+   save();toast("Mission evidence saved to your project portfolio.","gold","check");
+   App.go({name:"missions"});return;
+  }
+  // Keep the learner inside the chapter sequence until its mission evidence is complete.
+ }
+ fcLegacyNextStep(btn);
+};
+const fcLegacyStartMission=Actions["start-fc-mission"];
+Actions["start-fc-mission"]=function(btn){
+ const i=Number(btn.dataset.mission),m=FOOD_CHOICE_MISSIONS[i];
+ if(!m||!fcUnlocked(i))return;
+ if(i===11){
+  if(S.unlocked>=5){S.fcActiveMission=null;App.go({name:"final"});return;}
+  toast("Complete the previous source missions before the final pitch.","info","lock");return;
+ }
+ if(m.target){
+  S.fcActiveMission=i;S.started=true;save();
+  const chapter=m.target.l,step=m.target.s;
+  // Resume at the first unfinished source step belonging to this mission.
+  let start=step;
+  while(start<LESSONS[chapter].steps.length){
+   const task=LESSONS[chapter].steps[start].task;
+   if(task&&m.requires?.includes(task)&&S.results[task]){start++;continue;}
+   if(task&&m.requires?.includes(task))break;
+   if(LESSONS[chapter].steps[start].decision&&m.decision&&LESSONS[chapter].steps[start].decision===m.decision&&!S.decisions[m.decision])break;
+   start++;
+  }
+  if(start>=LESSONS[chapter].steps.length){toast("The source tasks are complete. Return to the mission map.","info","check");App.go({name:"missions"});return;}
+  S.stepPos[chapter]=Math.max(S.stepPos[chapter],start);save();
+  App.go({name:"step",l:chapter,s:start});
+ }
+};
+function fcPortfolioMarkup(){
+ const items=[
+  ["Starting hypothesis",S.missionHypothesis||"Not submitted yet"],
+  ["Packaging decision",S.decisions.pack?.title||S.decisions.pack?.id||"Not decided"],
+  ["Nutrition report",S.results["3b-plan"]?S.results["3b-plan"].score+"/2 recommendations":"Not completed"],
+  ["Vending-machine decision",S.decisions.vend?.title||S.decisions.vend?.id||"Not decided"],
+  ["Shopping plan",S.trolley?S.trolley.met+"/5 constraints · £"+Number(S.trolley.spent).toFixed(2):"Not completed"],
+  ["Launch announcement",S.poster?.title|| (S.results["3e-poster"]?"Completed":"Not completed")]
+ ];
+ return '<div class="card fc-portfolio"><b>My Smart Food Choice portfolio</b><p class="small muted">Evidence collected during the missions is gathered here automatically.</p><div class="fc-portfolio-grid">'+items.map(x=>'<div><span>'+esc(x[0])+'</span><b>'+esc(String(x[1]))+'</b></div>').join("")+'</div><div class="fc-portfolio-progress"><span>'+fcProgress()+' / 12 missions recorded</span><span>'+S.xp+' XP</span></div></div>';
+}
+const fcDashboardPortfolioBase=renderFoodChoiceDashboard;
+renderFoodChoiceDashboard=function(el){
+ fcDashboardPortfolioBase(el);
+ const roadmap=el.querySelector(".roadmap");
+ if(roadmap)roadmap.insertAdjacentHTML("afterend",fcPortfolioMarkup());
+};
