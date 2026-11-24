@@ -626,3 +626,41 @@ body.no-bar #app{padding:0;max-width:none}
 @media(max-width:700px){.skills-line{grid-template-columns:70px minmax(0,1fr)}.skills-line select{grid-column:1/-1}.skills-rubric-row{grid-template-columns:1fr 100px}.analytics-mission-top{flex-direction:column;gap:3px}.teacher-action-table{min-width:710px}}
 .skills-audio{display:grid;gap:7px;margin:12px 0 16px;padding:17px 19px;border:1px solid var(--goldLine);border-radius:15px;background:linear-gradient(145deg,#faf6e9,#fff)}
 .skills-audio h3{margin:2px 0}.skills-audio p{margin:0;color:var(--muted);font-size:13px}.skills-audio audio{width:100%;margin-top:3px}
+
+
+/* Food Choice Academy · 12-mission navigation layer */
+.fc-roadmap-item{display:flex;align-items:center;gap:12px;padding:11px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,253,248,.82);margin:8px 0;min-width:0}
+.fc-roadmap-item.is-locked{opacity:.58;background:#F2EEE5}
+.fc-roadmap-item.is-done{border-color:#B8D7C4;background:#F0F7F1}
+.fc-roadmap-num{width:34px;height:34px;display:grid;place-items:center;flex:none;border-radius:11px;background:var(--gradEmerald);color:#fff;font-size:12px;font-weight:900}
+.fc-roadmap-item.is-done .fc-roadmap-num{background:var(--gradGold);color:var(--forest)}
+.fc-roadmap-copy{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.fc-roadmap-copy b{font-size:12.5px;line-height:1.3}
+.fc-roadmap-copy span{font-size:10.5px;color:var(--muted);line-height:1.35}
+.fc-roadmap-item .link-btn{white-space:nowrap;font-size:11px}
+.fc-lock{color:var(--muted);padding:0 8px}
+.fc-mission-screen{max-width:1040px;margin:0 auto;padding:24px clamp(14px,3vw,28px) 60px}
+.fc-mission-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.fc-mission-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:clamp(22px,4vw,42px);border-radius:24px;background:var(--gradEmerald);color:#F6F1E6;box-shadow:var(--shadow-lg);margin-bottom:18px}
+.fc-mission-hero h1{font-size:clamp(30px,5vw,52px);font-weight:900;margin:10px 0}
+.fc-mission-hero p{color:#D9E4DC;max-width:650px}
+.fc-mission-hero .kicker{color:var(--gold2)}
+.fc-count{font-size:clamp(38px,6vw,64px);font-weight:900;color:var(--gold2);line-height:1;white-space:nowrap}
+.fc-count small{font-size:14px;color:#D9E4DC}
+.fc-mission-card{padding:clamp(18px,3vw,30px)}
+.fc-mystery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.fc-mystery-grid figure{min-width:0;border-radius:16px;overflow:hidden;background:#F3EDE0;border:1px solid var(--line)}
+.fc-mystery-grid .ph{width:100%;height:clamp(145px,20vw,220px)}
+.fc-mystery-grid figcaption{padding:10px 12px;font-size:11px;font-weight:700;color:var(--muted)}
+.fc-coach{margin:18px 0;padding:16px 18px;border-left:4px solid var(--gold);background:linear-gradient(110deg,#F8F1DF,#F6F8F2);border-radius:0 14px 14px 0}
+.fc-coach b{display:block;color:var(--gold3);font-size:12px;margin-bottom:6px}
+.fc-coach p{font-size:13px;margin:5px 0}
+.fc-hypothesis{display:block;font-size:12px;font-weight:800;color:var(--forest);margin-top:16px}
+.fc-hypothesis textarea{display:block;width:100%;margin-top:8px;border:1px solid var(--goldLine);border-radius:12px;padding:13px;font:500 14px Montserrat,sans-serif;resize:vertical;min-height:86px;background:#fff}
+.fc-mission-intro{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:22px;align-items:center}
+.fc-mission-photo .ph{height:210px;border-radius:16px}
+.fc-mission-intro h2{font-size:clamp(24px,3vw,34px);margin:10px 0}
+.fc-mission-intro p{font-size:14px;line-height:1.65}
+.fc-meta{font-size:11px;color:var(--gold3);font-weight:800;letter-spacing:.5px;margin-top:14px}
+.fc-done-note{margin-top:14px;padding:10px 12px;border-radius:10px;background:#EEF6EF;color:#276144;font-size:12px;font-weight:700}
+@media(max-width:700px){.fc-mystery-grid{grid-template-columns:1fr}.fc-mystery-grid .ph{height:190px}.fc-mission-intro{grid-template-columns:1fr}.fc-mission-photo .ph{height:180px}.fc-mission-hero{align-items:flex-start}.fc-roadmap-item{flex-wrap:wrap}.fc-roadmap-item .link-btn{margin-left:46px}}
