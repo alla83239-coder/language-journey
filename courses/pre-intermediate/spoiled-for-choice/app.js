@@ -1033,3 +1033,30 @@ renderFoodChoiceDashboard=function(el){
  const roadmap=el.querySelector(".roadmap");
  if(roadmap)roadmap.insertAdjacentHTML("afterend",fcPortfolioMarkup());
 };
+
+/* Final alignment of the learner-facing mission map with the source sequence. */
+FOOD_CHOICE_MISSIONS[9].requires=["3d-rel","3d-cook","3d-shop"];
+FOOD_CHOICE_MISSIONS[10].requires=["3e-abbr","3e-note","3e-poster","3e-chat"];
+FOOD_CHOICE_MISSIONS[11].requires=[];
+FOOD_CHOICE_MISSIONS[11].target=null;
+Actions["start-fc-mission"]=function(btn){
+ const i=Number(btn.dataset.mission),m=FOOD_CHOICE_MISSIONS[i];
+ if(!m||!fcUnlocked(i))return;
+ if(i===11){
+  if(!fcUnlocked(11)){toast("Complete the previous missions before the final pitch.","info","lock");return;}
+  S.fcActiveMission=null;S.started=true;save();App.go({name:"final"});return;
+ }
+ if(m.target){
+  S.fcActiveMission=i;S.started=true;save();
+  const chapter=m.target.l;let start=m.target.s;
+  while(start<LESSONS[chapter].steps.length){
+   const step=LESSONS[chapter].steps[start],task=step.task;
+   if(task&&m.requires?.includes(task)&&S.results[task]){start++;continue;}
+   if(task&&m.requires?.includes(task))break;
+   if(step.decision&&m.decision===step.decision&&!S.decisions[m.decision])break;
+   start++;
+  }
+  if(start>=LESSONS[chapter].steps.length){S.fcActiveMission=null;save();toast("The required source tasks are already complete.","gold","check");App.go({name:"missions"});return;}
+  S.stepPos[chapter]=Math.max(S.stepPos[chapter],start);save();App.go({name:"step",l:chapter,s:start});
+ }
+};
