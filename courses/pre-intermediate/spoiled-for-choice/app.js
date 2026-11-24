@@ -1068,4 +1068,20 @@ Actions["start-fc-mission"]=function(btn){
 };
 
 const fcMissionDoneBase=fcMissionDone;
-fcMissionDone=function(i){if(i===11)return !!S.finished;return fcMissionDoneBase(i);};
+function syncFoodChoiceLegacyProgress(){
+ const groups=[[1,2],[3,4,5],[6,7],[8,9],[10]];
+ groups.forEach((missions,chapter)=>{
+  if(missions.every(i=>fcMissionDoneBase(i))){
+   S.completed[chapter]=true;
+   S.unlocked=Math.max(S.unlocked,chapter+1);
+   awardBadge(chapter);
+  }
+ });
+ save();
+}
+fcMissionDone=function(i){
+ if(i===11)return !!S.finished;
+ const done=fcMissionDoneBase(i);
+ if(done)syncFoodChoiceLegacyProgress();
+ return done;
+};
