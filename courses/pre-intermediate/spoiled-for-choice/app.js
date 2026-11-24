@@ -911,8 +911,9 @@ function fcMissionDone(i){
 }
 function fcUnlocked(i){if(i===0)return true;for(let n=0;n<i;n++)if(!fcMissionDone(n))return false;return true;}
 function fcProgress(){return FOOD_CHOICE_MISSIONS.filter((m,i)=>fcMissionDone(i)).length;}
+const renderBriefBaseFC=renderBrief;
 function renderFoodChoiceDashboard(el){
- const old=renderBrief;old(el);
+ renderBriefBaseFC(el);
  const roadmap=el.querySelector(".roadmap");
  if(roadmap){
   roadmap.innerHTML=FOOD_CHOICE_MISSIONS.map((m,i)=>{
