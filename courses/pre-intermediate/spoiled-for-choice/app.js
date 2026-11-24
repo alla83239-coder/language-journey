@@ -1060,3 +1060,6 @@ Actions["start-fc-mission"]=function(btn){
   S.stepPos[chapter]=Math.max(S.stepPos[chapter],start);save();App.go({name:"step",l:chapter,s:start});
  }
 };
+
+const fcMissionDoneBase=fcMissionDone;
+fcMissionDone=function(i){if(i===11)return !!S.finished;return fcMissionDoneBase(i);};
